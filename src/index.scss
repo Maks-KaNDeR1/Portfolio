@@ -1,0 +1,16 @@
+@import './common/styles/sass/variables';
+@import './common/styles/sass/mixins';
+
+body {
+  margin: 0;
+  color: $textColor;
+  font-family: $TextFontFamily;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

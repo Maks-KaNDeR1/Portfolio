@@ -8,6 +8,6 @@
     .container {
         @include container();
         @include flex(column, space-between, center, nowrap);
-        height: 150px;
+        min-height: 150px;
     }
 }

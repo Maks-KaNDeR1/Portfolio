@@ -5,7 +5,6 @@ import styles from './Skill.module.scss'
 type PropsType = {
     title: string
     icon: string
-    description: string
 }
 
 function Skill(props: PropsType) {
@@ -15,7 +14,7 @@ function Skill(props: PropsType) {
                 <img src={props.icon} alt=""/>
             </div>
             <h3 className={styles.skillTitle}>{props.title}</h3>
-            <span className={styles.description}>{props.description}</span>
+            {/* <span className={styles.description}>{props.description}</span> */}
         </div>
     );
 }

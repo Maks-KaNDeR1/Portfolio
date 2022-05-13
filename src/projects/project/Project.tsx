@@ -6,16 +6,18 @@ type PropsType = {
     style: any
     title: string 
     description: string
+    way: string
 }
 
 
 function Project(props: PropsType) {
 
+   
 
     return (
         <div className={style.project}>
             <div className={style.image} style={props.style}>
-                <Button text={"view"}/>
+                <Button way={`https://maks-kander1.github.io/${props.way}/`} text={"view"}/>
             </div>
             <div className={style.projectInfo}>
                 <h3 className={style.projectTitle}>{props.title}</h3>

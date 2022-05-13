@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './Contacts.module.scss';
 import Title from "../common/components/title/Title";
+import { Fade } from 'react-awesome-reveal';
 
 
 function Contacts() {
     return (
-        <div className={styles.contactsBlock}>
+        <div id='contacts' className={styles.contactsBlock}>
+            <Fade direction='up' triggerOnce={true} > 
             <div className={styles.container}>
                 <Title text={"Contacts"}/>
                 <form className={styles.form}>
@@ -15,6 +17,7 @@ function Contacts() {
                     <button type="submit" >Send message</button>
                 </form>
             </div>
+            </Fade>
         </div>
     );
 }

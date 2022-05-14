@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b4ac6c47.chunk.css",
-    "main.js": "/Portfolio/static/js/main.6f838e14.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.6f838e14.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.1fbc3245.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.1fbc3245.js.map",
-    "static/js/2.8e0bb63a.chunk.js": "/Portfolio/static/js/2.8e0bb63a.chunk.js",
-    "static/js/2.8e0bb63a.chunk.js.map": "/Portfolio/static/js/2.8e0bb63a.chunk.js.map",
-    "static/js/3.47451d12.chunk.js": "/Portfolio/static/js/3.47451d12.chunk.js",
-    "static/js/3.47451d12.chunk.js.map": "/Portfolio/static/js/3.47451d12.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.f02a7909.chunk.css",
+    "main.js": "/Portfolio/static/js/main.b211e39d.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.b211e39d.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.26ff6d54.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.26ff6d54.js.map",
+    "static/js/2.f23fa312.chunk.js": "/Portfolio/static/js/2.f23fa312.chunk.js",
+    "static/js/2.f23fa312.chunk.js.map": "/Portfolio/static/js/2.f23fa312.chunk.js.map",
+    "static/js/3.5610de52.chunk.js": "/Portfolio/static/js/3.5610de52.chunk.js",
+    "static/js/3.5610de52.chunk.js.map": "/Portfolio/static/js/3.5610de52.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.b4ac6c47.chunk.css.map": "/Portfolio/static/css/main.b4ac6c47.chunk.css.map",
-    "static/js/2.8e0bb63a.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.8e0bb63a.chunk.js.LICENSE.txt",
+    "static/css/main.f02a7909.chunk.css.map": "/Portfolio/static/css/main.f02a7909.chunk.css.map",
+    "static/js/2.f23fa312.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f23fa312.chunk.js.LICENSE.txt",
     "static/media/ajax.71d63d86.svg": "/Portfolio/static/media/ajax.71d63d86.svg",
     "static/media/chat-firebase.8b11258f.png": "/Portfolio/static/media/chat-firebase.8b11258f.png",
     "static/media/counter.1fa1f236.png": "/Portfolio/static/media/counter.1fa1f236.png",
@@ -35,9 +35,9 @@
     "static/media/vk.798c92a5.svg": "/Portfolio/static/media/vk.798c92a5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1fbc3245.js",
-    "static/js/2.8e0bb63a.chunk.js",
-    "static/css/main.b4ac6c47.chunk.css",
-    "static/js/main.6f838e14.chunk.js"
+    "static/js/runtime-main.26ff6d54.js",
+    "static/js/2.f23fa312.chunk.js",
+    "static/css/main.f02a7909.chunk.css",
+    "static/js/main.b211e39d.chunk.js"
   ]
 }

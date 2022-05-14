@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import './App.scss';
 import Header from "./header/Header";
 import Main from "./main/Main";
@@ -9,13 +9,11 @@ import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
 
 
-
-
-function App() {
+export const App = () => {
   return (
     <div className="App">
-            <Header/>
-            <Main/>
+            <Header />
+            <Main />
             <Skills/>
             <Projects/>
             <Hire/>

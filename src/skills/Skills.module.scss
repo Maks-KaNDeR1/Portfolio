@@ -8,6 +8,7 @@
     .container {
         @include container();
         @include flex(column, flex-start, stretch, nowrap);
+        max-width: 1300px;
         .skills {
             @include flex(row, space-around, flex-start, wrap);
             @media screen and (max-width: 1128px){

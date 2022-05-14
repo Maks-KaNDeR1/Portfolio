@@ -7,7 +7,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 function Nav() {
     return (
         <div className={style.nav}>
-            <Fade style={{}} direction='right' >
+            <Fade style={{}} direction='right' triggerOnce={true} >
                 <Link
                     activeClass={style.active}
                     to="main"

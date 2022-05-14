@@ -1,0 +1,92 @@
+// n is number of stars required
+@function multiple-box-shadow ($n) {
+    $value: '#{random(2000)}px #{random(2000)}px #FFF';
+
+    @for $i from 2 through $n {
+        $value: '#{$value} , #{random(2000)}px #{random(600)}px #FFF';
+    }
+
+    @return unquote($value);
+}
+
+$shadowsSmall: multiple-box-shadow(700);
+$shadowsMedium: multiple-box-shadow(200);
+$shadowsBig: multiple-box-shadow(100);
+
+// html {
+//     height: 100%;
+//     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+//     overflow: hidden
+// }
+
+.container {
+
+    height: 200px;
+    // background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    // overflow: hidden;
+    .stars {
+        width: 1px;
+        height: 1px;
+        background: transparent;
+        box-shadow: $shadowsSmall;
+        animation: animStar 50s linear infinite
+    }
+    &::after {
+        content: " ";
+        position: absolute;
+        // top: 100vh;
+        width: 1px;
+        height: 1px;
+        background: transparent;
+        box-shadow: $shadowsSmall
+    }
+    .stars2 {
+        width: 2px;
+        height: 2px;
+        background: transparent;
+        box-shadow: $shadowsMedium;
+        animation: animStar 100s linear infinite
+    }
+    &::after {
+        content: " ";
+        position: absolute;
+        // top: 100vh;
+        width: 2px;
+        height: 2px;
+        background: transparent;
+        box-shadow: $shadowsMedium;
+    }
+    .stars3 {
+        width: 3px;
+        height: 3px;
+        background: transparent;
+        box-shadow: $shadowsBig;
+        animation: animStar 150s linear infinite;
+    }
+    &::after {
+        content: " ";
+        position: absolute;
+        // top: 500px;
+        width: 3px;
+        height: 3px;
+        background: transparent;
+        box-shadow: $shadowsBig;
+    }
+
+}
+
+
+span {
+    // background: -webkit-linear-gradient(white, #b7bec5);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px)
+    }
+    to {
+        transform: translateY(-2000px)
+    }
+}

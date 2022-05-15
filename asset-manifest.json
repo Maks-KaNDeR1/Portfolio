@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f02a7909.chunk.css",
-    "main.js": "/Portfolio/static/js/main.b211e39d.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.b211e39d.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.26ff6d54.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.26ff6d54.js.map",
-    "static/js/2.f23fa312.chunk.js": "/Portfolio/static/js/2.f23fa312.chunk.js",
-    "static/js/2.f23fa312.chunk.js.map": "/Portfolio/static/js/2.f23fa312.chunk.js.map",
-    "static/js/3.5610de52.chunk.js": "/Portfolio/static/js/3.5610de52.chunk.js",
-    "static/js/3.5610de52.chunk.js.map": "/Portfolio/static/js/3.5610de52.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.131f9813.chunk.css",
+    "main.js": "/Portfolio/static/js/main.0a8264c3.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.0a8264c3.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.29cb38ae.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.29cb38ae.js.map",
+    "static/js/2.66b5f28f.chunk.js": "/Portfolio/static/js/2.66b5f28f.chunk.js",
+    "static/js/2.66b5f28f.chunk.js.map": "/Portfolio/static/js/2.66b5f28f.chunk.js.map",
+    "static/js/3.30459378.chunk.js": "/Portfolio/static/js/3.30459378.chunk.js",
+    "static/js/3.30459378.chunk.js.map": "/Portfolio/static/js/3.30459378.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.f02a7909.chunk.css.map": "/Portfolio/static/css/main.f02a7909.chunk.css.map",
-    "static/js/2.f23fa312.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.f23fa312.chunk.js.LICENSE.txt",
+    "static/css/main.131f9813.chunk.css.map": "/Portfolio/static/css/main.131f9813.chunk.css.map",
+    "static/js/2.66b5f28f.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.66b5f28f.chunk.js.LICENSE.txt",
     "static/media/ajax.71d63d86.svg": "/Portfolio/static/media/ajax.71d63d86.svg",
     "static/media/chat-firebase.8b11258f.png": "/Portfolio/static/media/chat-firebase.8b11258f.png",
     "static/media/counter.1fa1f236.png": "/Portfolio/static/media/counter.1fa1f236.png",
     "static/media/figma.7ec53a4a.svg": "/Portfolio/static/media/figma.7ec53a4a.svg",
+    "static/media/firebase.ea1a2d66.svg": "/Portfolio/static/media/firebase.ea1a2d66.svg",
     "static/media/formik.d2a5d1c7.svg": "/Portfolio/static/media/formik.d2a5d1c7.svg",
     "static/media/git.1396a4ad.svg": "/Portfolio/static/media/git.1396a4ad.svg",
     "static/media/html-icon.2b8208b2.svg": "/Portfolio/static/media/html-icon.2b8208b2.svg",
@@ -28,6 +29,7 @@
     "static/media/rest-api.d863627a.svg": "/Portfolio/static/media/rest-api.d863627a.svg",
     "static/media/sass.ec032538.svg": "/Portfolio/static/media/sass.ec032538.svg",
     "static/media/social-network.91e20c0c.jpg": "/Portfolio/static/media/social-network.91e20c0c.jpg",
+    "static/media/storybook.4d16fda6.svg": "/Portfolio/static/media/storybook.4d16fda6.svg",
     "static/media/telegram.6ef96d2a.svg": "/Portfolio/static/media/telegram.6ef96d2a.svg",
     "static/media/test.cbbb7865.svg": "/Portfolio/static/media/test.cbbb7865.svg",
     "static/media/todolist.892ba5ca.jpg": "/Portfolio/static/media/todolist.892ba5ca.jpg",
@@ -35,9 +37,9 @@
     "static/media/vk.798c92a5.svg": "/Portfolio/static/media/vk.798c92a5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.26ff6d54.js",
-    "static/js/2.f23fa312.chunk.js",
-    "static/css/main.f02a7909.chunk.css",
-    "static/js/main.b211e39d.chunk.js"
+    "static/js/runtime-main.29cb38ae.js",
+    "static/js/2.66b5f28f.chunk.js",
+    "static/css/main.131f9813.chunk.css",
+    "static/js/main.0a8264c3.chunk.js"
   ]
 }

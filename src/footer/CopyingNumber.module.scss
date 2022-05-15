@@ -1,5 +1,10 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+
 .copyNumber {
-  margin-top: 30px;
+  background-color: $bgSecondary;
+  color: $textColor;
   opacity: 0.4;
   text-align: center;
 }

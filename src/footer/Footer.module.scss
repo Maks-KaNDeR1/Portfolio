@@ -1,17 +1,13 @@
 @import '../common/styles/sass/variables';
 @import '../common/styles/sass/mixins';
 
-
-
 .footer {
     min-height: 300px;
     @include flex(row, center, stretch, nowrap);
-
     .container {
         @include container();
         @include flex(column, flex-start, center, nowrap);
         padding: 100px 0 20px;
-
         .socialIcons {
             @include flex(row, space-between, center, nowrap);
             width: 400px;
@@ -20,7 +16,6 @@
             @media screen and (max-width: 505px) {
                 width: 100%;
             }
-
             .socialIcon {
                 width: 60px;
                 height: 60px;
@@ -34,7 +29,6 @@
                     border: 1px solid $textColor;
                     transition: all 0.3s ease-in-out 0s;
                 }
-
                 @media screen and (max-width: 380px) {
                     width: 50px;
                     height: 50px;
@@ -50,12 +44,6 @@
                     }
                 }
             }
-        }
-
-        .copyright {
-            margin-top: 40px;
-            @include text($TextFontFamily, 14px, 1.8, 300);
-            opacity: 0.6;
         }
     }
 }

@@ -6,12 +6,10 @@ type PropsType = {
     way: string
 }
 
-function Button(props: PropsType) {
+export const Button = (props: PropsType) => {
     return (
         <a target="_blank" rel="noreferrer" href={props.way}
             className={style.btn}> {props.text}
         </a>
     );
 }
-
-export default Button;

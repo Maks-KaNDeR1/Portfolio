@@ -2,16 +2,14 @@ import React from 'react';
 import styles from './Main.module.scss';
 import Typewriter from 'typewriter-effect';
 import { Fade } from 'react-awesome-reveal';
-import Particles from "react-tsparticles";
-import Background from './Background';
+import { Background } from './Background/Background';
+import { FaGithubSquare } from 'react-icons/fa';
 
-function Main() {
 
+export const Main = () => {
     return (
-
         <div id='main' className={styles.mainBlock}>
-            <Background /> 
-            {/* <Particles className={styles.tsparticles} params={particlesOpt} /> */}
+            <Background />
             <div className={styles.container}>
                 <Fade direction='left' >
                     <div className={styles.greeting}>
@@ -24,7 +22,7 @@ function Main() {
                                 loop: true,
                                 deleteSpeed: 20,
                                 cursorClassName: '',
-                                wrapperClassName: '  '
+                                wrapperClassName: ''
                             }} />
                         <span style={{ fontSize: '17px', maxWidth: '605px', marginTop: '25px' }} >
                             I'm a Frontend result-oriented developer when creating SPA applications,
@@ -32,6 +30,8 @@ function Main() {
                             I'm pushing up and I'm not used to giving up,
                             I want to realize myself and become the best in my field. I would like to find project work and full-time employment in a
                             company with a modern approach to development and a collaborative team.
+                            <p /> My github: <b />
+                            <a target="_blank" rel="noreferrer" href='https://github.com/Maks-KaNDeR1' >@Maks_KaNDeR</a>
                         </span>
                     </div>
                 </Fade>
@@ -46,4 +46,3 @@ function Main() {
     );
 }
 
-export default Main;

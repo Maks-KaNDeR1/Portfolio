@@ -43,6 +43,11 @@
                         }
                     }
                 }
+                a {
+                    @include text($TitleFontFamily, 20px, 1.2, 300);
+                    text-decoration: none;
+                    color: $primaryColor;
+                }
             }
             h1 {
                 @include text($TextFontFamily, 28px, 1.8, 400);

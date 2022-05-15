@@ -5,7 +5,7 @@ type PropsType = {
     text: string
 }
 
-function Title(props: PropsType) {
+export const Title = (props: PropsType) => {
     return (
         <div className={style.title}>
             <h2>{props.text}</h2>
@@ -13,5 +13,3 @@ function Title(props: PropsType) {
 
     );
 }
-
-export default Title;

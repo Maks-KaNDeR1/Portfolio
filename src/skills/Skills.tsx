@@ -1,37 +1,39 @@
 import React from 'react';
 import styles from './Skills.module.scss';
-import Skill from "./skill/Skill";
-import Title from "../common/components/title/Title";
+import { Skill } from "./skill/Skill";
+import { Title } from "../common/components/title/Title";
+import gitIcon from "./../assets/images/git.svg";
 import htmlIcon from "./../assets/images/html-icon.svg";
 import jsIcon from "./../assets/images/js.svg";
 import tsIcon from "./../assets/images/typescript.svg";
 import reactIcon from "./../assets/images/react.svg";
 import reduxIcon from "./../assets/images/redux.svg";
-import gitIcon from "./../assets/images/git.svg";
+import formikIcon from "./../assets/images/formik.svg";
+import uiIcon from "./../assets/images/material-ui.svg";
 import sassIcon from "./../assets/images/sass.svg";
-import figmaIcon from "./../assets/images/figma.svg";
 import restIcon from "./../assets/images/rest-api.svg";
 import ajaxIcon from "./../assets/images/ajax.svg";
-import formikIcon from "./../assets/images/formik.svg";
 import testIcon from "./../assets/images/test.svg";
-import uiIcon from "./../assets/images/material-ui.svg";
+import storybookIcon from "./../assets/images/storybook.svg";
+import figmaIcon from "./../assets/images/figma.svg";
 import { Fade } from 'react-awesome-reveal';
 
 
-function Skills() {
-       let react = reactIcon;
+export const Skills = () => {
+       let git = gitIcon;
+       let html = htmlIcon;
        let js = jsIcon;
        let ts = tsIcon;
-       let html = htmlIcon;
-       let ui = uiIcon;
+       let react = reactIcon;
        let redux = reduxIcon;
-       let git = gitIcon;
+       let ui = uiIcon;
+       let formik = formikIcon;
        let sass = sassIcon;
-       let figma = figmaIcon;
        let test = testIcon;
+       let storybook = storybookIcon;
        let rest = restIcon;
        let ajax = ajaxIcon;
-       let formik = formikIcon;
+       let figma = figmaIcon;
 
        return (
               <div id='skills' className={styles.skillsBlock}>
@@ -46,9 +48,13 @@ function Skills() {
                                           <Skill title={"TypeScript"}
                                                  icon={ts} />
                                           <Skill title={"React"}
-                                                 icon={react} />
+                                                 icon={react} 
+                                                 description={"hook's"}
+                                                 />
                                           <Skill title={"Redux"}
-                                                 icon={redux} />
+                                                 icon={redux} 
+                                                 description={"hook's, redux-thunk, redux-toolkit"}
+                                                 />
                                           <Skill title={"github"}
                                                  icon={git} />
                                           <Skill title={"formik"}
@@ -59,7 +65,9 @@ function Skills() {
                                                  icon={sass} />
                                           <Skill title={"TDD"}
                                                  icon={test} />
-                                          <Skill title={"rest"}
+                                          <Skill title={"storybook"}
+                                                 icon={storybook} />
+                                          <Skill title={"rest api"}
                                                  icon={rest} />
                                           <Skill title={"ajax"}
                                                  icon={ajax} />
@@ -71,5 +79,3 @@ function Skills() {
               </div>
        );
 }
-
-export default Skills;

@@ -35,6 +35,8 @@ export const Skills = () => {
        let ajax = ajaxIcon;
        let figma = figmaIcon;
 
+
+
        return (
               <div id='skills' className={styles.skillsBlock}>
                      <Fade direction='up' triggerOnce={true} >
@@ -42,20 +44,22 @@ export const Skills = () => {
                                    <Title text={"Skills"} />
                                    <div className={styles.skills}>
                                           <Skill title={"html & Css"}
+                                                 description={"css-modules, styled-component"}
                                                  icon={html} />
                                           <Skill title={"Javascript"}
                                                  icon={js} />
                                           <Skill title={"TypeScript"}
                                                  icon={ts} />
                                           <Skill title={"React"}
-                                                 icon={react} 
-                                                 description={"hook's"}
-                                                 />
+                                                 icon={react}
+                                                 description={"React-Hook's"}
+                                          />
                                           <Skill title={"Redux"}
-                                                 icon={redux} 
-                                                 description={"hook's, redux-thunk, redux-toolkit"}
-                                                 />
+                                                 icon={redux}
+                                                 description={"Redux-Hook's, Redux-Thunk, Redux-Toolkit, Redux-Saga"}
+                                          />
                                           <Skill title={"github"}
+                                                 description={"Maks-KaNDeR1"}
                                                  icon={git} />
                                           <Skill title={"formik"}
                                                  icon={formik} />
@@ -70,6 +74,7 @@ export const Skills = () => {
                                           <Skill title={"rest api"}
                                                  icon={rest} />
                                           <Skill title={"ajax"}
+                                                 description={"Axios"}
                                                  icon={ajax} />
                                           <Skill title={"figma"}
                                                  icon={figma} />

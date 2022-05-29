@@ -13,7 +13,7 @@ import { CopyingNumber } from './CopyingNumber';
 export const Footer = () => {
     return (
         <div className={styles.footer}>
-            <Fade direction='up' triggerOnce={true} >
+             <Fade delay={300} >
                 <div className={styles.container} >
                     <Title text={"Maksim Kandersky"} />
                     <CopyingNumber />

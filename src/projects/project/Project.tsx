@@ -1,26 +1,32 @@
 import React from 'react';
-import style from './Project.module.scss';
+import styles from './Project.module.scss';
 import { Button } from "../../common/components/button/Button";
+import { Fade } from 'react-awesome-reveal';
 
 type PropsType = {
     style: any
     title: string
     description: string
     way: string
+    gitWay: string
     icon?: string
 }
 
 
-export const Project = (props: PropsType) => {
+export const Project: React.FC<PropsType> = ({style, title, way, gitWay, description, icon}) => {
     return (
-        <div className={style.project}>
-            <div className={style.image} style={props.style}>
-                <Button way={`https://maks-kander1.github.io/${props.way}/`} text={"view"} />
+        <div className={styles.project}>
+            <Fade delay={300} >
+            <div className={styles.image} style={style}>
+                <Button way={`https://maks-kander1.github.io/${way}/`} text={"view"} />
             </div>
-            <div className={style.projectInfo}>
-                <h3 className={style.projectTitle}>{props.title} {props.icon && <img src={props.icon} alt="" />}</h3>
-                <span className={style.description}>{props.description}</span>
+            <div className={styles.projectInfo}>
+                <h3 className={styles.projectTitle}>{title} {icon && <img src={icon} alt="" />}</h3>
+               <a target="_blank" rel="noreferrer" href={`https://github.com/Maks-KaNDeR1/${gitWay}`}>https://github.com/Maks-KaNDeR1/{gitWay}</a>
+               <br/>
+                <span className={styles.description}>{description}</span>
             </div>
+            </Fade>
         </div>
     );
 }

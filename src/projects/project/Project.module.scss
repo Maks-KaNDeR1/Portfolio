@@ -34,6 +34,11 @@
             height: 20px;
             width: 20px;
         }
+        a {
+            @include text($TextFontFamily, 12px, 1.8, 500);
+            color: $primaryColor;
+            text-decoration: none;
+        }
         .description {
             @include text($TextFontFamily, 12px, 1.8, 400);
         }

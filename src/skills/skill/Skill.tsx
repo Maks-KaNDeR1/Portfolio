@@ -8,14 +8,14 @@ type PropsType = {
     description?: string
 }
 
-export const Skill = (props: PropsType) => {
+export const Skill: React.FC<PropsType> = ({title, icon, description}) => {
     return (
         <div className={styles.skill}>
             <div className={styles.icon}>
-                <img src={props.icon} alt=""/>
+                <img src={icon} alt="https://github.com/Maks-KaNDeR1"/>
             </div>
-            <h3 className={styles.skillTitle}>{props.title}</h3>
-            <span className={styles.description}>{props.description}</span>
+            <h3 className={styles.skillTitle}>{title}</h3>
+            <span className={styles.description}>{description}</span>
         </div>
     );
 }

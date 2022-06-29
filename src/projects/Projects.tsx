@@ -4,8 +4,11 @@ import { Project } from './project/Project';
 import { Title } from '../common/components/title/Title';
 import todoImage from './../assets/images/todolist.png'
 import socialImage from './../assets/images/social-network.png'
+import coogleBooksImage from './../assets/images/coogle-books.png'
+import calculatorImage from './../assets/images/calculator.png'
 import counterImage from './../assets/images/counter.png'
 import chatImage from './../assets/images/chat-firebase.png'
+import catImage from './../assets/images/cat-images.png'
 import firebaseIcon from './../assets/images/firebase.svg'
 import { Fade } from 'react-awesome-reveal';
 
@@ -18,8 +21,17 @@ export const Projects = () => {
     const todolist = {
         backgroundImage: `url(${todoImage})`,
     };
+    const coogleBooks = {
+        backgroundImage: `url(${coogleBooksImage})`,
+    };
+    const calculator = {
+        backgroundImage: `url(${calculatorImage})`,
+    };
     const counter = {
         backgroundImage: `url(${counterImage})`,
+    };
+    const catImages = {
+        backgroundImage: `url(${catImage})`,
     };
     const chat = {
         backgroundImage: `url(${chatImage})`,
@@ -37,9 +49,12 @@ export const Projects = () => {
     let descriptionTodo = (`Huge project - Todo list with storage of data on remote server. 
 	Technology stack: React, Redux (Redux-thunk, Redux-toolkit, Hooks), REST API, Storybook, 
 	Unit and snapshot tests. Formik, Material-UI. And much more... `)
-    let descriptionCounter = ('Just simple counter with settings start value and end value. I used in this project React, Redux, clean CSS, React-router-dom and more')
+    let descriptionGoogleBooksAPI = (`Google Books Api - App Based on React Redux, SASS, etc., requesting books from the Google API, 
+    'load more' pagination, filtering, as well as filtering by category, implemented on the front, because. not on the back. Clicking on the card will take you to the detailed page of the book.`)
+    let descriptionCalculator = (`Computational calculator on React, Redux, Not using the EVAL method, well, with it too. As well as keyboard input, + Escape, Enter, NumpadEnter`)
+    let descriptionCounter = ('Just simple counter with settings start value and end value. Saving State to LocalStorage. I used in this project React, Redux, clean CSS, React-router-dom and more')
     let descriptionFirebase = ('Simple chat on React and Firebase. Login via google and email. Hooks, CSS')
-    let descriptionWorks = ('Lorem ipsum dolor sit amet, ipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametconsectetur adipisicing elit, ')
+    let descriptionCatImages = (`test task/ Cat pictures API, Pagination, the ability to add to "favorites" and remove from "favorites" on React, Redux, interaction with the API server`)
 
 
     return (
@@ -55,15 +70,21 @@ export const Projects = () => {
                     <Project way={'todolist'} style={todolist} title={"Todo list"}
                         gitWay={'todolist'}
                         description={descriptionTodo} />
+                    <Project way={'books-search'} style={coogleBooks} title={"Google Books API"}
+                        gitWay={'books-search'}
+                        description={descriptionGoogleBooksAPI} />
+                    <Project way={'calculator'} style={calculator} title={"Calculator"}
+                        gitWay={'calculator'}
+                        description={descriptionCalculator} />
                     <Project way={'Counter'} style={counter} title={"Counter"}
                         gitWay={'Counter'}
                         description={descriptionCounter} />
                     <Project way={'chat-firebase'} style={chat} title={`Chat Firebase`} icon={firebase}
                         gitWay={'chat-firebase'}
                         description={descriptionFirebase} />
-                    <Project way={'works'} style={homeworks} title={"Works"}
-                        gitWay={'works'}
-                        description={descriptionWorks} />
+                    <Project way={'cat-images'} style={catImages} title={"Cat Images"}
+                        gitWay={'cat-images'}
+                        description={descriptionCatImages} />
                 </div>
             </div>
         </div>

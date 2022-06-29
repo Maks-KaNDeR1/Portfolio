@@ -4,11 +4,11 @@ import { Project } from './project/Project';
 import { Title } from '../common/components/title/Title';
 import todoImage from './../assets/images/todolist.png'
 import socialImage from './../assets/images/social-network.png'
-import coogleBooksImage from './../assets/images/coogle-books.png'
-import calculatorImage from './../assets/images/calculator.png'
+import googleBooksImage from './../assets/images/google-books.jpg'
+import calculatorImage from './../assets/images/calculator.jpg'
 import counterImage from './../assets/images/counter.png'
 import chatImage from './../assets/images/chat-firebase.png'
-import catImage from './../assets/images/cat-images.png'
+import catImage from './../assets/images/cat-images.jpg'
 import firebaseIcon from './../assets/images/firebase.svg'
 import { Fade } from 'react-awesome-reveal';
 
@@ -21,8 +21,8 @@ export const Projects = () => {
     const todolist = {
         backgroundImage: `url(${todoImage})`,
     };
-    const coogleBooks = {
-        backgroundImage: `url(${coogleBooksImage})`,
+    const googleBooks = {
+        backgroundImage: `url(${googleBooksImage})`,
     };
     const calculator = {
         backgroundImage: `url(${calculatorImage})`,
@@ -35,9 +35,6 @@ export const Projects = () => {
     };
     const chat = {
         backgroundImage: `url(${chatImage})`,
-    };
-    const homeworks = {
-        backgroundImage: `url(dgfdh)`,
     };
 
     let firebase = firebaseIcon;
@@ -70,7 +67,7 @@ export const Projects = () => {
                     <Project way={'todolist'} style={todolist} title={"Todo list"}
                         gitWay={'todolist'}
                         description={descriptionTodo} />
-                    <Project way={'books-search'} style={coogleBooks} title={"Google Books API"}
+                    <Project way={'books-search'} style={googleBooks} title={"Google Books API"}
                         gitWay={'books-search'}
                         description={descriptionGoogleBooksAPI} />
                     <Project way={'calculator'} style={calculator} title={"Calculator"}

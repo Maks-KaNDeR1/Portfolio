@@ -25,6 +25,7 @@
   }
 
   .icon {
+    position: relative;
     height: 80px;
     width: 80px;
     background: rgba(255, 255, 255, 0.1);
@@ -32,13 +33,20 @@
     margin-bottom: 40px;
     @include flex(row, center, center, nowrap);
 
+    .svg {
+      position: absolute;
+      transform: rotate(-45deg);
+      // width: 75%;
+      
+    }
+
     img {
       transform: rotate(-45deg);
       width: 55%;
  
     }
     &:hover {
-      box-shadow: 0 0 43px 1px #6ba9f5;
+      box-shadow: 0 0 43px 1px $primaryColor;
       transition: all 0.3s ease-in-out 0s;
       // position: absolute
     }

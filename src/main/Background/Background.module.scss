@@ -9,16 +9,13 @@
     @return unquote($value);
 }
 
-$shadowsSmall: multiple-box-shadow(700);
-$shadowsMedium: multiple-box-shadow(200);
-$shadowsBig: multiple-box-shadow(100);
+$shadowsSmall: multiple-box-shadow(300);
+$shadowsMedium: multiple-box-shadow(100);
+$shadowsBig: multiple-box-shadow(40);
 
 
 .container {
-
     height: 200px;
-    // background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-    // overflow: hidden;
     .stars {
         width: 1px;
         height: 1px;
@@ -69,13 +66,6 @@ $shadowsBig: multiple-box-shadow(100);
         animation			: animStar 150s linear infinite
     }
 
-}
-
-
-span {
-    // background: -webkit-linear-gradient(white, #b7bec5);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
 }
 
 @keyframes animStar {

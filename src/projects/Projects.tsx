@@ -47,9 +47,11 @@ export const Projects = () => {
 	Technology stack: React, Redux (Redux-thunk, Redux-toolkit, Hooks), REST API, Storybook, 
 	Unit and snapshot tests. Formik, Material-UI. And much more... `)
     let descriptionGoogleBooksAPI = (`Google Books Api - App Based on React Redux, SASS, etc., requesting books from the Google API, 
-    'load more' pagination, filtering, as well as filtering by category, implemented on the front, because. not on the back. Clicking on the card will take you to the detailed page of the book.`)
+    'load more' pagination, filtering, as well as filtering by category, implemented on the front, because. not on the back. 
+    Clicking on the card will take you to the detailed page of the book.`)
     let descriptionCalculator = (`Computational calculator on React, Redux, Not using the EVAL method, well, with it too. As well as keyboard input, + Escape, Enter, NumpadEnter`)
-    let descriptionCounter = ('Just simple counter with settings start value and end value. Saving State to LocalStorage. I used in this project React, Redux, clean CSS, React-router-dom and more')
+    let descriptionCounter = (`Just simple counter with settings start value and end value. Saving State to LocalStorage. 
+    I used in this project React, Redux, clean CSS, React-router-dom and more`)
     let descriptionFirebase = ('Simple chat on React and Firebase. Login via google and email. Hooks, CSS')
     let descriptionCatImages = (`test task/ Cat pictures API, Pagination, the ability to add to "favorites" and remove from "favorites" on React, Redux, interaction with the API server`)
 
@@ -61,27 +63,41 @@ export const Projects = () => {
                     <Title text={"Projects"} />
                 </Fade>
                 <div className={style.projects}>
-                    <Project way={'TypeScript-Social-Network'} style={social} title={"Social network"}
+                    <Project way={'TypeScript-Social-Network'} style={social}
+                        title={"Social network"}
                         gitWay={'TypeScript-Social-Network'}
-                        description={descriptionNetwork} />
-                    <Project way={'todolist'} style={todolist} title={"Todo list"}
+                        description={descriptionNetwork}
+                    />
+                    <Project way={'todolist'} style={todolist}
+                        title={"Todo list"}
                         gitWay={'todolist'}
-                        description={descriptionTodo} />
-                    <Project way={'books-search'} style={googleBooks} title={"Google Books API"}
+                        description={descriptionTodo}
+                    />
+                    <Project way={'books-search'} style={googleBooks}
+                        title={"Google Books API"}
                         gitWay={'books-search'}
-                        description={descriptionGoogleBooksAPI} />
-                    <Project way={'calculator'} style={calculator} title={"Calculator"}
+                        description={descriptionGoogleBooksAPI}
+                    />
+                    <Project way={'calculator'} style={calculator}
+                        title={"Calculator"}
                         gitWay={'calculator'}
-                        description={descriptionCalculator} />
-                    <Project way={'Counter'} style={counter} title={"Counter"}
+                        description={descriptionCalculator}
+                    />
+                    <Project way={'Counter'} style={counter}
+                        title={"Counter"}
                         gitWay={'Counter'}
-                        description={descriptionCounter} />
-                    <Project way={'chat-firebase'} style={chat} title={`Chat Firebase`} icon={firebase}
+                        description={descriptionCounter}
+                    />
+                    <Project way={'chat-firebase'} style={chat}
+                        title={`Chat Firebase`} icon={firebase}
                         gitWay={'chat-firebase'}
-                        description={descriptionFirebase} />
-                    <Project way={'cat-images'} style={catImages} title={"Cat Images"}
+                        description={descriptionFirebase}
+                    />
+                    <Project way={'cat-images'} style={catImages}
+                        title={"Cat Images"}
                         gitWay={'cat-images'}
-                        description={descriptionCatImages} />
+                        description={descriptionCatImages}
+                    />
                 </div>
             </div>
         </div>

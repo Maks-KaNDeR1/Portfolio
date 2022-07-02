@@ -3,6 +3,7 @@ import styles from './Main.module.scss';
 import Typewriter from 'typewriter-effect';
 import { Fade } from 'react-awesome-reveal';
 import { Background } from './Background/Background';
+import { ParticlesComponent } from './Particles';
 
 
 export const Main = () => {
@@ -10,6 +11,7 @@ export const Main = () => {
     return (
         <div id='main' className={styles.mainBlock}>
             <Background />
+            <ParticlesComponent />
             <div className={styles.container}>
                 <Fade direction='left' >
                     <div className={styles.greeting}>

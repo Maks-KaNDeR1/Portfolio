@@ -1,18 +1,22 @@
 import React from 'react';
 import styles from './Skill.module.scss'
-
+import { Icon } from '@iconify/react';
 
 type PropsType = {
     title: string
-    icon: string
+    icon?: string
     description?: string
+    logos?: any
 }
 
-export const Skill: React.FC<PropsType> = ({title, icon, description}) => {
+export const Skill: React.FC<PropsType> = ({ title, icon, description, logos }) => {
     return (
         <div className={styles.skill}>
             <div className={styles.icon}>
-                <img src={icon} alt="https://github.com/Maks-KaNDeR1"/>
+                <Icon className={styles.svg} width="55" color='#2c74cb' icon={logos} />
+                {/* <Icon icon="bxl:nodejs" /> */}
+                {/* <Icon icon="bxl:nodejs" /> */}
+                <img src={icon} alt='' />
             </div>
             <h3 className={styles.skillTitle}>{title}</h3>
             <span className={styles.description}>{description}</span>

@@ -2,39 +2,17 @@ import React from 'react';
 import styles from './Skills.module.scss';
 import { Skill } from "./skill/Skill";
 import { Title } from "../common/components/title/Title";
-import gitIcon from "./../assets/images/git.svg";
 import htmlIcon from "./../assets/images/html-icon.svg";
-import jsIcon from "./../assets/images/js.svg";
-import tsIcon from "./../assets/images/typescript.svg";
-import reactIcon from "./../assets/images/react.svg";
-import reduxIcon from "./../assets/images/redux.svg";
 import formikIcon from "./../assets/images/formik.svg";
-import uiIcon from "./../assets/images/material-ui.svg";
-import sassIcon from "./../assets/images/sass.svg";
-import restIcon from "./../assets/images/rest-api.svg";
-import ajaxIcon from "./../assets/images/ajax.svg";
-import testIcon from "./../assets/images/test.svg";
-import storybookIcon from "./../assets/images/storybook.svg";
-import figmaIcon from "./../assets/images/figma.svg";
+import ajaxIcon from "./../assets/images/AJAX.svg";
+import websocketIcon from "./../assets/images/websocket.svg";
 import { Fade } from 'react-awesome-reveal';
 
-
 export const Skills = () => {
-       let git = gitIcon;
        let html = htmlIcon;
-       let js = jsIcon;
-       let ts = tsIcon;
-       let react = reactIcon;
-       let redux = reduxIcon;
-       let ui = uiIcon;
        let formik = formikIcon;
-       let sass = sassIcon;
-       let test = testIcon;
-       let storybook = storybookIcon;
-       let rest = restIcon;
        let ajax = ajaxIcon;
-       let figma = figmaIcon;
-
+       let websocket = websocketIcon;
 
 
        return (
@@ -45,39 +23,68 @@ export const Skills = () => {
                                    <div className={styles.skills}>
                                           <Skill title={"html & Css"}
                                                  description={"css-modules, styled-component"}
-                                                 icon={html} />
+                                                 icon={html}
+                                          />
                                           <Skill title={"Javascript"}
-                                                 icon={js} />
+                                                 logos={"bi:filetype-js"}
+                                          />
                                           <Skill title={"TypeScript"}
-                                                 icon={ts} />
+                                                 logos={"ph:file-ts-duotone"}
+                                          />
                                           <Skill title={"React"}
-                                                 icon={react}
+                                                 logos={"bxl:react"}
                                                  description={"React-Hook's"}
                                           />
                                           <Skill title={"Redux"}
-                                                 icon={redux}
+                                                 logos={"bxl:redux"}
                                                  description={"Redux-Hook's, Redux-Thunk, Redux-Toolkit, Redux-Saga"}
+                                          />
+                                          <Skill title={"rest api"}
+                                                 logos={"dashicons:rest-api"}
+                                          />
+                                          <Skill title={"axios"}
+                                                 description={"Axios"}
+                                                 icon={ajax}
                                           />
                                           <Skill title={"github"}
                                                  description={"Maks-KaNDeR1"}
-                                                 icon={git} />
-                                          <Skill title={"formik"}
-                                                 icon={formik} />
-                                          <Skill title={"material-ui"}
-                                                 icon={ui} />
+                                                 logos={"bxl:github"}
+                                          />
                                           <Skill title={"sass/scss"}
-                                                 icon={sass} />
+                                                 logos={"bxl:sass"}
+                                          />
                                           <Skill title={"TDD"}
-                                                 icon={test} />
+                                                 logos={"file-icons:test-react"}
+                                          />
                                           <Skill title={"storybook"}
-                                                 icon={storybook} />
-                                          <Skill title={"rest api"}
-                                                 icon={rest} />
-                                          <Skill title={"ajax"}
-                                                 description={"Axios"}
-                                                 icon={ajax} />
+                                                 logos={"cib:storybook"}
+                                          />
                                           <Skill title={"figma"}
-                                                 icon={figma} />
+                                                 logos={"akar-icons:figma-fill"}
+                                          // logos={"logos:figma"}
+                                          />
+                                          <Skill title={"formik"}
+                                                 icon={formik}
+                                          />
+                                          <Skill title={"material-ui"}
+                                                 logos={"mdi:material-ui"}
+                                          />
+                                          <Skill title={"websocket"}
+                                                 icon={websocket}
+                                          />
+                                          <Skill title={"Next.js"}
+                                                 logos={"teenyicons:nextjs-outline"}
+                                          />
+                                          <Skill title={"webpack"}
+                                                 // logos={"file-icons:webpack-old"}
+                                                 logos={"logos:webpack"}
+                                          />
+                                          <Skill title={"node-js"}
+                                                 logos={"bxl:nodejs"}
+                                          />
+                                          <Skill title={"mongodb"}
+                                                 logos={"simple-icons:mongodb"}
+                                          />
                                    </div>
                             </div>
                      </Fade>

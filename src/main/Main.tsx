@@ -16,7 +16,7 @@ export const Main = () => {
                 <Fade direction='left' >
                     <div className={styles.greeting}>
                         <span style={{ fontSize: '16px' }} >Welcome to me Portolio</span>
-                        <span>I am Maksim <span>KaNDeR</span></span>
+                        <span>I am Maksim <span>KaNDeRsKiy</span></span>
                         <Typewriter
                             options={{
                                 strings: ['Frontend Developer', 'Technology Expert', 'React, Redux JS/TS'],

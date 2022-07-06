@@ -72,7 +72,7 @@ export const Skills = () => {
                                           <Skill title={"websocket"}
                                                  icon={websocket}
                                           />
-                                          <Skill title={"Next.js"}
+                                          {/* <Skill title={"Next.js"}
                                                  logos={"teenyicons:nextjs-outline"}
                                           />
                                           <Skill title={"webpack"}
@@ -85,6 +85,9 @@ export const Skills = () => {
                                           <Skill title={"mongodb"}
                                                  logos={"simple-icons:mongodb"}
                                           />
+                                          <Skill title={"express"}
+                                                 logos={"simple-icons:express"}
+                                          /> */}
                                    </div>
                             </div>
                      </Fade>

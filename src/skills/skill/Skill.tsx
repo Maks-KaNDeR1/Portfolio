@@ -6,16 +6,14 @@ type PropsType = {
     title: string
     icon?: string
     description?: string
-    logos?: any
+    logos?: string
 }
 
 export const Skill: React.FC<PropsType> = ({ title, icon, description, logos }) => {
     return (
         <div className={styles.skill}>
             <div className={styles.icon}>
-                <Icon className={styles.svg} width="55" color='#2c74cb' icon={logos} />
-                {/* <Icon icon="bxl:nodejs" /> */}
-                {/* <Icon icon="bxl:nodejs" /> */}
+                <Icon className={styles.svg} width="55" color='#2c74cb' icon={logos ? logos : ''} />
                 <img src={icon} alt='' />
             </div>
             <h3 className={styles.skillTitle}>{title}</h3>

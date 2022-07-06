@@ -3,12 +3,13 @@ import style from './Projects.module.scss';
 import { Project } from './project/Project';
 import { Title } from '../common/components/title/Title';
 import todoImage from './../assets/images/todolist.png'
+import netflixImage from './../assets/images/netflix.jpg'
 import socialImage from './../assets/images/social-network.png'
 import googleBooksImage from './../assets/images/google-books.jpg'
 import calculatorImage from './../assets/images/calculator.jpg'
 import counterImage from './../assets/images/counter.png'
 import chatImage from './../assets/images/chat-firebase.png'
-import catImage from './../assets/images/cat-images.jpg'
+import catImage from './../assets/images/cat-images.png'
 import firebaseIcon from './../assets/images/firebase.svg'
 import { Fade } from 'react-awesome-reveal';
 
@@ -20,6 +21,9 @@ export const Projects = () => {
     };
     const todolist = {
         backgroundImage: `url(${todoImage})`,
+    };
+    const netflix = {
+        backgroundImage: `url(${netflixImage})`,
     };
     const googleBooks = {
         backgroundImage: `url(${googleBooksImage})`,
@@ -46,6 +50,7 @@ export const Projects = () => {
     let descriptionTodo = (`Huge project - Todo list with storage of data on remote server. 
 	Technology stack: React, Redux (Redux-thunk, Redux-toolkit, Hooks), REST API, Storybook, 
 	Unit and snapshot tests. Formik, Material-UI. And much more... `)
+    let descriptionNetflix = (`Netflix app, Netflix copy, React, Hooks. request API themoviedb, css BEM. scroll When clicking on the picture, the video is played, movie-trailer`)
     let descriptionGoogleBooksAPI = (`Google Books Api - App Based on React Redux, SASS, etc., requesting books from the Google API, 
     'load more' pagination, filtering, as well as filtering by category, implemented on the front, because. not on the back. 
     Clicking on the card will take you to the detailed page of the book.`)
@@ -72,6 +77,11 @@ export const Projects = () => {
                         title={"Todo list"}
                         gitWay={'todolist'}
                         description={descriptionTodo}
+                    />
+                    <Project way={'netflix'} style={netflix}
+                        title={"Netflix"}
+                        gitWay={'netflix'}
+                        description={descriptionNetflix}
                     />
                     <Project way={'books-search'} style={googleBooks}
                         title={"Google Books API"}

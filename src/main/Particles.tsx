@@ -18,7 +18,7 @@ export const ParticlesComponent = () => {
             id="tsparticles"
             // init={particlesInit}
             options={{
-                // fpsLimit: 120,
+                fpsLimit: 120,
                 interactivity: {
                     events: {
                         onClick: {
@@ -33,10 +33,10 @@ export const ParticlesComponent = () => {
                     },
                     modes: {
                         push: {
-                            quantity: 4,
+                            quantity: 3,
                         },
                         repulse: {
-                            distance: 200,
+                            distance: 150,
                             duration: 0.4,
                         },
                     },
@@ -46,7 +46,7 @@ export const ParticlesComponent = () => {
                         color: "#ffffff",
                         distance: 150,
                         enable: true,
-                        opacity: 0.2,
+                        opacity: 0.3,
                         width: 1,
                     },
                     collisions: {
@@ -70,7 +70,7 @@ export const ParticlesComponent = () => {
                         value: 60,
                     },
                     opacity: {
-                        value: 0.3,
+                        value: 0.7,
                     },
                     size: {
                         value: { min: 1, max: 4 },

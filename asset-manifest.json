@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.67440d4b.chunk.css",
-    "main.js": "/Portfolio/static/js/main.ed7ea6dd.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.ed7ea6dd.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.ec49fcd5.chunk.css",
+    "main.js": "/Portfolio/static/js/main.d079f419.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.d079f419.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.5a9b250e.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.5a9b250e.js.map",
     "static/js/2.3ee6d16d.chunk.js": "/Portfolio/static/js/2.3ee6d16d.chunk.js",
@@ -12,11 +12,11 @@
     "static/js/4.2da99a2a.chunk.js": "/Portfolio/static/js/4.2da99a2a.chunk.js",
     "static/js/4.2da99a2a.chunk.js.map": "/Portfolio/static/js/4.2da99a2a.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.67440d4b.chunk.css.map": "/Portfolio/static/css/main.67440d4b.chunk.css.map",
+    "static/css/main.ec49fcd5.chunk.css.map": "/Portfolio/static/css/main.ec49fcd5.chunk.css.map",
     "static/js/2.3ee6d16d.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.3ee6d16d.chunk.js.LICENSE.txt",
     "static/media/AJAX.972f7551.svg": "/Portfolio/static/media/AJAX.972f7551.svg",
     "static/media/calculator.60bb70ae.jpg": "/Portfolio/static/media/calculator.60bb70ae.jpg",
-    "static/media/cat-images.9044ce84.jpg": "/Portfolio/static/media/cat-images.9044ce84.jpg",
+    "static/media/cat-images.e3ff92e8.png": "/Portfolio/static/media/cat-images.e3ff92e8.png",
     "static/media/chat-firebase.8b11258f.png": "/Portfolio/static/media/chat-firebase.8b11258f.png",
     "static/media/counter.1b8ecbb3.png": "/Portfolio/static/media/counter.1b8ecbb3.png",
     "static/media/firebase.ea1a2d66.svg": "/Portfolio/static/media/firebase.ea1a2d66.svg",
@@ -24,6 +24,7 @@
     "static/media/google-books.41ea5422.jpg": "/Portfolio/static/media/google-books.41ea5422.jpg",
     "static/media/html-icon.2b8208b2.svg": "/Portfolio/static/media/html-icon.2b8208b2.svg",
     "static/media/linkedin.2e1db5e2.svg": "/Portfolio/static/media/linkedin.2e1db5e2.svg",
+    "static/media/netflix.cb53a970.jpg": "/Portfolio/static/media/netflix.cb53a970.jpg",
     "static/media/Main.module.scss": "/Portfolio/static/media/photo.6b829055.jpg",
     "static/media/social-network.2ad9bf0c.png": "/Portfolio/static/media/social-network.2ad9bf0c.png",
     "static/media/telegram.6ef96d2a.svg": "/Portfolio/static/media/telegram.6ef96d2a.svg",
@@ -34,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.5a9b250e.js",
     "static/js/2.3ee6d16d.chunk.js",
-    "static/css/main.67440d4b.chunk.css",
-    "static/js/main.ed7ea6dd.chunk.js"
+    "static/css/main.ec49fcd5.chunk.css",
+    "static/js/main.d079f419.chunk.js"
   ]
 }

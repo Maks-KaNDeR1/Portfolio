@@ -1,7 +1,4 @@
-
-
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
 
 export const ParticlesComponent = () => {
     // const particlesInit = async (main: any) => {
@@ -67,7 +64,7 @@ export const ParticlesComponent = () => {
                             enable: true,
                             area: 800,
                         },
-                        value: 60,
+                        value: 30,
                     },
                     opacity: {
                         value: 0.7,

@@ -2,7 +2,8 @@ import React from 'react';
 import style from './Projects.module.scss';
 import { Project } from './project/Project';
 import { Title } from '../common/components/title/Title';
-import todoImage from './../assets/images/todolist.png'
+import todoImage from './../assets/images/todolist.jpg'
+import hotelSearchImage from './../assets/images/hotel-search.jpg'
 import netflixImage from './../assets/images/netflix.jpg'
 import socialImage from './../assets/images/social-network.png'
 import googleBooksImage from './../assets/images/google-books.jpg'
@@ -16,36 +17,25 @@ import { Fade } from 'react-awesome-reveal';
 
 
 export const Projects = () => {
-    const social = {
-        backgroundImage: `url(${socialImage})`,
-    };
-    const todolist = {
-        backgroundImage: `url(${todoImage})`,
-    };
-    const netflix = {
-        backgroundImage: `url(${netflixImage})`,
-    };
-    const googleBooks = {
-        backgroundImage: `url(${googleBooksImage})`,
-    };
-    const calculator = {
-        backgroundImage: `url(${calculatorImage})`,
-    };
-    const counter = {
-        backgroundImage: `url(${counterImage})`,
-    };
-    const catImages = {
-        backgroundImage: `url(${catImage})`,
-    };
-    const chat = {
-        backgroundImage: `url(${chatImage})`,
-    };
 
-    let firebase = firebaseIcon;
+    const social = { backgroundImage: `url(${socialImage})` }
+    const todolist = { backgroundImage: `url(${todoImage})` }
+    const hotelSearch = { backgroundImage: `url(${hotelSearchImage})` }
+    const netflix = { backgroundImage: `url(${netflixImage})` }
+    const googleBooks = { backgroundImage: `url(${googleBooksImage})` }
+    const calculator = { backgroundImage: `url(${calculatorImage})` }
+    const counter = { backgroundImage: `url(${counterImage})` }
+    const catImages = { backgroundImage: `url(${catImage})` }
+    const chat = { backgroundImage: `url(${chatImage})` }
+
+    let firebase = firebaseIcon
 
 
+    let descriptionHotelSearch = (`Hotel search application, request hotels with API,Authorization page, Request parameters where you can enter the name of the city, 
+    date check-in and number of days. Hotels can be added to your favorites. Selected hotels can be sorted by cost and number of stars. etc. 
+    In TypeScript, React, Redux (Redux-thunk, Redux-Saga) React-Hooks, saved in sessStorage `)
     let descriptionNetwork = (`Social network. Stack Technology: React, Redux, redux-thunk, redux-hooks, 
-	REST API Axios,	DAL ,Formik,High Order Component(hoc) context API, Router, Class components, 
+	REST API Axios,	DAL, Formik,High Order Component(hoc) context API, Router, Class components, 
 	selectors(reselect), test. And much more...`)
     let descriptionTodo = (`Huge project - Todo list with storage of data on remote server. 
 	Technology stack: React, Redux (Redux-thunk, Redux-toolkit, Hooks), REST API, Storybook, 
@@ -68,45 +58,69 @@ export const Projects = () => {
                     <Title text={"Projects"} />
                 </Fade>
                 <div className={style.projects}>
-                    <Project way={'TypeScript-Social-Network'} style={social}
-                        title={"Social network"}
-                        gitWay={'TypeScript-Social-Network'}
-                        description={descriptionNetwork}
+                    <Project
+                        style={hotelSearch}
+                        way={'hotel-search'}
+                        title={"Hotel Search"}
+                        gitWay={'hotel-search'}
+                        description={descriptionHotelSearch}
                     />
-                    <Project way={'todolist'} style={todolist}
+                    <Project
+                        style={todolist}
+                        way={'todolist'}
                         title={"Todo list"}
                         gitWay={'todolist'}
                         description={descriptionTodo}
                     />
-                    <Project way={'netflix'} style={netflix}
-                        title={"Netflix"}
-                        gitWay={'netflix'}
-                        description={descriptionNetflix}
+                    <Project
+                        style={social}
+                        way={'TypeScript-Social-Network'}
+                        title={"Social network"}
+                        gitWay={'TypeScript-Social-Network'}
+                        description={descriptionNetwork}
                     />
-                    <Project way={'books-search'} style={googleBooks}
+                    <Project
+                        style={googleBooks}
+                        way={'books-search'}
                         title={"Google Books API"}
                         gitWay={'books-search'}
                         description={descriptionGoogleBooksAPI}
                     />
-                    <Project way={'calculator'} style={calculator}
+                    <Project
+                        style={netflix}
+                        way={'netflix'}
+                        title={"Netflix"}
+                        gitWay={'netflix'}
+                        description={descriptionNetflix}
+                    />
+                    <Project
+                        style={calculator}
+                        way={'calculator'}
                         title={"Calculator"}
                         gitWay={'calculator'}
                         description={descriptionCalculator}
                     />
-                    <Project way={'Counter'} style={counter}
-                        title={"Counter"}
-                        gitWay={'Counter'}
-                        description={descriptionCounter}
-                    />
-                    <Project way={'chat-firebase'} style={chat}
-                        title={`Chat Firebase`} icon={firebase}
+                    <Project
+                        style={chat}
+                        way={'chat-firebase'}
+                        title={`Chat Firebase`}
+                        icon={firebase}
                         gitWay={'chat-firebase'}
                         description={descriptionFirebase}
                     />
-                    <Project way={'cat-images'} style={catImages}
+                    <Project
+                        style={catImages}
+                        way={'cat-images'}
                         title={"Cat Images"}
                         gitWay={'cat-images'}
                         description={descriptionCatImages}
+                    />
+                    <Project
+                        style={counter}
+                        way={'Counter'}
+                        title={"Counter"}
+                        gitWay={'Counter'}
+                        description={descriptionCounter}
                     />
                 </div>
             </div>

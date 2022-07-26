@@ -21,71 +21,91 @@ export const Skills = () => {
                             <div className={styles.container}>
                                    <Title text={"Skills"} />
                                    <div className={styles.skills}>
-                                          <Skill title={"html & Css"}
-                                                 description={"css-modules, styled-component"}
+                                          <Skill
+                                                 title={"html & Css"}
+                                                 description={"БЭМ, css-modules, styled-component"}
                                                  icon={html}
                                           />
-                                          <Skill title={"Javascript"}
+                                          <Skill
+                                                 title={"Javascript"}
                                                  logos={"bi:filetype-js"}
                                           />
-                                          <Skill title={"TypeScript"}
+                                          <Skill
+                                                 title={"TypeScript"}
                                                  logos={"ph:file-ts-duotone"}
                                           />
-                                          <Skill title={"React"}
+                                          <Skill
+                                                 title={"React"}
                                                  logos={"bxl:react"}
                                                  description={"React-Hook's"}
                                           />
-                                          <Skill title={"Redux"}
+                                          <Skill
+                                                 title={"Redux"}
                                                  logos={"bxl:redux"}
                                                  description={"Redux-Hook's, Redux-Thunk, Redux-Toolkit, Redux-Saga"}
                                           />
-                                          <Skill title={"rest api"}
+                                          <Skill
+                                                 title={"rest api"}
                                                  logos={"dashicons:rest-api"}
                                           />
-                                          <Skill title={"axios"}
+                                          <Skill
+                                                 title={"axios"}
                                                  description={"Axios"}
                                                  icon={ajax}
                                           />
-                                          <Skill title={"github"}
+                                          <Skill
+                                                 title={"github"}
                                                  description={"Maks-KaNDeR1"}
                                                  logos={"bxl:github"}
                                           />
-                                          <Skill title={"sass/scss"}
+                                          <Skill
+                                                 title={"sass/scss"}
                                                  logos={"bxl:sass"}
                                           />
-                                          <Skill title={"TDD"}
+                                          <Skill
+                                                 title={"TDD"}
                                                  logos={"file-icons:test-react"}
                                           />
-                                          <Skill title={"storybook"}
+                                          <Skill
+                                                 title={"storybook"}
                                                  logos={"cib:storybook"}
                                           />
-                                          <Skill title={"figma"}
+                                          <Skill
+                                                 title={"figma"}
                                                  logos={"akar-icons:figma-fill"}
                                           // logos={"logos:figma"}
                                           />
-                                          <Skill title={"formik"}
+                                          <Skill
+                                                 title={"formik"}
                                                  icon={formik}
                                           />
-                                          <Skill title={"material-ui"}
+                                          <Skill
+                                                 title={"material-ui"}
                                                  logos={"mdi:material-ui"}
                                           />
-                                          <Skill title={"websocket"}
+                                          <Skill
+                                                 title={"websocket"}
                                                  icon={websocket}
                                           />
-                                          {/* <Skill title={"Next.js"}
+                                          {/* <Skill 
+                                          title={"Next.js"}
                                                  logos={"teenyicons:nextjs-outline"}
                                           />
-                                          <Skill title={"webpack"}
+                                          <Skill 
+                                          title={"webpack"}
                                                  // logos={"file-icons:webpack-old"}
                                                  logos={"logos:webpack"}
                                           />
-                                          <Skill title={"node-js"}
+                                          <Skill 
+                                          title={"node-js"}
                                                  logos={"bxl:nodejs"}
                                           />
-                                          <Skill title={"mongodb"}
+                                          <Skill 
+                                          title={"mongodb"}
                                                  logos={"simple-icons:mongodb"}
                                           />
-                                          <Skill title={"express"}
+                                          <Skill 
+                                          title={"express"}
                                                  logos={"simple-icons:express"}
                                           /> */}
                                    </div>

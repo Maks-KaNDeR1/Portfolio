@@ -33,22 +33,21 @@
     margin-bottom: 40px;
     @include flex(row, center, center, nowrap);
 
+    transition: .5s;
+
     .svg {
       position: absolute;
       transform: rotate(-45deg);
-      // width: 75%;
-      
     }
 
     img {
       transform: rotate(-45deg);
       width: 55%;
- 
     }
+
     &:hover {
       box-shadow: 0 0 43px 1px $primaryColor;
       transition: all 0.3s ease-in-out 0s;
-      // position: absolute
     }
   }
 

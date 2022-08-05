@@ -87,15 +87,16 @@ export const Skills = () => {
                                                  title={"websocket"}
                                                  icon={websocket}
                                           />
-                                          {/* <Skill 
-                                          title={"Next.js"}
-                                                 logos={"teenyicons:nextjs-outline"}
-                                          />
-                                          <Skill 
-                                          title={"webpack"}
+                                          <Skill
+                                                 title={"webpack"}
                                                  // logos={"file-icons:webpack-old"}
                                                  logos={"logos:webpack"}
                                           />
+                                          {/* <Skill 
+                                          title={"Next.js"}
+                                          logos={"teenyicons:nextjs-outline"}
+                                          /> */}
+                                          {/* 
                                           <Skill 
                                           title={"node-js"}
                                                  logos={"bxl:nodejs"}

@@ -12,6 +12,7 @@ import counterImage from './../assets/images/counter.png'
 import chatImage from './../assets/images/chat-firebase.png'
 import catImage from './../assets/images/cat-images.png'
 import firebaseIcon from './../assets/images/firebase.svg'
+import webpackIcon from './../assets/images/webpack.svg'
 import { Fade } from 'react-awesome-reveal';
 
 
@@ -29,6 +30,7 @@ export const Projects = () => {
     const chat = { backgroundImage: `url(${chatImage})` }
 
     let firebase = firebaseIcon
+    let webpack = webpackIcon
 
 
     let descriptionHotelSearch = (`Hotel search application, request hotels with API,Authorization page, Request parameters where you can enter the name of the city, 
@@ -44,7 +46,7 @@ export const Projects = () => {
     let descriptionGoogleBooksAPI = (`Google Books Api - App Based on React Redux, SASS, etc., requesting books from the Google API, 
     'load more' pagination, filtering, as well as filtering by category, implemented on the front, because. not on the back. 
     Clicking on the card will take you to the detailed page of the book.`)
-    let descriptionCalculator = (`Computational calculator on React, Redux, Not using the EVAL method, well, with it too. As well as keyboard input, + Escape, Enter, NumpadEnter`)
+    let descriptionCalculator = (`Native Webpack build, Computational calculator on TypeScript, React, Redux, Not using the EVAL method, well, with it too. As well as keyboard input, + Escape, Enter, NumpadEnter`)
     let descriptionCounter = (`Just simple counter with settings start value and end value. Saving State to LocalStorage. 
     I used in this project React, Redux, clean CSS, React-router-dom and more`)
     let descriptionFirebase = ('Simple chat on React and Firebase. Login via google and email. Hooks, CSS')
@@ -95,9 +97,10 @@ export const Projects = () => {
                     />
                     <Project
                         style={calculator}
-                        way={'calculator'}
-                        title={"Calculator"}
-                        gitWay={'calculator'}
+                        way={'webpack-build-calculator'}
+                        title={"Calculator - webpack build"}
+                        icon={webpack}
+                        gitWay={'webpack-build-calculator'}
                         description={descriptionCalculator}
                     />
                     <Project

@@ -32,14 +32,13 @@ export const CopyingNumber = () => {
     <PopupState variant="popover" popupId="demo-popup-popover">
       {(popupState: any) => (
         <div>
-          <Button style={{ marginTop: '25px' , backgroundColor: '#252527'}} variant="contained" {...bindTrigger(popupState)}>
+          <Button style={{ marginTop: '25px', backgroundColor: '#252527' }} variant="contained" {...bindTrigger(popupState)}>
             <div className={styles.copyNumber} > Copy on click <FaArrowCircleDown style={{ float: 'inline-end' }} />
               <div style={{ cursor: 'pointer' }} onClick={copyNumber}  > <FaPhoneAlt /> {oneNumber} </div>
               <br />
               <div style={{ cursor: 'pointer' }} onClick={copyToNumber}  > <FaPhoneAlt /> {twoNumber} </div>
             </div>
           </Button>
-          {/* </Button> */}
           <Popover
             {...bindPopover(popupState)}
             anchorOrigin={{

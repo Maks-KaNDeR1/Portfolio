@@ -13,9 +13,9 @@ import { CopyingNumber } from './CopyingNumber';
 export const Footer = () => {
     return (
         <div className={styles.footer}>
-             <Fade delay={300} >
+            <Fade delay={300} >
                 <div className={styles.container} >
-                    <Title text={"Maksim Kandersky"} />
+                    <Title text={"Maksim Kanderskiy"} />
                     <CopyingNumber />
                     <div className={styles.socialIcons}>
                         <div className={styles.socialIcon}>

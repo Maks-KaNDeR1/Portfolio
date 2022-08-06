@@ -4,15 +4,17 @@ import { Skill } from "./skill/Skill";
 import { Title } from "../common/components/title/Title";
 import htmlIcon from "./../assets/images/html-icon.svg";
 import formikIcon from "./../assets/images/formik.svg";
+import figmaIcon from "./../assets/images/figma.svg";
 import ajaxIcon from "./../assets/images/AJAX.svg";
 import websocketIcon from "./../assets/images/websocket.svg";
 import { Fade } from 'react-awesome-reveal';
 
 export const Skills = () => {
-       let html = htmlIcon;
-       let formik = formikIcon;
-       let ajax = ajaxIcon;
-       let websocket = websocketIcon;
+       const html = htmlIcon;
+       const formik = formikIcon;
+       const ajax = ajaxIcon;
+       const websocket = websocketIcon;
+       const figma = figmaIcon;
 
 
        return (
@@ -71,11 +73,6 @@ export const Skills = () => {
                                                  logos={"cib:storybook"}
                                           />
                                           <Skill
-                                                 title={"figma"}
-                                                 logos={"akar-icons:figma-fill"}
-                                          // logos={"logos:figma"}
-                                          />
-                                          <Skill
                                                  title={"formik"}
                                                  icon={formik}
                                           />
@@ -84,13 +81,23 @@ export const Skills = () => {
                                                  logos={"mdi:material-ui"}
                                           />
                                           <Skill
+                                                 title={"ant-design"}
+                                                 // logos={"logos:ant-design"}
+                                                 logos={"ant-design:ant-design-outlined"}
+                                          />
+                                          <Skill
                                                  title={"websocket"}
                                                  icon={websocket}
                                           />
                                           <Skill
+                                                 title={"figma"}
+                                                 logos={"akar-icons:figma-fill"}
+                                          // icon={figma}
+                                          />
+                                          <Skill
                                                  title={"webpack"}
-                                                 // logos={"file-icons:webpack-old"}
-                                                 logos={"logos:webpack"}
+                                                 logos={"file-icons:webpack-old"}
+                                          // logos={"logos:webpack"}
                                           />
                                           {/* <Skill 
                                           title={"Next.js"}
@@ -102,13 +109,14 @@ export const Skills = () => {
                                                  logos={"bxl:nodejs"}
                                           />
                                           <Skill 
+                                          title={"express"}
+                                                 logos={"simple-icons:express"}
+                                          /> 
+                                          <Skill 
                                           title={"mongodb"}
                                                  logos={"simple-icons:mongodb"}
                                           />
-                                          <Skill 
-                                          title={"express"}
-                                                 logos={"simple-icons:express"}
-                                          /> */}
+                                          */}
                                    </div>
                             </div>
                      </Fade>

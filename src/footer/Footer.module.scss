@@ -20,11 +20,14 @@
                 width: 60px;
                 height: 60px;
                 border: 1px solid #4a4a4a;
-                ;
                 border-radius: 50%;
+                background-color: $bgPrimary;
+                // bgPrimary
+// $bgSecondary
+transition: 0.3s;
 
                 &:hover {
-                    box-shadow: 0 0 20px 1px #6ba9f5;
+                    box-shadow: 0 0 20px 1px $primaryColor;
                     transform: scale(1.1);
                     border: 1px solid $textColor;
                     transition: all 0.3s ease-in-out 0s;

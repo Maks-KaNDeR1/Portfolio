@@ -1,7 +1,23 @@
-$textColor: #fff;
-$primaryColor: #4e93e6;
-$bgPrimary: #1f1f20;
-$bgSecondary: #252527;
+
+:root[data-theme="light"] {
+    --textColor: #032845;
+  --primaryColor: #82a1c8;
+  --bgPrimary: #fff;
+  --bgSecondary: #b0b6bca7;
+}
+
+:root[data-theme="dark"] {
+    --textColor: #fff;
+    --primaryColor: #4e93e6;
+    --bgPrimary: #1f1f20;
+    --bgSecondary: #252527;
+}
+
+$textColor: var(--textColor);
+$primaryColor: var(--primaryColor);
+$bgPrimary: var(--bgPrimary);
+$bgSecondary: var(--bgSecondary);
+
 
 $TitleFontFamily: 'Josefin Sans', sans-serif;
 $TextFontFamily: 'Poppins', sans-serif;

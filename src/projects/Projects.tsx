@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Projects.module.scss';
 import { Project } from './project/Project';
 import { Title } from '../common/components/title/Title';
+import { Fade } from 'react-awesome-reveal';
 import todoImage from './../assets/images/todolist.jpg'
 import hotelSearchImage from './../assets/images/hotel-search.jpg'
 import netflixImage from './../assets/images/netflix.jpg'
@@ -13,7 +14,6 @@ import chatImage from './../assets/images/chat-firebase.png'
 import catImage from './../assets/images/cat-images.png'
 import firebaseIcon from './../assets/images/firebase.svg'
 import webpackIcon from './../assets/images/webpack.svg'
-import { Fade } from 'react-awesome-reveal';
 
 
 
@@ -29,28 +29,43 @@ export const Projects = () => {
     const catImages = { backgroundImage: `url(${catImage})` }
     const chat = { backgroundImage: `url(${chatImage})` }
 
-    let firebase = firebaseIcon
-    let webpack = webpackIcon
-
-
-    let descriptionHotelSearch = (`Hotel search application, request hotels with API,Authorization page, Request parameters where you can enter the name of the city, 
-    date check-in and number of days. Hotels can be added to your favorites. Selected hotels can be sorted by cost and number of stars. etc. 
-    In TypeScript, React, Redux (Redux-thunk, Redux-Saga) React-Hooks, saved in sessStorage `)
-    let descriptionNetwork = (`Social network. Stack Technology: React, Redux, redux-thunk, redux-hooks, 
-	REST API Axios,	DAL, Formik,High Order Component(hoc) context API, Router, Class components, 
-	selectors(reselect), test. And much more...`)
-    let descriptionTodo = (`Huge project - Todo list with storage of data on remote server. 
-	Technology stack: React, Redux (Redux-thunk, Redux-toolkit, Hooks), REST API, Storybook, 
-	Unit and snapshot tests. Formik, Material-UI. And much more... `)
-    let descriptionNetflix = (`Netflix app, Netflix copy, React, Hooks. request API themoviedb, css BEM. scroll When clicking on the picture, the video is played, movie-trailer`)
-    let descriptionGoogleBooksAPI = (`Google Books Api - App Based on React Redux, SASS, etc., requesting books from the Google API, 
-    'load more' pagination, filtering, as well as filtering by category, implemented on the front, because. not on the back. 
-    Clicking on the card will take you to the detailed page of the book.`)
-    let descriptionCalculator = (`Native Webpack build, Computational calculator on TypeScript, React, Redux, Not using the EVAL method, well, with it too. As well as keyboard input, + Escape, Enter, NumpadEnter`)
-    let descriptionCounter = (`Just simple counter with settings start value and end value. Saving State to LocalStorage. 
-    I used in this project React, Redux, clean CSS, React-router-dom and more`)
-    let descriptionFirebase = ('Simple chat on React and Firebase. Login via google and email. Hooks, CSS')
-    let descriptionCatImages = (`test task/ Cat pictures API, Pagination, the ability to add to "favorites" and remove from "favorites" on React, Redux, interaction with the API server`)
+    const descriptionHotelSearch = (
+        `Hotel search application, request hotels with API,Authorization page, Request parameters where you can enter the name of the city, 
+         date check-in and number of days. Hotels can be added to your favorites. Selected hotels can be sorted by cost and number of stars. etc. 
+         In TypeScript, React, Redux (Redux-Saga) React-Hooks, saved in sessStorage `
+    )
+    const descriptionNetwork = (
+        `Social network. Stack Technology: React, Redux, redux-thunk, redux-hooks, 
+	     REST API Axios,	DAL, Formik,High Order Component(hoc) context API, Router, Class components, 
+	     selectors(reselect), test. And much more...`
+    )
+    const descriptionTodo = (
+        `Huge project - Todo list with storage of data on remote server. 
+	     Technology stack: React, Redux (Redux-thunk, Redux-toolkit, Hooks), REST API, Storybook, 
+	     Unit and snapshot tests. Formik, Material-UI. And much more... `
+    )
+    const descriptionNetflix = (
+        `Netflix app, Netflix copy, React, Hooks. request API themoviedb, css BEM. scroll When clicking on the picture, the video is played, movie-trailer`
+    )
+    const descriptionGoogleBooksAPI = (
+        `Google Books Api - App Based on React Redux, SASS, etc., requesting books from the Google API, 
+         'load more' pagination, filtering, as well as filtering by category, implemented on the front, because. not on the back. 
+         Clicking on the card will take you to the detailed page of the book.`
+    )
+    const descriptionCalculator = (
+        `Native Webpack build, Computational calculator on TypeScript, React, Redux, Not using the EVAL method, well, with it too.
+         As well as keyboard input, + Escape, Enter, NumpadEnter`
+    )
+    const descriptionCounter = (
+        `Just simple counter with settings start value and end value. Saving State to LocalStorage. 
+         I used in this project React, Redux, clean CSS, React-router-dom and more`
+    )
+    const descriptionChatFirebase = (
+        'Simple chat on React and Firebase. Login via google and email. Hooks, CSS'
+    )
+    const descriptionCatImages = (
+        `test task/ Cat pictures API, Pagination, the ability to add to "favorites" and remove from "favorites" on React, Redux, interaction with the API server`
+    )
 
 
     return (
@@ -99,7 +114,7 @@ export const Projects = () => {
                         style={calculator}
                         way={'webpack-build-calculator'}
                         title={"Calculator - webpack build"}
-                        icon={webpack}
+                        icon={webpackIcon}
                         gitWay={'webpack-build-calculator'}
                         description={descriptionCalculator}
                     />
@@ -107,9 +122,9 @@ export const Projects = () => {
                         style={chat}
                         way={'chat-firebase'}
                         title={`Chat Firebase`}
-                        icon={firebase}
+                        icon={firebaseIcon}
                         gitWay={'chat-firebase'}
-                        description={descriptionFirebase}
+                        description={descriptionChatFirebase}
                     />
                     <Project
                         style={catImages}

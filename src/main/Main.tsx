@@ -4,6 +4,7 @@ import Typewriter from 'typewriter-effect';
 import { Fade } from 'react-awesome-reveal';
 import { Background } from './Background/Background';
 import { ParticlesComponent } from './Particles';
+import portfolioIcon from "./../assets/images/portfolio.svg";
 
 
 export const Main = () => {
@@ -15,11 +16,14 @@ export const Main = () => {
             <div className={styles.container}>
                 <Fade direction='left' >
                     <div className={styles.greeting}>
-                        <span style={{ fontSize: '16px' }} >Welcome to me Portolio</span>
+                        <span style={{ fontSize: '16px' }} >
+                            Welcome to me Portolio
+                            <img src={portfolioIcon} alt='' />
+                        </span>
                         <span>I am Maksim <span>KaNDeRsKiy</span></span>
                         <Typewriter
                             options={{
-                                strings: ['Frontend Developer', 'Technology Expert', 'React, Redux JS/TS'],
+                                strings: ['Frontend Developer', 'Technology Expert', 'JavaScript, TypeScript, React'],
                                 autoStart: true,
                                 loop: true,
                                 deleteSpeed: 20,
@@ -28,12 +32,8 @@ export const Main = () => {
                             }} />
                         <span style={{ fontSize: '17px', maxWidth: '605px', marginTop: '25px' }} >
                             I'm a Frontend result-oriented developer when creating SPA applications,
-                            using React (JS/TS), Redux.  Worked in a team.
-                            Ambitious, capable, responsible. I am diligent in my work.
-                            Of those who prefer free time to work, study, rather than entertainment and an empty time rate)
-                            I'm pushing up and I'm not used to giving up,
-                            I want to realize myself and become the best in my field. I would like to find project work and full-time employment in a
-                            company with a modern approach to development and a collaborative team.
+                            using JavaScript/TypeScript, React, Redux and much more in my Skills
+
                             <p /> My github: <b />
                             <a target="_blank" rel="noreferrer" href='https://github.com/Maks-KaNDeR1' >@Maks_KaNDeR</a>
                         </span>

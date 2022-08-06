@@ -1,6 +1,9 @@
 @import './common/styles/sass/variables';
 
 
+*{
+    transition: all 0.02s;
+}
 
 .App {
     > div {

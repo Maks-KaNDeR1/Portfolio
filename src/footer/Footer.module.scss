@@ -4,10 +4,12 @@
 .footer {
     min-height: 300px;
     @include flex(row, center, stretch, nowrap);
+
     .container {
         @include container();
         @include flex(column, flex-start, center, nowrap);
         padding: 100px 0 20px;
+
         .socialIcons {
             @include flex(row, space-between, center, nowrap);
             width: 400px;
@@ -16,6 +18,7 @@
             @media screen and (max-width: 505px) {
                 width: 100%;
             }
+
             .socialIcon {
                 width: 60px;
                 height: 60px;
@@ -23,8 +26,8 @@
                 border-radius: 50%;
                 background-color: $bgPrimary;
                 // bgPrimary
-// $bgSecondary
-transition: 0.3s;
+                // $bgSecondary
+                transition: 0.3s;
 
                 &:hover {
                     box-shadow: 0 0 20px 1px $primaryColor;
@@ -32,6 +35,7 @@ transition: 0.3s;
                     border: 1px solid $textColor;
                     transition: all 0.3s ease-in-out 0s;
                 }
+
                 @media screen and (max-width: 380px) {
                     width: 50px;
                     height: 50px;
@@ -48,7 +52,8 @@ transition: 0.3s;
                 }
             }
         }
-        .copyright{
+
+        .copyright {
             margin-top: 10px;
         }
     }

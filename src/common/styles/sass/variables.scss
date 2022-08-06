@@ -1,12 +1,12 @@
 
-:root[data-theme="light"] {
+:root[data-theme="dark"] {
     --textColor: #032845;
   --primaryColor: #82a1c8;
   --bgPrimary: #fff;
   --bgSecondary: #b0b6bca7;
 }
 
-:root[data-theme="dark"] {
+:root[data-theme="light"] {
     --textColor: #fff;
     --primaryColor: #4e93e6;
     --bgPrimary: #1f1f20;

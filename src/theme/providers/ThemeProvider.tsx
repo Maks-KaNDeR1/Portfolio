@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { ThemeContext, themes } from '../contexts/ThemeContext'
 
 const getTheme = () => {
@@ -14,11 +14,9 @@ const getTheme = () => {
 
 
 export const ThemeProvider: React.FC<any> = ({ children }) => {
-  const [theme, setTheme] = React.useState(getTheme)
+  const [theme, setTheme] = useState(getTheme)
 
-  console.log(theme)
-
-  React.useEffect(() => {
+  useEffect(() => {
     document.documentElement.dataset.theme = theme
     localStorage.setItem('theme', theme)
   }, [theme])

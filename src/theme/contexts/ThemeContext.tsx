@@ -8,7 +8,6 @@ export const themes = {
 type ContextProps = {
   theme: string,
   setTheme: Dispatch<SetStateAction<string>>
-};
+}
 
-export const ThemeContext =
-  React.createContext<Partial<ContextProps>>({})
+export const ThemeContext = React.createContext<Partial<ContextProps>>({})

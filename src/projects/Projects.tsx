@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './Projects.module.scss';
-import { Project } from './project/Project';
-import { Title } from '../common/components/title/Title';
-import { Fade } from 'react-awesome-reveal';
+import { Project } from './project/Project'
+import { Title } from '../common/components/title/Title'
+import { Fade } from 'react-awesome-reveal'
 import todoImage from './../assets/images/todolist.jpg'
 import hotelSearchImage from './../assets/images/hotel-search.jpg'
 import netflixImage from './../assets/images/netflix.jpg'

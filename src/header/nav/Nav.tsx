@@ -1,7 +1,7 @@
-import React from 'react';
-import { Fade } from 'react-awesome-reveal';
-import style from './Nav.module.scss';
-import { Link, animateScroll as scroll } from "react-scroll";
+import React from 'react'
+import { Fade } from 'react-awesome-reveal'
+import style from './Nav.module.scss'
+import { Link, animateScroll as scroll } from "react-scroll"
 
 
 export const Nav = () => {
@@ -42,5 +42,5 @@ export const Nav = () => {
                 > Contacts </Link>
             </Fade>
         </div>
-    );
+    )
 }

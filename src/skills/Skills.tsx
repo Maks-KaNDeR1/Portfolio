@@ -1,21 +1,34 @@
-import React from 'react';
-import styles from './Skills.module.scss';
-import { Skill } from "./skill/Skill";
-import { Title } from "../common/components/title/Title";
-import htmlIcon from "./../assets/images/html-icon.svg";
-import formikIcon from "./../assets/images/formik.svg";
-import figmaIcon from "./../assets/images/figma.svg";
-import ajaxIcon from "./../assets/images/AJAX.svg";
-import websocketIcon from "./../assets/images/websocket.svg";
-import { Fade } from 'react-awesome-reveal';
+import React from 'react'
+import styles from './Skills.module.scss'
+import { Skill } from "./skill/Skill"
+import { Title } from "../common/components/title/Title"
+import htmlIcon from "./../assets/images/html-icon.svg"
+import codingIcon from "./../assets/images/coding.svg"
+import jslIcon from "./../assets/images/jsl.svg"
+import formikIcon from "./../assets/images/formik.svg"
+import figmaIcon from "./../assets/images/figma.svg"
+import materialcon from "./../assets/images/material.svg"
+import ajaxIcon from "./../assets/images/AJAX.svg"
+import websocketIcon from "./../assets/images/websocket.svg"
+import testIcon from "./../assets/images/test.svg"
+import { Fade } from 'react-awesome-reveal'
 
-export const Skills = () => {
-       const html = htmlIcon;
-       const formik = formikIcon;
-       const ajax = ajaxIcon;
-       const websocket = websocketIcon;
-       const figma = figmaIcon;
+type PropsType = {
+       theme: string | undefined
+}
 
+export const Skills: React.FC<PropsType> = ({ theme }) => {
+       const html = htmlIcon
+       const formik = formikIcon
+       const ajax = ajaxIcon
+       const websocket = websocketIcon
+       const figma = figmaIcon
+       const material = materialcon
+       const jsl = jslIcon
+       const coding = codingIcon
+       const test = testIcon
+
+       const themeObj = theme === 'dark' ? false : true
 
        return (
               <div id='skills' className={styles.skillsBlock}>
@@ -26,29 +39,33 @@ export const Skills = () => {
                                           <Skill
                                                  title={"html & Css"}
                                                  description={"БЭМ, css-modules, styled-component"}
-                                                 icon={html}
+                                                 icon={themeObj ? html : coding}
+                                          // logos={themeObj ? '' : 'icon-park:file-code'}
                                           />
                                           <Skill
                                                  title={"Javascript"}
-                                                 logos={"bi:filetype-js"}
+                                                 logos={themeObj ? "bi:filetype-js" : ''}
+                                                 icon={themeObj ? '' : jsl}
+                                          // logos={"bi:filetype-js"}
                                           />
                                           <Skill
                                                  title={"TypeScript"}
-                                                 logos={"ph:file-ts-duotone"}
+                                                 logos={themeObj ? "ph:file-ts-duotone" : 'logos:typescript-icon-round'}
+                                          //vscode-icons:file-type-typescript-official
                                           />
                                           <Skill
                                                  title={"React"}
-                                                 logos={"bxl:react"}
+                                                 logos={themeObj ? "bxl:react" : 'vscode-icons:file-type-reactjs'}
                                                  description={"React-Hook's"}
                                           />
                                           <Skill
                                                  title={"Redux"}
-                                                 logos={"bxl:redux"}
+                                                 logos={themeObj ? "bxl:redux" : 'logos:redux'}
                                                  description={"Redux-Hook's, Redux-Thunk, Redux-Toolkit, Redux-Saga"}
                                           />
                                           <Skill
                                                  title={"rest api"}
-                                                 logos={"dashicons:rest-api"}
+                                                 logos={themeObj ? "dashicons:rest-api" : 'vscode-icons:file-type-rest'}
                                           />
                                           <Skill
                                                  title={"axios"}
@@ -58,19 +75,21 @@ export const Skills = () => {
                                           <Skill
                                                  title={"github"}
                                                  description={"Maks-KaNDeR1"}
-                                                 logos={"bxl:github"}
+                                                 logos={themeObj ? "bxl:github" : 'logos:git-icon'}
                                           />
                                           <Skill
                                                  title={"sass/scss"}
-                                                 logos={"bxl:sass"}
+                                                 logos={themeObj ? "bxl:sass" : 'vscode-icons:file-type-scss2'}
                                           />
                                           <Skill
                                                  title={"TDD"}
-                                                 logos={"file-icons:test-react"}
+                                                 logos={themeObj ? "file-icons:test-react" : ''}
+                                                 // logos={"file-icons:test-react"}
+                                                 icon={themeObj ? '' : test}
                                           />
                                           <Skill
                                                  title={"storybook"}
-                                                 logos={"cib:storybook"}
+                                                 logos={themeObj ? "cib:storybook" : 'vscode-icons:file-type-storybook'}
                                           />
                                           <Skill
                                                  title={"formik"}
@@ -78,26 +97,27 @@ export const Skills = () => {
                                           />
                                           <Skill
                                                  title={"material-ui"}
-                                                 logos={"mdi:material-ui"}
+                                                 logos={themeObj ? "mdi:material-ui" : ''}
+                                                 icon={themeObj ? '' : material}
                                           />
                                           <Skill
                                                  title={"ant-design"}
-                                                 // logos={"logos:ant-design"}
-                                                 logos={"ant-design:ant-design-outlined"}
+
+                                                 logos={themeObj ? "ant-design:ant-design-outlined" : "logos:ant-design"}
                                           />
                                           <Skill
                                                  title={"websocket"}
-                                                 icon={websocket}
+                                                 logos={themeObj ? '' : 'logos:websocket'}
+                                                 icon={themeObj ? websocket : ''}
                                           />
                                           <Skill
                                                  title={"figma"}
-                                                 logos={"akar-icons:figma-fill"}
-                                          // icon={figma}
+                                                 logos={themeObj ? "akar-icons:figma-fill" : ''}
+                                                 icon={themeObj ? '' : figma}
                                           />
                                           <Skill
                                                  title={"webpack"}
-                                                 logos={"file-icons:webpack-old"}
-                                          // logos={"logos:webpack"}
+                                                 logos={themeObj ? "file-icons:webpack-old" : "logos:webpack"}
                                           />
                                           {/* <Skill 
                                           title={"Next.js"}
@@ -121,5 +141,5 @@ export const Skills = () => {
                             </div>
                      </Fade>
               </div>
-       );
+       )
 }

@@ -1,19 +1,15 @@
-import Particles from "react-tsparticles";
+import Particles from "react-tsparticles"
 
-export const ParticlesComponent = () => {
-    // const particlesInit = async (main: any) => {
-    //     console.log(main);
 
-    //     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    //     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    //     // starting from v2 you can add only the features you need reducing the bundle size
-    //     await loadFull(main);
-    // };
+type PropsType = {
+    theme: string | undefined
+}
+
+export const ParticlesComponent: React.FC<PropsType> = ({ theme }) => {
 
     return (
         <Particles
             id="tsparticles"
-            // init={particlesInit}
             options={{
                 fpsLimit: 120,
                 interactivity: {
@@ -39,8 +35,11 @@ export const ParticlesComponent = () => {
                     },
                 },
                 particles: {
+                    color: {
+                        value: theme === 'dark' ? "#4e93e6" : '#fff',
+                    },
                     links: {
-                        color: "#ffffff",
+                        color: theme === 'dark' ? "#4e93e6" : '#fff',
                         distance: 150,
                         enable: true,
                         opacity: 0.3,
@@ -65,6 +64,7 @@ export const ParticlesComponent = () => {
                             area: 800,
                         },
                         value: 30,
+
                     },
                     opacity: {
                         value: 0.7,
@@ -76,8 +76,8 @@ export const ParticlesComponent = () => {
                 detectRetina: true,
             }}
         />
-    );
-};
+    )
+}
 
 
 

@@ -1,5 +1,5 @@
-import React from 'react';
-import style from './Button.module.scss';
+import React from 'react'
+import style from './Button.module.scss'
 
 type PropsType = {
     text: string
@@ -11,5 +11,5 @@ export const Button = (props: PropsType) => {
         <a target="_blank" rel="noreferrer" href={props.way}
             className={style.btn}> {props.text}
         </a>
-    );
+    )
 }

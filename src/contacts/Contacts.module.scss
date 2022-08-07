@@ -21,7 +21,6 @@
             .messageArea {
                 background: $bgSecondary;
                 border: 1px solid #4a4a4a;
-                // border: 1px solid $bgSecondary;
                 box-sizing: border-box;
                 @include text(inherit, 12px, 1.5, 400);
                 outline: none;
@@ -30,7 +29,7 @@
                 &:-webkit-autofill {
                     border: 1px solid #4a4a4a;
                     -webkit-text-fill-color: #495057;
-                    -webkit-box-shadow: 0 0 0 1000px #252527 inset;
+                    -webkit-box-shadow: 0 0 0 1000px $bgSecondary inset;
                     transition: background-color 5000s ease-in-out 0s;
                     &:focus {
                         border: 2px solid $bgSecondary;

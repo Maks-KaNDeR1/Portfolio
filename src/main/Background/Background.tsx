@@ -1,6 +1,6 @@
 
 import React from 'react'
-import styles from './Background.module.scss';
+import styles from './Background.module.scss'
 
 export const Background = () => {
   return (

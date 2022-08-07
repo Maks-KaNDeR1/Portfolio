@@ -1,18 +1,21 @@
-import React from 'react';
-import styles from './Main.module.scss';
-import Typewriter from 'typewriter-effect';
-import { Fade } from 'react-awesome-reveal';
-import { Background } from './Background/Background';
-import { ParticlesComponent } from './Particles';
-import portfolioIcon from "./../assets/images/portfolio.svg";
+import React from 'react'
+import styles from './Main.module.scss'
+import Typewriter from 'typewriter-effect'
+import { Fade } from 'react-awesome-reveal'
+import { Background } from './Background/Background'
+import { ParticlesComponent } from './Particles'
+import portfolioIcon from "./../assets/images/portfolio.svg"
 
 
-export const Main = () => {
+type PropsType = {
+    theme: string | undefined
+}
 
+export const Main: React.FC<PropsType> = ({ theme }) => {
     return (
         <div id='main' className={styles.mainBlock}>
             <Background />
-            <ParticlesComponent />
+            <ParticlesComponent theme={theme} />
             <div className={styles.container}>
                 <Fade direction='left' >
                     <div className={styles.greeting}>
@@ -47,6 +50,6 @@ export const Main = () => {
                 </Fade>
             </div>
         </div>
-    );
+    )
 }
 

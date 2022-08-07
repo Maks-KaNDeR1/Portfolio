@@ -1,9 +1,21 @@
+
+
+
+:root[data-theme="dark"] {
+    --starsColor: #115990;
+}
+
+:root[data-theme="light"] {
+    --starsColor: aqua;
+}
+
+
 // n is number of stars required
 @function multiple-box-shadow ($n) {
     $value: '#{random(2000)}px #{random(2000)}px #FFF';
 
     @for $i from 2 through $n {
-        $value: '#{$value} , #{random(2000)}px #{random(600)}px aqua';
+        $value: '#{$value} , #{random(2000)}px #{random(600)}px var(--starsColor)';
     }
 
     @return unquote($value);

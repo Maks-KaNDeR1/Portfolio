@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import styles from './Skill.module.scss'
-import { Icon } from '@iconify/react';
+import { Icon } from '@iconify/react'
 
 type PropsType = {
     title: string

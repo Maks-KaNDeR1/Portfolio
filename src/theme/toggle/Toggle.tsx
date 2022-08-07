@@ -1,4 +1,4 @@
-import { Alert, AlertTitle, Collapse, Stack } from '@mui/material'
+import { Alert, Stack } from '@mui/material'
 import React from 'react'
 import styles from './Toggle.module.scss'
 
@@ -20,7 +20,7 @@ const Toggle: React.FC<PropsType> = ({ value, onChange }) => {
       />
       <span className={styles.slider} />
       <span className={styles.wave} />
-      <div style={{ width: '500%', marginLeft: '150%' }}>
+      <div style={{ width: '500%', marginLeft: '150%', marginTop: '-30px' }}>
 
         <AlertWindow value={value} />
       </div>
@@ -35,14 +35,10 @@ type AlertPropsType = {
 
 const AlertWindow: React.FC<AlertPropsType> = ({ value }) => {
 
-  const [open, setOpen] = React.useState(true);
-
   if (value === true) return <Stack sx={{ width: '100%' }} spacing={2}>
-    <Collapse in={open}>
-      <Alert onClose={() => { setOpen(false) }} severity="warning">
-        <strong>Не Доработано!</strong>
-      </Alert>
-    </Collapse>
+    <Alert severity="warning">
+      <strong>Не Доработано!</strong>
+    </Alert>
   </Stack>
   else return <></>
 

@@ -1,8 +1,8 @@
-import React from 'react';
-import style from './Hire.module.scss';
-import { Title } from "../common/components/title/Title";
-import { Button } from "../common/components/button/Button";
-import { Fade } from 'react-awesome-reveal';
+import React from 'react'
+import style from './Hire.module.scss'
+import { Title } from "../common/components/title/Title"
+import { Button } from "../common/components/button/Button"
+import { Fade } from 'react-awesome-reveal'
 
 
 
@@ -16,5 +16,5 @@ export const Hire = () => {
                 </div>
             </Fade>
         </div>
-    );
+    )
 }

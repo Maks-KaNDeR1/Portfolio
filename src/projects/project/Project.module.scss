@@ -2,6 +2,17 @@
 @import '../../common/styles/sass/mixins';
 
 
+:root[data-theme="dark"] {
+  --backgroundColor: #f8f8f8;
+  --opacity: 0.1;
+  --border: 2px solid #595a5b
+}
+
+:root[data-theme="light"] {
+    --backgroundColor: #000;
+    --opacity: 0.2;
+}
+
 .project {
     width: 450px;
     margin-top: 60px;
@@ -18,8 +29,9 @@
             bottom: 0;
             left: 0;
             right: 0;
-            opacity: 0.2;
-            background-color: black;
+            opacity: var(--opacity);
+            background-color: var(--backgroundColor);
+            border: var(--border);
         }
     }
     .projectInfo {
@@ -36,7 +48,7 @@
         }
         a {
             @include text($TextFontFamily, 12px, 1.8, 500);
-            color: $primaryColor;
+            color: #4e93e6;
             text-decoration: none;
         }
         .description {

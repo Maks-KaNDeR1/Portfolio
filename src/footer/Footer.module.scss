@@ -1,6 +1,19 @@
 @import '../common/styles/sass/variables';
 @import '../common/styles/sass/mixins';
 
+
+
+:root[data-theme="dark"] {
+    --footBorder: #4288ae;
+    --hoverBorder: #4288ae;
+}
+
+:root[data-theme="light"] {
+    --footBorder: #4a4a4a;
+    --hoverBorder: #fff
+}
+
+
 .footer {
     min-height: 300px;
     @include flex(row, center, stretch, nowrap);
@@ -22,17 +35,15 @@
             .socialIcon {
                 width: 60px;
                 height: 60px;
-                border: 1px solid #4a4a4a;
+                border: 1px solid var(--footBorder);
                 border-radius: 50%;
                 background-color: $bgPrimary;
-                // bgPrimary
-                // $bgSecondary
                 transition: 0.3s;
 
                 &:hover {
                     box-shadow: 0 0 20px 1px $primaryColor;
                     transform: scale(1.1);
-                    border: 1px solid $textColor;
+                    border: 1px solid var(--hoverBorder);
                     transition: all 0.3s ease-in-out 0s;
                 }
 

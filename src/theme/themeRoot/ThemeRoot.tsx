@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeContext, themes } from '../contexts/ThemeContext'
-import Toggle from '../../header/toggle/Toggle'
+import Toggle from '../toggle/Toggle'
 
 export const ThemeRoot = () => (
   <ThemeContext.Consumer>

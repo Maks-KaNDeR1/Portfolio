@@ -1,6 +1,17 @@
 @import '../../common/styles/sass/variables';
 @import '../../common/styles/sass/mixins';
 
+
+:root[data-theme="dark"] {
+  --skillBackground: rgba(251, 252, 255, 0.923);
+  --skillBoxShadow: inset 6px 4px 20px 0px rgb(0 129 255 / 9%);
+}
+
+:root[data-theme="light"] {
+  --skillBackground: rgba(255, 255, 255, 0.1);
+}
+
+
 .skill {
   position: relative;
   width: 300px;
@@ -28,9 +39,8 @@
     position: relative;
     height: 80px;
     width: 80px;
-    // background: #152c568f;
-    // background: #5b6e92;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--skillBackground);
+    // box-shadow: var(--boxShadow);
     transform: rotate(45deg);
     margin-bottom: 40px;
     @include flex(row, center, center, nowrap);
@@ -49,10 +59,10 @@
 
     &:hover {
       box-shadow: 0 0 43px 1px $primaryColor;
+      // box-shadow: 0 0 43px 1px #fff;
       transition: all 0.3s ease-in-out 0s;
     }
   }
-
 
   .skillTitle {
     @include text($TitleFontFamily, 16px, 1.2, 700);
@@ -61,8 +71,6 @@
     padding: 0;
     letter-spacing: 1px;
     top: 125px;
-    // left: 2000px;
-    // position: absolute
   }
 
   .description {

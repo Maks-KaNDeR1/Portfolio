@@ -27,7 +27,7 @@
     left: 0;
     z-index: 1;
     overflow: hidden;
-    background-color: #4a4a4a; //$primaryColor;
+    background-color: $primaryColor; //#4a4a4a;
     border-radius: 50px;
     cursor: pointer;
     transition: all 1.4s;
@@ -99,6 +99,6 @@
 
   input:checked~.wave {
     display: block;
-    background-color: $primaryColor //#4a4a4a
+    background-color: #4a4a4a //$primaryColor
   }
 }

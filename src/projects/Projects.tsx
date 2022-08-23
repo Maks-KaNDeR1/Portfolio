@@ -8,6 +8,7 @@ import hotelSearchImage from './../assets/images/hotel-search.jpg'
 import netflixImage from './../assets/images/netflix.jpg'
 import socialImage from './../assets/images/social-network.png'
 import googleBooksImage from './../assets/images/google-books.jpg'
+import questionsImage from './../assets/images/questions-stackoverflow.jpg'
 import calculatorImage from './../assets/images/calculator.jpg'
 import counterImage from './../assets/images/counter.png'
 import chatImage from './../assets/images/chat-firebase.png'
@@ -19,11 +20,12 @@ import webpackIcon from './../assets/images/webpack.svg'
 
 export const Projects = () => {
 
-    const social = { backgroundImage: `url(${socialImage})` }
-    const todolist = { backgroundImage: `url(${todoImage})` }
     const hotelSearch = { backgroundImage: `url(${hotelSearchImage})` }
-    const netflix = { backgroundImage: `url(${netflixImage})` }
+    const todolist = { backgroundImage: `url(${todoImage})` }
     const googleBooks = { backgroundImage: `url(${googleBooksImage})` }
+    const questions = { backgroundImage: `url(${questionsImage})` }
+    const social = { backgroundImage: `url(${socialImage})` }
+    const netflix = { backgroundImage: `url(${netflixImage})` }
     const calculator = { backgroundImage: `url(${calculatorImage})` }
     const counter = { backgroundImage: `url(${counterImage})` }
     const catImages = { backgroundImage: `url(${catImage})` }
@@ -32,25 +34,30 @@ export const Projects = () => {
     const descriptionHotelSearch = (
         `Hotel search application, request hotels with API,Authorization page, Request parameters where you can enter the name of the city, 
          date check-in and number of days. Hotels can be added to your favorites. Selected hotels can be sorted by cost and number of stars. etc. 
-         In TypeScript, React, Redux (Redux-Saga) React-Hooks, saved in sessStorage `
-    )
-    const descriptionNetwork = (
-        `Social network. Stack Technology: React, Redux, redux-thunk, redux-hooks, 
-	     REST API Axios,	DAL, Formik,High Order Component(hoc) context API, Router, Class components, 
-	     selectors(reselect), test. And much more...`
-    )
-    const descriptionTodo = (
-        `Huge project - Todo list with storage of data on remote server. 
-	     Technology stack: React, Redux (Redux-thunk, Redux-toolkit, Hooks), REST API, Storybook, 
-	     Unit and snapshot tests. Formik, Material-UI. And much more... `
-    )
-    const descriptionNetflix = (
-        `Netflix app, Netflix copy, React, Hooks. request API themoviedb, css BEM. scroll When clicking on the picture, the video is played, movie-trailer`
+         In TypeScript, React, Redux (Redux-Saga) React-Hooks, saved in sessStorage`
     )
     const descriptionGoogleBooksAPI = (
         `Google Books Api - App Based on React Redux, SASS, etc., requesting books from the Google API, 
-         'load more' pagination, filtering, as well as filtering by category, implemented on the front, because. not on the back. 
-         Clicking on the card will take you to the detailed page of the book.`
+        'load more' pagination, filtering, as well as filtering by category, implemented on the front, because. not on the back. 
+         Clicking on the card will take you to the detailed page of the book`
+    )
+    const descriptionQuestions = (
+        `The app queries and displays questions on Stackoverflow, search by title and date. 
+         Drag and Drop, on auth site click. load more loading of data, according to the number selected in the select
+         Stack: TypeScript, Reaact, Redux, Redux-Thunk, react-beautiful-dnd, mui `
+    )
+    const descriptionTodo = (
+        `Huge project - Todo list with storage of data on remote server. 
+         Technology stack: React, Redux (Redux-thunk, Redux-toolkit, Hooks), REST API, Storybook, 
+         Unit and snapshot tests. Formik, Material-UI. And much more...`
+    )
+    const descriptionNetwork = (
+        `Social network. Stack: React, Redux, redux-thunk, redux-hooks, 
+         EST API Axios, DAL, Formik,High Order Component(hoc) context API, Router, Class components, 
+         selectors(reselect), test. And much more...`
+    )
+    const descriptionNetflix = (
+        `Netflix app, Netflix copy, React, Hooks. request API themoviedb, css BEM. scroll When clicking on the picture, the video is played, movie-trailer`
     )
     const descriptionCalculator = (
         `Native Webpack build, Computational calculator on TypeScript, React, Redux, Not using the EVAL method, well, with it too.
@@ -90,18 +97,25 @@ export const Projects = () => {
                         description={descriptionTodo}
                     />
                     <Project
-                        style={social}
-                        way={'TypeScript-Social-Network'}
-                        title={"Social network"}
-                        gitWay={'TypeScript-Social-Network'}
-                        description={descriptionNetwork}
-                    />
-                    <Project
                         style={googleBooks}
                         way={'books-search'}
                         title={"Google Books API"}
                         gitWay={'books-search'}
                         description={descriptionGoogleBooksAPI}
+                    />
+                    <Project
+                        style={questions}
+                        way={'questions-stackoverflow'}
+                        title={"Questions Stackoverflow"}
+                        gitWay={'questions-stackoverflow'}
+                        description={descriptionQuestions}
+                    />
+                    <Project
+                        style={social}
+                        way={'TypeScript-Social-Network'}
+                        title={"Social network"}
+                        gitWay={'TypeScript-Social-Network'}
+                        description={descriptionNetwork}
                     />
                     <Project
                         style={netflix}

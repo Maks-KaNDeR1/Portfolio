@@ -20,27 +20,12 @@ const Toggle: React.FC<PropsType> = ({ value, onChange }) => {
       />
       <span className={styles.slider} />
       <span className={styles.wave} />
-      <div style={{ width: '500%', marginLeft: '150%', marginTop: '-30px' }}>
-
+      {/* <div style={{ width: '500%', marginLeft: '150%', marginTop: '-30px' }}>
         <AlertWindow value={value} />
-      </div>
+      </div> */}
     </label>
   )
 
 }
 
-type AlertPropsType = {
-  value: boolean
-}
-
-const AlertWindow: React.FC<AlertPropsType> = ({ value }) => {
-
-  if (value === true) return <Stack sx={{ width: '100%' }} spacing={2}>
-    <Alert severity="warning">
-      <strong>Не Доработано!</strong>
-    </Alert>
-  </Stack>
-  else return <></>
-
-}
 export default Toggle

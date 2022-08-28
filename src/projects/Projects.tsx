@@ -106,7 +106,8 @@ export const Projects = () => {
                     <Project
                         style={questions}
                         way={'questions-stackoverflow'}
-                        title={"Questions Stackoverflow"}
+                        title={"Questions Stackoverflow - webpack build"}
+                        icon={webpackIcon}
                         gitWay={'questions-stackoverflow'}
                         description={descriptionQuestions}
                     />

@@ -98,9 +98,9 @@ export const Projects = () => {
                     />
                     <Project
                         style={googleBooks}
-                        way={'books-search'}
+                        way={'book-search'}
                         title={"Google Books API"}
-                        gitWay={'books-search'}
+                        gitWay={'book-search'}
                         description={descriptionGoogleBooksAPI}
                     />
                     <Project

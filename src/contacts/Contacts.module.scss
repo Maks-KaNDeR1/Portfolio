@@ -17,8 +17,8 @@
             @media screen and (max-width: 680px){
                 width: 100%;
             }
-            .formArea,
-            .messageArea {
+            .input,
+            .area {
                 background: $bgSecondary;
                 border: 1px solid #4a4a4a;
                 box-sizing: border-box;
@@ -36,7 +36,7 @@
                     }
                 }
             }
-            .formArea {
+            .input {
                 height: calc(1.5em + .75rem + 2px);
                 padding: .4rem 15px;
                 &:focus {
@@ -44,7 +44,7 @@
                     transition: all 0.4s ease-in-out 0s;
                 }
             }
-            .messageArea {
+            .area {
                 min-height: 160px;
                 padding: 15px;
                 resize: none;

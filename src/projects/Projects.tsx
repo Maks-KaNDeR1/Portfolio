@@ -4,6 +4,7 @@ import { Project } from './project/Project'
 import { Title } from '../common/components/title/Title'
 import { Fade } from 'react-awesome-reveal'
 import todoImage from './../assets/images/todolist.jpg'
+import omarketImage from './../assets/images/omarket.jpg'
 import hotelSearchImage from './../assets/images/hotel-search.jpg'
 import netflixImage from './../assets/images/netflix.jpg'
 import socialImage from './../assets/images/social-network.png'
@@ -20,6 +21,7 @@ import webpackIcon from './../assets/images/webpack.svg'
 
 export const Projects = () => {
 
+    const omarket = { backgroundImage: `url(${omarketImage})` }
     const hotelSearch = { backgroundImage: `url(${hotelSearchImage})` }
     const todolist = { backgroundImage: `url(${todoImage})` }
     const googleBooks = { backgroundImage: `url(${googleBooksImage})` }
@@ -31,6 +33,10 @@ export const Projects = () => {
     const catImages = { backgroundImage: `url(${catImage})` }
     const chat = { backgroundImage: `url(${chatImage})` }
 
+    const descriptionOmarket = (
+        `Fork project, Large commercial project. 
+        Technology stack: TypeScript, React, Redux, Redux/Toolkit, SCSS, native js `
+    )
     const descriptionHotelSearch = (
         `Hotel search application, request hotels with API,Authorization page, Request parameters where you can enter the name of the city, 
          date check-in and number of days. Hotels can be added to your favorites. Selected hotels can be sorted by cost and number of stars. etc. 
@@ -82,6 +88,13 @@ export const Projects = () => {
                     <Title text={"Projects"} />
                 </Fade>
                 <div className={style.projects}>
+                    <Project
+                        style={omarket}
+                        way={'omarket'}
+                        title={"Omarket"}
+                        gitWay={'omarket'}
+                        description={descriptionOmarket}
+                    />
                     <Project
                         style={hotelSearch}
                         way={'hotel-search'}

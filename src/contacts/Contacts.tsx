@@ -17,8 +17,10 @@ export const Contacts: React.FC<PropsType> = ({ theme }) => {
     const messageRef = useRef<HTMLTextAreaElement>(null)
 
     const onSubmitSendMessage = (e: FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        axios.post('https://nodejs-smtp-form.herokuapp.com/sendMessage', {
+        e.preventDefault();
+        axios.get('http://localhost:5000/').then(res => console.log(res))
+        // axios.post('https://git.heroku.com/smtp-nodejs-server-of.git/sendMessage', {
+        axios.post('http://localhost:5000/sendMessage', {
             name: nameRef.current?.value,
             email: emailRef.current?.value,
             message: messageRef.current?.value
@@ -30,10 +32,10 @@ export const Contacts: React.FC<PropsType> = ({ theme }) => {
             <Fade direction='up' triggerOnce={true} >
                 <div className={styles.container}>
                     <Title text={"Contacts"} />
-                    <form className={styles.form}>
-                        <input type="text" className={styles.formArea} placeholder="Name" ref={nameRef} />
-                        <input type="text" className={styles.formArea} placeholder="e-mail" ref={emailRef} />
-                        <textarea className={styles.messageArea} placeholder="Message" ref={messageRef} />
+                    <form className={styles.form} onSubmit={onSubmitSendMessage} >
+                        <input type="text" placeholder="Name" className={styles.input} ref={nameRef} />
+                        <input type="text" placeholder="E-mail" className={styles.input} ref={emailRef} />
+                        <textarea placeholder="Your  message" className={styles.area} ref={messageRef} />
                         <button type="submit" >Send message</button>
                     </form>
                 </div>

@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a3d841a2.chunk.css",
-    "main.js": "/Portfolio/static/js/main.8c8727fd.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.8c8727fd.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.ab7de8f7.chunk.css",
+    "main.js": "/Portfolio/static/js/main.bd1a9d40.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.bd1a9d40.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.674501b5.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.674501b5.js.map",
-    "static/js/2.0d2669b3.chunk.js": "/Portfolio/static/js/2.0d2669b3.chunk.js",
-    "static/js/2.0d2669b3.chunk.js.map": "/Portfolio/static/js/2.0d2669b3.chunk.js.map",
+    "static/js/2.50be9bf6.chunk.js": "/Portfolio/static/js/2.50be9bf6.chunk.js",
+    "static/js/2.50be9bf6.chunk.js.map": "/Portfolio/static/js/2.50be9bf6.chunk.js.map",
     "static/js/3.7e589f8b.chunk.js": "/Portfolio/static/js/3.7e589f8b.chunk.js",
     "static/js/3.7e589f8b.chunk.js.map": "/Portfolio/static/js/3.7e589f8b.chunk.js.map",
     "static/js/4.99550250.chunk.js": "/Portfolio/static/js/4.99550250.chunk.js",
     "static/js/4.99550250.chunk.js.map": "/Portfolio/static/js/4.99550250.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.a3d841a2.chunk.css.map": "/Portfolio/static/css/main.a3d841a2.chunk.css.map",
-    "static/js/2.0d2669b3.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.0d2669b3.chunk.js.LICENSE.txt",
+    "static/css/main.ab7de8f7.chunk.css.map": "/Portfolio/static/css/main.ab7de8f7.chunk.css.map",
+    "static/js/2.50be9bf6.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.50be9bf6.chunk.js.LICENSE.txt",
     "static/media/AJAX.972f7551.svg": "/Portfolio/static/media/AJAX.972f7551.svg",
     "static/media/calculator.60bb70ae.jpg": "/Portfolio/static/media/calculator.60bb70ae.jpg",
     "static/media/cat-images.e3ff92e8.png": "/Portfolio/static/media/cat-images.e3ff92e8.png",
@@ -34,6 +34,7 @@
     "static/media/mongo.53cffe90.svg": "/Portfolio/static/media/mongo.53cffe90.svg",
     "static/media/netflix.cb53a970.jpg": "/Portfolio/static/media/netflix.cb53a970.jpg",
     "static/media/node-js.4a84040b.svg": "/Portfolio/static/media/node-js.4a84040b.svg",
+    "static/media/omarket.eaeafcb5.jpg": "/Portfolio/static/media/omarket.eaeafcb5.jpg",
     "static/media/Main.module.scss": "/Portfolio/static/media/photo.6b829055.jpg",
     "static/media/portfolio.2435151d.svg": "/Portfolio/static/media/portfolio.2435151d.svg",
     "static/media/questions-stackoverflow.99257dae.jpg": "/Portfolio/static/media/questions-stackoverflow.99257dae.jpg",
@@ -50,8 +51,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.674501b5.js",
-    "static/js/2.0d2669b3.chunk.js",
-    "static/css/main.a3d841a2.chunk.css",
-    "static/js/main.8c8727fd.chunk.js"
+    "static/js/2.50be9bf6.chunk.js",
+    "static/css/main.ab7de8f7.chunk.css",
+    "static/js/main.bd1a9d40.chunk.js"
   ]
 }

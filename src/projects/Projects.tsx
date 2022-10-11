@@ -8,6 +8,7 @@ import omarketImage from './../assets/images/omarket.jpg'
 import hotelSearchImage from './../assets/images/hotel-search.jpg'
 import netflixImage from './../assets/images/netflix.jpg'
 import socialImage from './../assets/images/social-network.png'
+import onlineStoreImage from './../assets/images/online-store.jpg'
 import googleBooksImage from './../assets/images/google-books.jpg'
 import questionsImage from './../assets/images/questions-stackoverflow.jpg'
 import calculatorImage from './../assets/images/calculator.jpg'
@@ -24,6 +25,7 @@ export const Projects = () => {
     const omarket = { backgroundImage: `url(${omarketImage})` }
     const hotelSearch = { backgroundImage: `url(${hotelSearchImage})` }
     const todolist = { backgroundImage: `url(${todoImage})` }
+    const onlineStore = { backgroundImage: `url(${onlineStoreImage})` }
     const googleBooks = { backgroundImage: `url(${googleBooksImage})` }
     const questions = { backgroundImage: `url(${questionsImage})` }
     const social = { backgroundImage: `url(${socialImage})` }
@@ -46,6 +48,10 @@ export const Projects = () => {
         `Google Books Api - App Based on React Redux, SASS, etc., requesting books from the Google API, 
         'load more' pagination, filtering, as well as filtering by category, implemented on the front, because. not on the back. 
          Clicking on the card will take you to the detailed page of the book`
+    )
+    const descriptionOnlineStore = (
+        `Online Store layout. Search by selected categories. as well as for the mobile version.
+        Stack: React, TypeScript, Sass`
     )
     const descriptionQuestions = (
         `The app queries and displays questions on Stackoverflow, search by title and date. 
@@ -115,6 +121,13 @@ export const Projects = () => {
                         title={"Google Books API"}
                         gitWay={'book-search'}
                         description={descriptionGoogleBooksAPI}
+                    />
+                    <Project
+                        style={onlineStore}
+                        way={'online-store'}
+                        title={"Onlie Store"}
+                        gitWay={'online-store'}
+                        description={descriptionOnlineStore}
                     />
                     <Project
                         style={questions}

@@ -12,6 +12,7 @@ import onlineStoreImage from './../assets/images/online-store.jpg'
 import googleBooksImage from './../assets/images/google-books.jpg'
 import questionsImage from './../assets/images/questions-stackoverflow.jpg'
 import calculatorImage from './../assets/images/calculator.jpg'
+import carLeasingCalculatorImage from './../assets/images/car-leasing-calculator.jpg'
 import counterImage from './../assets/images/counter.png'
 import chatImage from './../assets/images/chat-firebase.png'
 import catImage from './../assets/images/cat-images.png'
@@ -29,6 +30,7 @@ export const Projects = () => {
     const googleBooks = { backgroundImage: `url(${googleBooksImage})` }
     const questions = { backgroundImage: `url(${questionsImage})` }
     const social = { backgroundImage: `url(${socialImage})` }
+    const carLeasingCalculator = { backgroundImage: `url(${carLeasingCalculatorImage})` }
     const netflix = { backgroundImage: `url(${netflixImage})` }
     const calculator = { backgroundImage: `url(${calculatorImage})` }
     const counter = { backgroundImage: `url(${counterImage})` }
@@ -67,6 +69,9 @@ export const Projects = () => {
         `Social network. Stack: React, Redux, redux-thunk, redux-hooks, 
          EST API Axios, DAL, Formik,High Order Component(hoc) context API, Router, Class components, 
          selectors(reselect), test. And much more...`
+    )
+    const descriptioncarLeasingCalculator = (
+        `Calculate the cost of a car lease. Stack: React, TypeScript, Sass`
     )
     const descriptionNetflix = (
         `Netflix app, Netflix copy, React, Hooks. request API themoviedb, css BEM. scroll When clicking on the picture, the video is played, movie-trailer`
@@ -143,6 +148,13 @@ export const Projects = () => {
                         title={"Social network"}
                         gitWay={'TypeScript-Social-Network'}
                         description={descriptionNetwork}
+                    />
+                    <Project
+                        style={carLeasingCalculator}
+                        way={'car-leasing-calculator'}
+                        title={"Car Leasing Calculator"}
+                        gitWay={'car-leasing-calculator'}
+                        description={descriptioncarLeasingCalculator}
                     />
                     <Project
                         style={netflix}

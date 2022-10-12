@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.2bbd6b04.chunk.css",
-    "main.js": "/Portfolio/static/js/main.dccd5b20.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.dccd5b20.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.bcf040d7.chunk.css",
+    "main.js": "/Portfolio/static/js/main.1c546b1b.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.1c546b1b.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.674501b5.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.674501b5.js.map",
     "static/js/2.50be9bf6.chunk.js": "/Portfolio/static/js/2.50be9bf6.chunk.js",
@@ -12,10 +12,11 @@
     "static/js/4.99550250.chunk.js": "/Portfolio/static/js/4.99550250.chunk.js",
     "static/js/4.99550250.chunk.js.map": "/Portfolio/static/js/4.99550250.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.2bbd6b04.chunk.css.map": "/Portfolio/static/css/main.2bbd6b04.chunk.css.map",
+    "static/css/main.bcf040d7.chunk.css.map": "/Portfolio/static/css/main.bcf040d7.chunk.css.map",
     "static/js/2.50be9bf6.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.50be9bf6.chunk.js.LICENSE.txt",
     "static/media/AJAX.972f7551.svg": "/Portfolio/static/media/AJAX.972f7551.svg",
     "static/media/calculator.60bb70ae.jpg": "/Portfolio/static/media/calculator.60bb70ae.jpg",
+    "static/media/car-leasing-calculator.da2c3408.jpg": "/Portfolio/static/media/car-leasing-calculator.da2c3408.jpg",
     "static/media/cat-images.e3ff92e8.png": "/Portfolio/static/media/cat-images.e3ff92e8.png",
     "static/media/chat-firebase.8b11258f.png": "/Portfolio/static/media/chat-firebase.8b11258f.png",
     "static/media/coding.fa3fea6b.svg": "/Portfolio/static/media/coding.fa3fea6b.svg",
@@ -53,7 +54,7 @@
   "entrypoints": [
     "static/js/runtime-main.674501b5.js",
     "static/js/2.50be9bf6.chunk.js",
-    "static/css/main.2bbd6b04.chunk.css",
-    "static/js/main.dccd5b20.chunk.js"
+    "static/css/main.bcf040d7.chunk.css",
+    "static/js/main.1c546b1b.chunk.js"
   ]
 }

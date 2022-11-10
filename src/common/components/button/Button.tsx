@@ -4,12 +4,27 @@ import style from './Button.module.scss'
 type PropsType = {
     text: string
     way: string
+    disabled?: boolean
 }
 
-export const Button = (props: PropsType) => {
+export const Button: React.FC<PropsType> = ({ text, way, disabled }) => {
     return (
-        <a target="_blank" rel="noreferrer" href={props.way}
-            className={style.btn}> {props.text}
-        </a>
+        <>
+            {
+                !disabled ?
+                    <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href={way}
+                        className={style.btn}
+                    >
+                        {text}
+                    </a>
+                    :
+                    <span className={style.btnDis}>
+                        {text}
+                    </span>
+            }
+        </>
     )
 }

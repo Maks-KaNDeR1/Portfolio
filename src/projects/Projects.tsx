@@ -13,6 +13,7 @@ import googleBooksImage from './../assets/images/google-books.jpg'
 import questionsImage from './../assets/images/questions-stackoverflow.jpg'
 import calculatorImage from './../assets/images/calculator.jpg'
 import carLeasingCalculatorImage from './../assets/images/car-leasing-calculator.jpg'
+import cmsPanelImage from './../assets/images/cms-panel.jpg'
 import counterImage from './../assets/images/counter.png'
 import chatImage from './../assets/images/chat-firebase.png'
 import catImage from './../assets/images/cat-images.png'
@@ -36,6 +37,7 @@ export const Projects = () => {
     const counter = { backgroundImage: `url(${counterImage})` }
     const catImages = { backgroundImage: `url(${catImage})` }
     const chat = { backgroundImage: `url(${chatImage})` }
+    const CMSPanel = { backgroundImage: `url(${cmsPanelImage})` }
 
     const descriptionOmarket = (
         `Fork project, Large commercial project. 
@@ -69,6 +71,9 @@ export const Projects = () => {
         `Social network. Stack: React, Redux, redux-thunk, redux-hooks, 
          EST API Axios, DAL, Formik,High Order Component(hoc) context API, Router, Class components, 
          selectors(reselect), test. And much more...`
+    )
+    const descriptionCRMPanel = (
+        `Сontrol panel CRM, connected to the service and display the addresses entered by the user on the page. as well as for the mobile version. Stack: React, TypeScript, Sass`
     )
     const descriptioncarLeasingCalculator = (
         `Calculate the cost of a car lease. Stack: React, TypeScript, Sass`
@@ -105,6 +110,7 @@ export const Projects = () => {
                         title={"Omarket"}
                         gitWay={'omarket'}
                         description={descriptionOmarket}
+                        notPagesIo
                     />
                     <Project
                         style={hotelSearch}
@@ -148,6 +154,14 @@ export const Projects = () => {
                         title={"Social network"}
                         gitWay={'TypeScript-Social-Network'}
                         description={descriptionNetwork}
+                    />
+                    <Project
+                        style={CMSPanel}
+                        way={'crm-control-panel'}
+                        title={"Сontrol panel CRM - webpack build"}
+                        icon={webpackIcon}
+                        gitWay={'crm-control-panel'}
+                        description={descriptionCRMPanel}
                     />
                     <Project
                         style={carLeasingCalculator}

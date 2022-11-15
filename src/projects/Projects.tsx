@@ -5,6 +5,7 @@ import { Title } from '../common/components/title/Title'
 import { Fade } from 'react-awesome-reveal'
 import todoImage from './../assets/images/todolist.jpg'
 import omarketImage from './../assets/images/omarket.jpg'
+import turbinaryImage from './../assets/images/turbinary.jpg'
 import hotelSearchImage from './../assets/images/hotel-search.jpg'
 import netflixImage from './../assets/images/netflix.jpg'
 import socialImage from './../assets/images/social-network.png'
@@ -24,6 +25,7 @@ import webpackIcon from './../assets/images/webpack.svg'
 
 export const Projects = () => {
 
+    const turbinary = { backgroundImage: `url(${turbinaryImage})` }
     const omarket = { backgroundImage: `url(${omarketImage})` }
     const hotelSearch = { backgroundImage: `url(${hotelSearchImage})` }
     const todolist = { backgroundImage: `url(${todoImage})` }
@@ -39,6 +41,10 @@ export const Projects = () => {
     const chat = { backgroundImage: `url(${chatImage})` }
     const CMSPanel = { backgroundImage: `url(${cmsPanelImage})` }
 
+    const descriptionTurbinary = (
+        `Catalog, layout. Search by selected categories. as well as for the mobile version.
+        Technology stack: Webpack, JS/TypeScript, React, SCSS,  `
+    )
     const descriptionOmarket = (
         `Fork project, Large commercial project. 
         Technology stack: TypeScript, React, Redux, Redux/Toolkit, SCSS, native js `
@@ -104,6 +110,14 @@ export const Projects = () => {
                     <Title text={"Projects"} />
                 </Fade>
                 <div className={style.projects}>
+                    <Project
+                        style={turbinary}
+                        way={'turbinary'}
+                        title={"Catalog - webpack build"}
+                        gitWay={'turbinary'}
+                        icon={webpackIcon}
+                        description={descriptionTurbinary}
+                    />
                     <Project
                         style={omarket}
                         way={'omarket'}

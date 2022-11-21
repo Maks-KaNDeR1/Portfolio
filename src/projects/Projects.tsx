@@ -3,32 +3,29 @@ import style from './Projects.module.scss';
 import { Project } from './project/Project'
 import { Title } from '../common/components/title/Title'
 import { Fade } from 'react-awesome-reveal'
-import todoImage from './../assets/images/todolist.jpg'
-import omarketImage from './../assets/images/omarket.jpg'
-import turbinaryImage from './../assets/images/turbinary.jpg'
-import hotelSearchImage from './../assets/images/hotel-search.jpg'
-import netflixImage from './../assets/images/netflix.jpg'
-import socialImage from './../assets/images/social-network.png'
-import onlineStoreImage from './../assets/images/online-store.jpg'
-import googleBooksImage from './../assets/images/google-books.jpg'
-import questionsImage from './../assets/images/questions-stackoverflow.jpg'
-import calculatorImage from './../assets/images/calculator.jpg'
-import carLeasingCalculatorImage from './../assets/images/car-leasing-calculator.jpg'
-import cmsPanelImage from './../assets/images/cms-panel.jpg'
-import counterImage from './../assets/images/counter.png'
-import chatImage from './../assets/images/chat-firebase.png'
-import catImage from './../assets/images/cat-images.png'
-import firebaseIcon from './../assets/images/firebase.svg'
-import webpackIcon from './../assets/images/webpack.svg'
-import keepIcon from './../assets/images/keep1.gif'
-import hockeyIcon from './../assets/images/hockeyshop1.gif'
-
-
+import todoImage from '../assets/images/todolist.jpg'
+import omarketImage from '../assets/images/omarket.jpg'
+import turbinaryImage from '../assets/images/turbinary.jpg'
+import hotelSearchImage from '../assets/images/hotel-search.jpg'
+import netflixImage from '../assets/images/netflix.jpg'
+import socialImage from '../assets/images/social-network.png'
+import onlineStoreImage from '../assets/images/online-store.jpg'
+import googleBooksImage from '../assets/images/google-books.jpg'
+import questionsImage from '../assets/images/questions-stackoverflow.jpg'
+import calculatorImage from '../assets/images/calculator.jpg'
+import carLeasingCalculatorImage from '../assets/images/car-leasing-calculator.jpg'
+import cmsPanelImage from '../assets/images/cms-panel.jpg'
+import counterImage from '../assets/images/counter.png'
+import chatImage from '../assets/images/chat-firebase.png'
+import catImage from '../assets/images/cat-images.png'
+import firebaseIcon from '../assets/images/firebase.svg'
+import webpackIcon from '../assets/images/webpack.svg'
+import keep from '../assets/videos/keep.mp4'
+import hockey from '../assets/videos/hockey.mp4'
+// import turbinary from '../assets/videos/turbinary.mp4'
 
 export const Projects = () => {
     const turbinary = { backgroundImage: `url(${turbinaryImage})` }
-    const keep_kalm = { backgroundImage: `url(${keepIcon})` }
-    const hockey_shop = { backgroundImage: `url(${hockeyIcon})` }
     const omarket = { backgroundImage: `url(${omarketImage})` }
     const hotelSearch = { backgroundImage: `url(${hotelSearchImage})` }
     const todolist = { backgroundImage: `url(${todoImage})` }
@@ -127,7 +124,7 @@ export const Projects = () => {
                         descriptionStack={descriptionTurbinaryStack}
                     />
                     <Project
-                        style={keep_kalm}
+                        videos={keep}
                         way={'keep-kalm'}
                         title={"Fashion catalog"}
                         gitWay={'keep-kalm'}
@@ -135,7 +132,7 @@ export const Projects = () => {
                         descriptionStack={descriptionKeepStack}
                     />
                     <Project
-                        style={hockey_shop}
+                        videos={hockey}
                         way={'hockey-shop'}
                         title={"Hockey shop"}
                         gitWay={'hockey-shop'}

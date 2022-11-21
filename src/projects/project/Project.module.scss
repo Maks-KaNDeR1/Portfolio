@@ -17,6 +17,15 @@
     width: 450px;
     margin-top: 60px;
     @include flex(column, flex-start, stretch, nowrap);
+
+    .video {
+        position: absolute;
+        width: 450px;
+        height: 300px;
+        object-fit: cover;
+        margin-top: 0;
+        background-color:  $bgSecondary;
+    }
     .image {
         height: 300px;
         @include flex(row, center, center, nowrap);

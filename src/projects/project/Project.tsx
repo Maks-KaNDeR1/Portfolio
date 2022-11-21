@@ -4,7 +4,8 @@ import { Button } from "../../common/components/button/Button";
 import { Fade } from 'react-awesome-reveal';
 
 type PropsType = {
-    style: any
+    style?: any
+    videos?: any
     title: string
     description: string
     descriptionStack?: string
@@ -18,6 +19,7 @@ type PropsType = {
 export const Project: React.FC<PropsType> = (
     {
         style,
+        videos,
         title,
         way,
         gitWay,
@@ -30,16 +32,25 @@ export const Project: React.FC<PropsType> = (
     return (
         <div className={styles.project}>
             <Fade delay={300} >
-                <div className={styles.image} style={style}>
-                    <Button disabled={notPagesIo} way={`https://maks-kander1.github.io/${way}/`} text={"view"} />
-                </div>
+                {
+                    videos ? <div>
+                        <video className={styles.video} autoPlay loop muted>
+                            <source src={videos} type="video/mp4" />
+                        </video>
+                        <div className={styles.image} style={style}>
+                            <Button disabled={notPagesIo} way={`https://maks-kander1.github.io/${way}/`} text={"view"} />
+                        </div>
+                    </div>
+                        : <div className={styles.image} style={style}>
+                            <Button disabled={notPagesIo} way={`https://maks-kander1.github.io/${way}/`} text={"view"} />
+                        </div>
+                }
                 <div className={styles.projectInfo}>
                     <h3 className={styles.projectTitle}>{title} {icon && <img src={icon} alt="" />}</h3>
                     <a target="_blank" rel="noreferrer" href={`https://github.com/Maks-KaNDeR1/${gitWay}`}>https://github.com/Maks-KaNDeR1/{gitWay}</a>
                     <br />
                     <span className={styles.description}>{description}</span>
                     <div>
-
                         {
                             descriptionStack &&
                             <span className={styles.description}> Stack: {descriptionStack}</span>

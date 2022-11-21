@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.db5e5f5c.chunk.css",
-    "main.js": "/Portfolio/static/js/main.105d340c.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.105d340c.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.365fd5d5.chunk.css",
+    "main.js": "/Portfolio/static/js/main.c097472e.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.c097472e.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.674501b5.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.674501b5.js.map",
-    "static/js/2.1ee6ae25.chunk.js": "/Portfolio/static/js/2.1ee6ae25.chunk.js",
-    "static/js/2.1ee6ae25.chunk.js.map": "/Portfolio/static/js/2.1ee6ae25.chunk.js.map",
+    "static/js/2.8bf6784e.chunk.js": "/Portfolio/static/js/2.8bf6784e.chunk.js",
+    "static/js/2.8bf6784e.chunk.js.map": "/Portfolio/static/js/2.8bf6784e.chunk.js.map",
     "static/js/3.7e589f8b.chunk.js": "/Portfolio/static/js/3.7e589f8b.chunk.js",
     "static/js/3.7e589f8b.chunk.js.map": "/Portfolio/static/js/3.7e589f8b.chunk.js.map",
     "static/js/4.99550250.chunk.js": "/Portfolio/static/js/4.99550250.chunk.js",
     "static/js/4.99550250.chunk.js.map": "/Portfolio/static/js/4.99550250.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.db5e5f5c.chunk.css.map": "/Portfolio/static/css/main.db5e5f5c.chunk.css.map",
-    "static/js/2.1ee6ae25.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.1ee6ae25.chunk.js.LICENSE.txt",
+    "static/css/main.365fd5d5.chunk.css.map": "/Portfolio/static/css/main.365fd5d5.chunk.css.map",
+    "static/js/2.8bf6784e.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.8bf6784e.chunk.js.LICENSE.txt",
     "static/media/AJAX.972f7551.svg": "/Portfolio/static/media/AJAX.972f7551.svg",
     "static/media/calculator.60bb70ae.jpg": "/Portfolio/static/media/calculator.60bb70ae.jpg",
     "static/media/car-leasing-calculator.da2c3408.jpg": "/Portfolio/static/media/car-leasing-calculator.da2c3408.jpg",
@@ -27,11 +27,11 @@
     "static/media/firebase.ea1a2d66.svg": "/Portfolio/static/media/firebase.ea1a2d66.svg",
     "static/media/formik.d2a5d1c7.svg": "/Portfolio/static/media/formik.d2a5d1c7.svg",
     "static/media/google-books.41ea5422.jpg": "/Portfolio/static/media/google-books.41ea5422.jpg",
-    "static/media/hockeyshop1.a3831d65.gif": "/Portfolio/static/media/hockeyshop1.a3831d65.gif",
+    "static/media/hockey.c1daf5df.mp4": "/Portfolio/static/media/hockey.c1daf5df.mp4",
     "static/media/hotel-search.8d4c9d87.jpg": "/Portfolio/static/media/hotel-search.8d4c9d87.jpg",
     "static/media/html-icon.2b8208b2.svg": "/Portfolio/static/media/html-icon.2b8208b2.svg",
     "static/media/jsl.eb9d2cb6.svg": "/Portfolio/static/media/jsl.eb9d2cb6.svg",
-    "static/media/keep1.9203b92a.gif": "/Portfolio/static/media/keep1.9203b92a.gif",
+    "static/media/keep.6f6c4767.mp4": "/Portfolio/static/media/keep.6f6c4767.mp4",
     "static/media/linkedin.2e1db5e2.svg": "/Portfolio/static/media/linkedin.2e1db5e2.svg",
     "static/media/linkedinl.f10c9de5.svg": "/Portfolio/static/media/linkedinl.f10c9de5.svg",
     "static/media/material.fd510ed8.svg": "/Portfolio/static/media/material.fd510ed8.svg",
@@ -57,8 +57,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.674501b5.js",
-    "static/js/2.1ee6ae25.chunk.js",
-    "static/css/main.db5e5f5c.chunk.css",
-    "static/js/main.105d340c.chunk.js"
+    "static/js/2.8bf6784e.chunk.js",
+    "static/css/main.365fd5d5.chunk.css",
+    "static/js/main.c097472e.chunk.js"
   ]
 }

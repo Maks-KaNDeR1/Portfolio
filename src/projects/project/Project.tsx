@@ -7,6 +7,7 @@ type PropsType = {
     style: any
     title: string
     description: string
+    descriptionStack?: string
     way: string
     gitWay: string
     icon?: string
@@ -14,7 +15,18 @@ type PropsType = {
 }
 
 
-export const Project: React.FC<PropsType> = ({ style, title, way, gitWay, description, icon, notPagesIo }) => {
+export const Project: React.FC<PropsType> = (
+    {
+        style,
+        title,
+        way,
+        gitWay,
+        description,
+        descriptionStack,
+        icon,
+        notPagesIo
+    }
+) => {
     return (
         <div className={styles.project}>
             <Fade delay={300} >
@@ -26,6 +38,13 @@ export const Project: React.FC<PropsType> = ({ style, title, way, gitWay, descri
                     <a target="_blank" rel="noreferrer" href={`https://github.com/Maks-KaNDeR1/${gitWay}`}>https://github.com/Maks-KaNDeR1/{gitWay}</a>
                     <br />
                     <span className={styles.description}>{description}</span>
+                    <div>
+
+                        {
+                            descriptionStack &&
+                            <span className={styles.description}> Stack: {descriptionStack}</span>
+                        }
+                    </div>
                 </div>
             </Fade>
         </div>

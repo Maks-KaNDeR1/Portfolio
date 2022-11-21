@@ -20,12 +20,15 @@ import chatImage from './../assets/images/chat-firebase.png'
 import catImage from './../assets/images/cat-images.png'
 import firebaseIcon from './../assets/images/firebase.svg'
 import webpackIcon from './../assets/images/webpack.svg'
+import keepIcon from './../assets/images/keep1.gif'
+import hockeyIcon from './../assets/images/hockeyshop1.gif'
 
 
 
 export const Projects = () => {
-
     const turbinary = { backgroundImage: `url(${turbinaryImage})` }
+    const keep_kalm = { backgroundImage: `url(${keepIcon})` }
+    const hockey_shop = { backgroundImage: `url(${hockeyIcon})` }
     const omarket = { backgroundImage: `url(${omarketImage})` }
     const hotelSearch = { backgroundImage: `url(${hotelSearchImage})` }
     const todolist = { backgroundImage: `url(${todoImage})` }
@@ -41,66 +44,70 @@ export const Projects = () => {
     const chat = { backgroundImage: `url(${chatImage})` }
     const CMSPanel = { backgroundImage: `url(${cmsPanelImage})` }
 
-    const descriptionTurbinary = (
-        `Catalog, layout. Search by selected categories. as well as for the mobile version.
-        Technology stack: Webpack, JS/TypeScript, React, SCSS,  `
-    )
-    const descriptionOmarket = (
-        `Fork project, Large commercial project. 
-        Technology stack: TypeScript, React, Redux, Redux/Toolkit, SCSS, native js `
-    )
+    const descriptionTurbinary = `Catalog, layout. Search by selected categories. as well as for the mobile version`
+    const descriptionTurbinaryStack = `Webpack, JavaScript / TypeScript, React, SASS, mock`
+
+    const descriptionKeep = `Fashion catalog with beautiful scroll slider`
+    const descriptionKeepStack = `JavaScript / TypeScript, React, SASS`
+
+    const descriptionHockeyShop = `Beautiful hockey shop layout`
+    const descriptionHockeyShopStack = `JavaScript / TypeScript, React, SASS`
+
+    const descriptionOmarket = `Fork project, Large commercial project`
+    const descriptionOmarketStack = `JavaScript / TypeScript, React, Redux, Redux/Toolkit, SCSS, native js `
+
+
     const descriptionHotelSearch = (
         `Hotel search application, request hotels with API,Authorization page, Request parameters where you can enter the name of the city, 
-         date check-in and number of days. Hotels can be added to your favorites. Selected hotels can be sorted by cost and number of stars. etc. 
-         In TypeScript, React, Redux (Redux-Saga) React-Hooks, saved in sessStorage`
+         date check-in and number of days. Hotels can be added to your favorites. Selected hotels can be sorted by cost and number of stars. etc.`
     )
+    const descriptionHotelSearchStack = `JavaScript / TypeScript, React, Redux (Redux-Saga) React-Hooks, saved in sessStorage`
+
     const descriptionGoogleBooksAPI = (
-        `Google Books Api - App Based on React Redux, SASS, etc., requesting books from the Google API, 
+        `Google Books API - App requesting books from the Google API, 
         'load more' pagination, filtering, as well as filtering by category, implemented on the front, because. not on the back. 
          Clicking on the card will take you to the detailed page of the book`
     )
-    const descriptionOnlineStore = (
-        `Online Store layout. Search by selected categories. as well as for the mobile version.
-        Stack: React, TypeScript, Sass`
-    )
+    const descriptionGoogleBooksAPIStack = `JavaScript / TypeScript, React Redux, SASS, etc.`
+
+    const descriptionOnlineStore = `Online Store layout. Search by selected categories. as well as for the mobile version`
+    const descriptionOnlineStoreStack = `JavaScript / TypeScript, React, SASS`
+
     const descriptionQuestions = (
         `The app queries and displays questions on Stackoverflow, search by title and date. 
-         Drag and Drop, on auth site click. load more loading of data, according to the number selected in the select
-         Stack: TypeScript, Reaact, Redux, Redux-Thunk, react-beautiful-dnd, mui `
+         Drag and Drop, on auth site click. load more loading of data, according to the number selected in the select`
     )
-    const descriptionTodo = (
-        `Huge project - Todo list with storage of data on remote server. 
-         Technology stack: React, Redux (Redux-thunk, Redux-toolkit, Hooks), REST API, Storybook, 
+    const descriptionQuestionsStack = `JavaScript / TypeScript, Reaact, Redux, Redux-Thunk, react-beautiful-dnd, mui, interaction with the API server`
+
+    const descriptionTodo = `Huge project - Todo list with storage of data on remote server`
+    const descriptionTodoStack = `JavaScript / TypeScript, React, Redux (Redux-thunk, Redux-toolkit, Hooks), REST API, Storybook, 
          Unit and snapshot tests. Formik, Material-UI. And much more...`
-    )
-    const descriptionNetwork = (
-        `Social network. Stack: React, Redux, redux-thunk, redux-hooks, 
-         EST API Axios, DAL, Formik,High Order Component(hoc) context API, Router, Class components, 
-         selectors(reselect), test. And much more...`
-    )
-    const descriptionCRMPanel = (
-        `Сontrol panel CRM, connected to the service and display the addresses entered by the user on the page. as well as for the mobile version. Stack: React, TypeScript, Sass`
-    )
-    const descriptioncarLeasingCalculator = (
-        `Calculate the cost of a car lease. Stack: React, TypeScript, Sass`
-    )
-    const descriptionNetflix = (
-        `Netflix app, Netflix copy, React, Hooks. request API themoviedb, css BEM. scroll When clicking on the picture, the video is played, movie-trailer`
-    )
-    const descriptionCalculator = (
-        `Native Webpack build, Computational calculator on TypeScript, React, Redux, Not using the EVAL method, well, with it too.
-         As well as keyboard input, + Escape, Enter, NumpadEnter`
-    )
-    const descriptionCounter = (
-        `Just simple counter with settings start value and end value. Saving State to LocalStorage. 
-         I used in this project React, Redux, clean CSS, React-router-dom and more`
-    )
-    const descriptionChatFirebase = (
-        'Simple chat on React and Firebase. Login via google and email. Hooks, CSS'
-    )
-    const descriptionCatImages = (
-        `test task/ Cat pictures API, Pagination, the ability to add to "favorites" and remove from "favorites" on React, Redux, interaction with the API server`
-    )
+
+    const descriptionNetwork = `Social network`
+    const descriptionNetworkStack = `JavaScript / TypeScript, React, Redux, redux-thunk, Hooks, 
+         REST API Axios, Formik, HOC, context API, Class components, selectors(reselect), test's. And much more...`
+
+    const descriptionCRMPanel = `Сontrol panel CRM, connected to the service and display the addresses entered by the user on the page. as well as for the mobile version`
+
+    const descriptionCRMPanelStack = `JavaScript / TypeScript, React, SASS, interaction with the API server`
+
+    const descriptioncarLeasingCalculator = `Calculate the cost of a car lease`
+    const descriptioncarLeasingCalculatorStack = `JavaScript / TypeScript, React, SASS`
+
+    const descriptionNetflix = `Netflix app, Netflix copy, request API themoviedb. scroll When clicking on the picture, the video is played`
+    const descriptionNetflixStack = `JavaScript / TypeScript, React, Hooks. request API, css BEM, movie-trailer`
+
+    const descriptionCalculator = `Calculator, Not using the EVAL method, well, with it too. As well as keyboard input, + Escape, Enter, NumpadEnter`
+    const descriptionCalculatorStack = `JavaScript / TypeScript, Native Webpack build, React, Redux`
+
+    const descriptionCounter = `Just simple counter with settings start value and end value. Saving State to LocalStorage`
+    const descriptionCounterStack = `JavaScript / TypeScriptReact, Redux, CSS, LocalStorage, and more`
+
+    const descriptionChatFirebase = 'Simple chat on React and Firebase. Login via google and email. Hooks, CSS'
+    const descriptionChatFirebaseStack = 'JavaScript / TypeScript, React, Firebase. Hooks, CSS'
+
+    const descriptionCatImages = `Cat pictures API, Pagination, the ability to add to "favorites" and remove from "favorites"`
+    const descriptionCatImagesStack = `JavaScript / TypeScript, React, Redux, interaction with the API server`
 
 
     return (
@@ -117,6 +124,23 @@ export const Projects = () => {
                         gitWay={'turbinary'}
                         icon={webpackIcon}
                         description={descriptionTurbinary}
+                        descriptionStack={descriptionTurbinaryStack}
+                    />
+                    <Project
+                        style={keep_kalm}
+                        way={'keep-kalm'}
+                        title={"Fashion catalog"}
+                        gitWay={'keep-kalm'}
+                        description={descriptionKeep}
+                        descriptionStack={descriptionKeepStack}
+                    />
+                    <Project
+                        style={hockey_shop}
+                        way={'hockey-shop'}
+                        title={"Hockey shop"}
+                        gitWay={'hockey-shop'}
+                        description={descriptionHockeyShop}
+                        descriptionStack={descriptionHockeyShopStack}
                     />
                     <Project
                         style={omarket}
@@ -124,6 +148,7 @@ export const Projects = () => {
                         title={"Omarket"}
                         gitWay={'omarket'}
                         description={descriptionOmarket}
+                        descriptionStack={descriptionOmarketStack}
                         notPagesIo
                     />
                     <Project
@@ -132,6 +157,7 @@ export const Projects = () => {
                         title={"Hotel Search"}
                         gitWay={'hotel-search'}
                         description={descriptionHotelSearch}
+                        descriptionStack={descriptionHotelSearchStack}
                     />
                     <Project
                         style={todolist}
@@ -139,6 +165,7 @@ export const Projects = () => {
                         title={"Todo list"}
                         gitWay={'todolist'}
                         description={descriptionTodo}
+                        descriptionStack={descriptionTodoStack}
                     />
                     <Project
                         style={googleBooks}
@@ -146,6 +173,7 @@ export const Projects = () => {
                         title={"Google Books API"}
                         gitWay={'book-search'}
                         description={descriptionGoogleBooksAPI}
+                        descriptionStack={descriptionGoogleBooksAPIStack}
                     />
                     <Project
                         style={onlineStore}
@@ -153,6 +181,7 @@ export const Projects = () => {
                         title={"Onlie Store"}
                         gitWay={'online-store'}
                         description={descriptionOnlineStore}
+                        descriptionStack={descriptionOnlineStoreStack}
                     />
                     <Project
                         style={questions}
@@ -161,6 +190,7 @@ export const Projects = () => {
                         icon={webpackIcon}
                         gitWay={'questions-stackoverflow'}
                         description={descriptionQuestions}
+                        descriptionStack={descriptionQuestionsStack}
                     />
                     <Project
                         style={social}
@@ -168,6 +198,7 @@ export const Projects = () => {
                         title={"Social network"}
                         gitWay={'TypeScript-Social-Network'}
                         description={descriptionNetwork}
+                        descriptionStack={descriptionNetworkStack}
                     />
                     <Project
                         style={CMSPanel}
@@ -176,6 +207,7 @@ export const Projects = () => {
                         icon={webpackIcon}
                         gitWay={'crm-control-panel'}
                         description={descriptionCRMPanel}
+                        descriptionStack={descriptionCRMPanelStack}
                     />
                     <Project
                         style={carLeasingCalculator}
@@ -183,6 +215,7 @@ export const Projects = () => {
                         title={"Car Leasing Calculator"}
                         gitWay={'car-leasing-calculator'}
                         description={descriptioncarLeasingCalculator}
+                        descriptionStack={descriptioncarLeasingCalculatorStack}
                     />
                     <Project
                         style={netflix}
@@ -190,6 +223,7 @@ export const Projects = () => {
                         title={"Netflix"}
                         gitWay={'netflix'}
                         description={descriptionNetflix}
+                        descriptionStack={descriptionNetflixStack}
                     />
                     <Project
                         style={calculator}
@@ -198,6 +232,7 @@ export const Projects = () => {
                         icon={webpackIcon}
                         gitWay={'webpack-build-calculator'}
                         description={descriptionCalculator}
+                        descriptionStack={descriptionCalculatorStack}
                     />
                     <Project
                         style={chat}
@@ -206,6 +241,7 @@ export const Projects = () => {
                         icon={firebaseIcon}
                         gitWay={'chat-firebase'}
                         description={descriptionChatFirebase}
+                        descriptionStack={descriptionChatFirebaseStack}
                     />
                     <Project
                         style={catImages}
@@ -213,6 +249,7 @@ export const Projects = () => {
                         title={"Cat Images"}
                         gitWay={'cat-images'}
                         description={descriptionCatImages}
+                        descriptionStack={descriptionCatImagesStack}
                     />
                     <Project
                         style={counter}
@@ -220,6 +257,7 @@ export const Projects = () => {
                         title={"Counter"}
                         gitWay={'Counter'}
                         description={descriptionCounter}
+                        descriptionStack={descriptionCounterStack}
                     />
                 </div>
             </div>

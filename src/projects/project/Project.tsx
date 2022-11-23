@@ -12,6 +12,7 @@ type PropsType = {
     way: string
     gitWay: string
     icon?: string
+    height?: number
     notPagesIo?: boolean
 }
 
@@ -26,6 +27,7 @@ export const Project: React.FC<PropsType> = (
         description,
         descriptionStack,
         icon,
+        height,
         notPagesIo
     }
 ) => {
@@ -37,7 +39,7 @@ export const Project: React.FC<PropsType> = (
                         <video className={styles.video} autoPlay loop muted>
                             <source src={videos} type="video/mp4" />
                         </video>
-                        <div className={styles.image} style={style}>
+                        <div className={styles.image} style={{ height: `${height}px` }} >
                             <Button disabled={notPagesIo} way={`https://maks-kander1.github.io/${way}/`} text={"view"} />
                         </div>
                     </div>

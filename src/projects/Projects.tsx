@@ -15,7 +15,6 @@ import questionsImage from '../assets/images/questions-stackoverflow.jpg'
 import calculatorImage from '../assets/images/calculator.jpg'
 import carLeasingCalculatorImage from '../assets/images/car-leasing-calculator.jpg'
 import cmsPanelImage from '../assets/images/cms-panel.jpg'
-import counterImage from '../assets/images/counter.png'
 import chatImage from '../assets/images/chat-firebase.png'
 import catImage from '../assets/images/cat-images.png'
 import firebaseIcon from '../assets/images/firebase.svg'
@@ -36,7 +35,6 @@ export const Projects = () => {
     const carLeasingCalculator = { backgroundImage: `url(${carLeasingCalculatorImage})` }
     const netflix = { backgroundImage: `url(${netflixImage})` }
     const calculator = { backgroundImage: `url(${calculatorImage})` }
-    const counter = { backgroundImage: `url(${counterImage})` }
     const catImages = { backgroundImage: `url(${catImage})` }
     const chat = { backgroundImage: `url(${chatImage})` }
     const CMSPanel = { backgroundImage: `url(${cmsPanelImage})` }
@@ -44,15 +42,14 @@ export const Projects = () => {
     const descriptionTurbinary = `Catalog, layout. Search by selected categories. as well as for the mobile version`
     const descriptionTurbinaryStack = `Webpack, JavaScript / TypeScript, React, SASS, mock`
 
-    const descriptionKeep = `Fashion catalog with beautiful scroll slider`
-    const descriptionKeepStack = `JavaScript / TypeScript, React, SASS`
+    const descriptionFashionCatalog = `Fashion catalog with beautiful scroll slider`
+    const descriptionFashionCatalogStack = `JavaScript / TypeScript, React, SASS`
 
     const descriptionHockeyShop = `Beautiful hockey shop layout`
     const descriptionHockeyShopStack = `JavaScript / TypeScript, React, SASS`
 
     const descriptionOmarket = `Fork project, Large commercial project`
     const descriptionOmarketStack = `JavaScript / TypeScript, React, Redux, Redux/Toolkit, SCSS, native js `
-
 
     const descriptionHotelSearch = (
         `Hotel search application, request hotels with API,Authorization page, Request parameters where you can enter the name of the city, 
@@ -85,7 +82,6 @@ export const Projects = () => {
          REST API Axios, Formik, HOC, context API, Class components, selectors(reselect), test's. And much more...`
 
     const descriptionCRMPanel = `Сontrol panel CRM, connected to the service and display the addresses entered by the user on the page. as well as for the mobile version`
-
     const descriptionCRMPanelStack = `JavaScript / TypeScript, React, SASS, interaction with the API server`
 
     const descriptioncarLeasingCalculator = `Calculate the cost of a car lease`
@@ -96,9 +92,6 @@ export const Projects = () => {
 
     const descriptionCalculator = `Calculator, Not using the EVAL method, well, with it too. As well as keyboard input, + Escape, Enter, NumpadEnter`
     const descriptionCalculatorStack = `JavaScript / TypeScript, Native Webpack build, React, Redux`
-
-    const descriptionCounter = `Just simple counter with settings start value and end value. Saving State to LocalStorage`
-    const descriptionCounterStack = `JavaScript / TypeScriptReact, Redux, CSS, LocalStorage, and more`
 
     const descriptionChatFirebase = 'Simple chat on React and Firebase. Login via google and email. Hooks, CSS'
     const descriptionChatFirebaseStack = 'JavaScript / TypeScript, React, Firebase. Hooks, CSS'
@@ -117,7 +110,7 @@ export const Projects = () => {
                     <Project
                         style={turbinary}
                         way={'turbinary'}
-                        title={"Catalog - webpack build"}
+                        title={"Games Catalog - webpack build"}
                         gitWay={'turbinary'}
                         icon={webpackIcon}
                         description={descriptionTurbinary}
@@ -125,19 +118,21 @@ export const Projects = () => {
                     />
                     <Project
                         videos={keep}
-                        way={'keep-kalm'}
-                        title={"Fashion catalog"}
-                        gitWay={'keep-kalm'}
-                        description={descriptionKeep}
-                        descriptionStack={descriptionKeepStack}
+                        way={'fashion-catalog'}
+                        title={"Fashion Catalog"}
+                        gitWay={'fashion-catalog'}
+                        description={descriptionFashionCatalog}
+                        descriptionStack={descriptionFashionCatalogStack}
+                        height={220}
                     />
                     <Project
                         videos={hockey}
                         way={'hockey-shop'}
-                        title={"Hockey shop"}
+                        title={"Hockey Shop"}
                         gitWay={'hockey-shop'}
                         description={descriptionHockeyShop}
                         descriptionStack={descriptionHockeyShopStack}
+                        height={220}
                     />
                     <Project
                         style={omarket}
@@ -192,7 +187,7 @@ export const Projects = () => {
                     <Project
                         style={social}
                         way={'TypeScript-Social-Network'}
-                        title={"Social network"}
+                        title={"Social Network"}
                         gitWay={'TypeScript-Social-Network'}
                         description={descriptionNetwork}
                         descriptionStack={descriptionNetworkStack}
@@ -247,14 +242,6 @@ export const Projects = () => {
                         gitWay={'cat-images'}
                         description={descriptionCatImages}
                         descriptionStack={descriptionCatImagesStack}
-                    />
-                    <Project
-                        style={counter}
-                        way={'Counter'}
-                        title={"Counter"}
-                        gitWay={'Counter'}
-                        description={descriptionCounter}
-                        descriptionStack={descriptionCounterStack}
                     />
                 </div>
             </div>

@@ -8,7 +8,6 @@ type PropsType = {
 }
 
 const Toggle: React.FC<PropsType> = ({ value, onChange }) => {
-
   return (
     <label className={styles.root} htmlFor="toggler">
       <input
@@ -25,7 +24,6 @@ const Toggle: React.FC<PropsType> = ({ value, onChange }) => {
       </div> */}
     </label>
   )
-
 }
 
 export default Toggle

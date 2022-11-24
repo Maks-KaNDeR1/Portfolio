@@ -18,9 +18,11 @@ import { Fade } from 'react-awesome-reveal'
 
 type PropsType = {
        theme: string | undefined
+       lang: string | undefined
 }
 
-export const Skills: React.FC<PropsType> = ({ theme }) => {
+export const Skills: React.FC<PropsType> = ({ theme, lang }) => {
+
        const html = htmlIcon
        const formik = formikIcon
        const ajax = ajaxIcon
@@ -40,7 +42,10 @@ export const Skills: React.FC<PropsType> = ({ theme }) => {
               <div id='skills' className={styles.skillsBlock}>
                      <Fade direction='up' triggerOnce={true} >
                             <div className={styles.container}>
-                                   <Title text={'Skills'} />
+                                   {
+                                          lang === 'en' ? <Title text={'Skills'} />
+                                                 : <Title text={'Скиллы'} />
+                                   }
                                    <div className={styles.skills}>
                                           <Skill
                                                  title={'html & Css'}

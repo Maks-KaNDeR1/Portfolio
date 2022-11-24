@@ -4,13 +4,16 @@ import './index.scss'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { ThemeProvider } from './theme/providers/ThemeProvider'
+import { LangProvider } from './language/providers/LangProvider'
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider >
-      <App />
-    </ThemeProvider>
+    <LangProvider>
+      <ThemeProvider >
+        <App />
+      </ThemeProvider>
+    </LangProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

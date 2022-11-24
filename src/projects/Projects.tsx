@@ -19,11 +19,16 @@ import chatImage from '../assets/images/chat-firebase.png'
 import catImage from '../assets/images/cat-images.png'
 import firebaseIcon from '../assets/images/firebase.svg'
 import webpackIcon from '../assets/images/webpack.svg'
-import keep from '../assets/videos/keep.mp4'
+import keep from '../assets/videos/fashion-catalog.mp4'
 import hockey from '../assets/videos/hockey.mp4'
 // import turbinary from '../assets/videos/turbinary.mp4'
 
-export const Projects = () => {
+
+type PropsType = {
+    lang: string | undefined
+}
+
+export const Projects: React.FC<PropsType> = ({ lang }) => {
     const turbinary = { backgroundImage: `url(${turbinaryImage})` }
     const omarket = { backgroundImage: `url(${omarketImage})` }
     const hotelSearch = { backgroundImage: `url(${hotelSearchImage})` }
@@ -96,21 +101,24 @@ export const Projects = () => {
     const descriptionChatFirebase = 'Simple chat on React and Firebase. Login via google and email. Hooks, CSS'
     const descriptionChatFirebaseStack = 'JavaScript / TypeScript, React, Firebase. Hooks, CSS'
 
-    const descriptionCatImages = `Cat pictures API, Pagination, the ability to add to "favorites" and remove from "favorites"`
+    const descriptionCatImages = `Cat pictures API, Pagination, the ability to add to 'favorites' and remove from 'favorites'`
     const descriptionCatImagesStack = `JavaScript / TypeScript, React, Redux, interaction with the API server`
 
 
     return (
         <div id='project' className={style.projectsBlock}>
             <div className={style.container} >
-                <Fade direction='up' triggerOnce={true} >
-                    <Title text={"Projects"} />
+                <Fade direction='up' triggerOnce={true}>
+                    {
+                        lang === 'en' ? <Title text={'Projects'} />
+                            : <Title text={'Проекты'} />
+                    }
                 </Fade>
                 <div className={style.projects}>
                     <Project
                         style={turbinary}
                         way={'turbinary'}
-                        title={"Games Catalog - webpack build"}
+                        title={'Games Catalog - webpack build'}
                         gitWay={'turbinary'}
                         icon={webpackIcon}
                         description={descriptionTurbinary}
@@ -119,7 +127,7 @@ export const Projects = () => {
                     <Project
                         videos={keep}
                         way={'fashion-catalog'}
-                        title={"Fashion Catalog"}
+                        title={'Fashion Catalog'}
                         gitWay={'fashion-catalog'}
                         description={descriptionFashionCatalog}
                         descriptionStack={descriptionFashionCatalogStack}
@@ -128,7 +136,7 @@ export const Projects = () => {
                     <Project
                         videos={hockey}
                         way={'hockey-shop'}
-                        title={"Hockey Shop"}
+                        title={'Hockey Shop'}
                         gitWay={'hockey-shop'}
                         description={descriptionHockeyShop}
                         descriptionStack={descriptionHockeyShopStack}
@@ -137,7 +145,7 @@ export const Projects = () => {
                     <Project
                         style={omarket}
                         way={'omarket'}
-                        title={"Omarket"}
+                        title={'Omarket'}
                         gitWay={'omarket'}
                         description={descriptionOmarket}
                         descriptionStack={descriptionOmarketStack}
@@ -146,7 +154,7 @@ export const Projects = () => {
                     <Project
                         style={hotelSearch}
                         way={'hotel-search'}
-                        title={"Hotel Search"}
+                        title={'Hotel Search'}
                         gitWay={'hotel-search'}
                         description={descriptionHotelSearch}
                         descriptionStack={descriptionHotelSearchStack}
@@ -154,7 +162,7 @@ export const Projects = () => {
                     <Project
                         style={todolist}
                         way={'todolist'}
-                        title={"Todo list"}
+                        title={'Todo list'}
                         gitWay={'todolist'}
                         description={descriptionTodo}
                         descriptionStack={descriptionTodoStack}
@@ -162,7 +170,7 @@ export const Projects = () => {
                     <Project
                         style={googleBooks}
                         way={'book-search'}
-                        title={"Google Books API"}
+                        title={'Google Books API'}
                         gitWay={'book-search'}
                         description={descriptionGoogleBooksAPI}
                         descriptionStack={descriptionGoogleBooksAPIStack}
@@ -170,7 +178,7 @@ export const Projects = () => {
                     <Project
                         style={onlineStore}
                         way={'online-store'}
-                        title={"Onlie Store"}
+                        title={'Onlie Store'}
                         gitWay={'online-store'}
                         description={descriptionOnlineStore}
                         descriptionStack={descriptionOnlineStoreStack}
@@ -178,7 +186,7 @@ export const Projects = () => {
                     <Project
                         style={questions}
                         way={'questions-stackoverflow'}
-                        title={"Questions Stackoverflow - webpack build"}
+                        title={'Questions Stackoverflow - webpack build'}
                         icon={webpackIcon}
                         gitWay={'questions-stackoverflow'}
                         description={descriptionQuestions}
@@ -187,7 +195,7 @@ export const Projects = () => {
                     <Project
                         style={social}
                         way={'TypeScript-Social-Network'}
-                        title={"Social Network"}
+                        title={'Social Network'}
                         gitWay={'TypeScript-Social-Network'}
                         description={descriptionNetwork}
                         descriptionStack={descriptionNetworkStack}
@@ -195,7 +203,7 @@ export const Projects = () => {
                     <Project
                         style={CMSPanel}
                         way={'crm-control-panel'}
-                        title={"Сontrol panel CRM - webpack build"}
+                        title={'Сontrol panel CRM - webpack build'}
                         icon={webpackIcon}
                         gitWay={'crm-control-panel'}
                         description={descriptionCRMPanel}
@@ -204,7 +212,7 @@ export const Projects = () => {
                     <Project
                         style={carLeasingCalculator}
                         way={'car-leasing-calculator'}
-                        title={"Car Leasing Calculator"}
+                        title={'Car Leasing Calculator'}
                         gitWay={'car-leasing-calculator'}
                         description={descriptioncarLeasingCalculator}
                         descriptionStack={descriptioncarLeasingCalculatorStack}
@@ -212,7 +220,7 @@ export const Projects = () => {
                     <Project
                         style={netflix}
                         way={'netflix'}
-                        title={"Netflix"}
+                        title={'Netflix'}
                         gitWay={'netflix'}
                         description={descriptionNetflix}
                         descriptionStack={descriptionNetflixStack}
@@ -220,7 +228,7 @@ export const Projects = () => {
                     <Project
                         style={calculator}
                         way={'webpack-build-calculator'}
-                        title={"Calculator - webpack build"}
+                        title={'Calculator - webpack build'}
                         icon={webpackIcon}
                         gitWay={'webpack-build-calculator'}
                         description={descriptionCalculator}
@@ -238,7 +246,7 @@ export const Projects = () => {
                     <Project
                         style={catImages}
                         way={'cat-images'}
-                        title={"Cat Images"}
+                        title={'Cat Images'}
                         gitWay={'cat-images'}
                         description={descriptionCatImages}
                         descriptionStack={descriptionCatImagesStack}

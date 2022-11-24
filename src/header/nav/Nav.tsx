@@ -1,10 +1,13 @@
 import React from 'react'
-import { Fade } from 'react-awesome-reveal'
 import style from './Nav.module.scss'
+import { Fade } from 'react-awesome-reveal'
 import { Link } from "react-scroll"
 
+type PropsType = {
+    lang: string | undefined
+}
 
-export const Nav = () => {
+export const Nav: React.FC<PropsType> = ({ lang }) => {
     return (
         <div className={style.nav}>
             <Fade style={{}} direction='right' triggerOnce={true} >
@@ -15,7 +18,7 @@ export const Nav = () => {
                     smooth={true}
                     offset={1}
                     duration={500}
-                > Main </Link>
+                > {lang === 'en' ? 'Main' : 'Главная'}</Link>
                 <Link
                     activeClass={style.active}
                     to="skills"
@@ -23,7 +26,7 @@ export const Nav = () => {
                     smooth={true}
                     offset={1}
                     duration={500}
-                > Skills </Link>
+                > {lang === 'en' ? 'Skills' : 'Скиллы'}</Link>
                 <Link
                     activeClass={style.active}
                     to="project"
@@ -31,7 +34,7 @@ export const Nav = () => {
                     smooth={true}
                     offset={1}
                     duration={500}
-                > Project </Link>
+                > {lang === 'en' ? 'Project' : 'Проекты'}</Link>
                 <Link
                     activeClass={style.active}
                     to="contacts"
@@ -39,7 +42,7 @@ export const Nav = () => {
                     smooth={true}
                     offset={1}
                     duration={500}
-                > Contacts </Link>
+                > {lang === 'en' ? 'Contacts' : 'Контакты'}</Link>
             </Fade>
         </div>
     )

@@ -1,14 +1,19 @@
 import React from 'react'
-import { ThemeRoot } from '../theme/themeRoot/ThemeRoot'
 import styles from './Header.module.scss'
+import { LangRoot } from '../language/langRoot/LangRoot'
+import { ThemeRoot } from '../theme/themeRoot/ThemeRoot'
 import { Nav } from "./nav/Nav"
 
+type PropsType = {
+    lang: string | undefined
+}
 
-export const Header = () => {
+export const Header: React.FC<PropsType> = ({ lang }) => {
     return (
         <div className={styles.header}>
             <ThemeRoot />
-            <Nav />
+            <LangRoot />
+            <Nav lang={lang} />
         </div>
     )
 }

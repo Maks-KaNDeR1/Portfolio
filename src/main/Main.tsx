@@ -9,9 +9,10 @@ import portfolioIcon from "./../assets/images/portfolio.svg"
 
 type PropsType = {
     theme: string | undefined
+    lang: string | undefined
 }
 
-export const Main: React.FC<PropsType> = ({ theme }) => {
+export const Main: React.FC<PropsType> = ({ theme, lang }) => {
     return (
         <div id='main' className={styles.mainBlock}>
             <Background />
@@ -19,11 +20,18 @@ export const Main: React.FC<PropsType> = ({ theme }) => {
             <div className={styles.container}>
                 <Fade direction='left' >
                     <div className={styles.greeting}>
-                        <span style={{ fontSize: '16px' }} >
-                            Welcome to me Portolio
+                        <span style={{ fontSize: '16px' }}>
+                            {
+                                lang === 'en' ? 'Welcome to me Portolio' : 'Добро пожаловать ко мне Портфолио'
+                            }
                             <img src={portfolioIcon} alt='' />
                         </span>
-                        <span>I am Maksim <span>KaNDeRsKiy</span></span>
+                        {
+                            lang === 'en' ?
+                                <span>I am Maksim <span>KaNDeRsKiy</span></span>
+                                :
+                                <span>Максим <span>Кандерский</span></span>
+                        }
                         <Typewriter
                             options={{
                                 strings: ['Frontend Developer', 'Technology Expert', 'JavaScript, TypeScript, React'],
@@ -33,16 +41,31 @@ export const Main: React.FC<PropsType> = ({ theme }) => {
                                 cursorClassName: '',
                                 wrapperClassName: ''
                             }} />
-                        <span style={{ fontSize: '17px', maxWidth: '605px', marginTop: '25px' }} >
-                            Hello, I'm a frontend developer in love with my business
-                            I have experience in creating SPA with React/Redux/TypeScript
-                            and much more in my Skills in Projects.
-                            I constantly strive to learn something new,
-                            improve my skills and expand them with new technologies.
-                            Open for your suggestions
-                            <p /> My github: <b />
-                            <a target="_blank" rel="noreferrer" href='https://github.com/Maks-KaNDeR1' >@Maks_KaNDeR</a>
-                        </span>
+                        {
+                            lang === 'en' ?
+                                <span style={{ fontSize: '17px', maxWidth: '605px', marginTop: '25px' }} >
+                                    Hello, I'm an experienced Front-end developer!
+                                    I create a SPA using the following technologies: JavaScript / TypeScript / React /
+                                    Redux / Webpack and others.
+                                    Now I am improving my skills in this direction and expanding them with new ones.
+                                    In addition to these projects, there are also works on github. I am ready to consider
+                                    project work and full employment.
+                                    <p /> My github: <b />
+                                    <a target="_blank" rel="noreferrer" href='https://github.com/Maks-KaNDeR1' >@Maks_KaNDeR</a>
+                                </span>
+                                :
+                                <span style={{ fontSize: '17px', maxWidth: '605px', marginTop: '25px' }} >
+                                    Здравствуйте, я опытный Front-end разработчик!
+                                    Создаю SPA с использованием следующих технологий: JavaScript / TypeScript /
+                                    React / Redux / Webpack и прочих...
+                                    Сейчас совершенствую свои навыки в этом направлении и расширяю их
+                                    новыми.
+                                    По мимо указанных проектов есть еще работы на github.
+                                    Готов рассмотреть проектную работу и полную занятость
+                                    <p /> Мой github: <b />
+                                    <a target="_blank" rel="noreferrer" href='https://github.com/Maks-KaNDeR1' >@Maks_KaNDeR</a>
+                                </span>
+                        }
                     </div>
                 </Fade>
                 <Fade direction='right' >

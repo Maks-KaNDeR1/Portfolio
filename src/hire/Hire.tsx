@@ -7,25 +7,24 @@ import { Fade } from 'react-awesome-reveal'
 
 
 type PropsType = {
-    lang: string | undefined
+    lang?: string
 }
 
 export const Hire: React.FC<PropsType> = ({ lang }) => {
     return (
         <div className={style.hireBlock}>
             <Fade direction='up' triggerOnce={true}>
-                {
-                    lang === 'en' ?
-                        <div className={style.container}>
-                            <Title text={'I am available for Freelance'} />
-                            <Button way={'https://t.me/Maks_KaNDeR'} text={'Hire me'} />
-                        </div>
-                        :
-                        <div className={style.container}>
-                            <Title text={'Я доступен для фриланса'} />
-                            <Button way={'https://t.me/Maks_KaNDeR'} text={'Нанять меня'} />
-                        </div>
-                }
+                <div className={style.container}>
+                    <Title text={
+                        lang === 'en'
+                            ? 'I am available for Freelance'
+                            : 'Я доступен для фриланса'
+                    }
+                    />
+                    <Button way={'https://t.me/Maks_KaNDeR'}
+                        text={lang === 'en' ? 'Hire me' : 'Нанять меня'}
+                    />
+                </div>
             </Fade>
         </div>
     )

@@ -1,11 +1,11 @@
 
 
 
-:root[data-theme="dark"] {
+:root[data-theme='dark'] {
     --starsColor: #115990;
 }
 
-:root[data-theme="light"] {
+:root[data-theme='light'] {
     --starsColor: aqua;
 }
 
@@ -36,7 +36,7 @@ $shadowsBig: multiple-box-shadow(40);
         animation: animStar 50s linear infinite
     }
     &::after {
-        content: " ";
+        content: ' ';
         position: absolute;
         top: 2000px;
         width: 1px;
@@ -52,7 +52,7 @@ $shadowsBig: multiple-box-shadow(40);
         animation: animStar 100s linear infinite
     }
     &::after {
-        content: " ";
+        content: ' ';
         position: absolute; 
         top: 2000px;
         width: 2px;
@@ -68,7 +68,7 @@ $shadowsBig: multiple-box-shadow(40);
         animation			: animStar 150s linear infinite
     }
     &::after {
-        content: " ";
+        content: ' ';
         position: absolute;
         top: 800px;
         width: 3px;

@@ -1,4 +1,4 @@
-import Particles from "react-tsparticles"
+import Particles from 'react-tsparticles'
 
 
 type PropsType = {
@@ -9,18 +9,18 @@ export const ParticlesComponent: React.FC<PropsType> = ({ theme }) => {
 
     return (
         <Particles
-            id="tsparticles"
+            id='tsparticles'
             options={{
                 fpsLimit: 120,
                 interactivity: {
                     events: {
                         onClick: {
                             enable: true,
-                            mode: "push",
+                            mode: 'push',
                         },
                         onHover: {
                             enable: true,
-                            mode: "repulse",
+                            mode: 'repulse',
                         },
                         resize: false,
                     },
@@ -36,10 +36,10 @@ export const ParticlesComponent: React.FC<PropsType> = ({ theme }) => {
                 },
                 particles: {
                     color: {
-                        value: theme === 'dark' ? "#4e93e6" : '#fff',
+                        value: theme === 'dark' ? '#4e93e6' : '#fff',
                     },
                     links: {
-                        color: theme === 'dark' ? "#4e93e6" : '#fff',
+                        color: theme === 'dark' ? '#4e93e6' : '#fff',
                         distance: 150,
                         enable: true,
                         opacity: 0.3,
@@ -49,10 +49,10 @@ export const ParticlesComponent: React.FC<PropsType> = ({ theme }) => {
                         enable: true,
                     },
                     move: {
-                        direction: "none",
+                        direction: 'none',
                         enable: true,
                         outModes: {
-                            default: "bounce",
+                            default: 'bounce',
                         },
                         random: false,
                         speed: 3,

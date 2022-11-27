@@ -13,8 +13,8 @@ export const Button: React.FC<PropsType> = ({ text, way, disabled }) => {
             {
                 !disabled ?
                     <a
-                        target="_blank"
-                        rel="noreferrer"
+                        target='_blank'
+                        rel='noreferrer'
                         href={way}
                         className={style.btn}
                     >

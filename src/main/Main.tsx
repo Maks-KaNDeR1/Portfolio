@@ -4,12 +4,12 @@ import Typewriter from 'typewriter-effect'
 import { Fade } from 'react-awesome-reveal'
 import { Background } from './Background/Background'
 import { ParticlesComponent } from './Particles'
-import portfolioIcon from "./../assets/images/portfolio.svg"
+import portfolioIcon from './../assets/images/portfolio.svg'
 
 
 type PropsType = {
-    theme: string | undefined
-    lang: string | undefined
+    theme?: string
+    lang?: string
 }
 
 export const Main: React.FC<PropsType> = ({ theme, lang }) => {
@@ -34,7 +34,7 @@ export const Main: React.FC<PropsType> = ({ theme, lang }) => {
                         }
                         <Typewriter
                             options={{
-                                strings: ['Frontend Developer', 'Technology Expert', 'JavaScript, TypeScript, React'],
+                                strings: [lang === 'en' ? 'Frontend Developer' : 'Frontend Разработчик', 'Technology Expert', 'JavaScript, TypeScript, React'],
                                 autoStart: true,
                                 loop: true,
                                 deleteSpeed: 20,
@@ -51,7 +51,7 @@ export const Main: React.FC<PropsType> = ({ theme, lang }) => {
                                     In addition to these projects, there are also works on github. I am ready to consider
                                     project work and full employment.
                                     <p /> My github: <b />
-                                    <a target="_blank" rel="noreferrer" href='https://github.com/Maks-KaNDeR1' >@Maks_KaNDeR</a>
+                                    <a target='_blank' rel='noreferrer' href='https://github.com/Maks-KaNDeR1' >@Maks_KaNDeR</a>
                                 </span>
                                 :
                                 <span style={{ fontSize: '17px', maxWidth: '605px', marginTop: '25px' }} >
@@ -60,10 +60,10 @@ export const Main: React.FC<PropsType> = ({ theme, lang }) => {
                                     React / Redux / Webpack и прочих...
                                     Сейчас совершенствую свои навыки в этом направлении и расширяю их
                                     новыми.
-                                    По мимо указанных проектов есть еще работы на github.
+                                    По мимо указанных работ, проектов есть еще работы на github.
                                     Готов рассмотреть проектную работу и полную занятость
                                     <p /> Мой github: <b />
-                                    <a target="_blank" rel="noreferrer" href='https://github.com/Maks-KaNDeR1' >@Maks_KaNDeR</a>
+                                    <a target='_blank' rel='noreferrer' href='https://github.com/Maks-KaNDeR1' >@Maks_KaNDeR</a>
                                 </span>
                         }
                     </div>

@@ -25,10 +25,11 @@ import hockey from '../assets/videos/hockey.mp4'
 
 
 type PropsType = {
-    lang: string | undefined
+    lang?: string
 }
 
 export const Projects: React.FC<PropsType> = ({ lang }) => {
+
     const turbinary = { backgroundImage: `url(${turbinaryImage})` }
     const omarket = { backgroundImage: `url(${omarketImage})` }
     const hotelSearch = { backgroundImage: `url(${hotelSearchImage})` }
@@ -44,64 +45,91 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
     const chat = { backgroundImage: `url(${chatImage})` }
     const CMSPanel = { backgroundImage: `url(${cmsPanelImage})` }
 
-    const descriptionTurbinary = `Catalog, layout. Search by selected categories. as well as for the mobile version`
-    const descriptionTurbinaryStack = `Webpack, JavaScript / TypeScript, React, SASS, mock`
+    const descriptionTurbinary = lang === 'en'
+        ? `Catalog, layout. Search. сhoice of categories.. as well as for the mobile version`
+        : 'Каталог, макет. Поиск, выбор категорий, так же под мобильную версию'
+    const descriptionTurbinaryStack = `Webpack, JavaScript / TypeScript, React, SASS, mock-data`
 
-    const descriptionFashionCatalog = `Fashion catalog with beautiful scroll slider`
+    const descriptionFashionCatalog = lang === 'en'
+        ? `Fashion catalog with beautiful scroll slider`
+        : `Каталог модной одежды с красивым слайдером прокрутки`
     const descriptionFashionCatalogStack = `JavaScript / TypeScript, React, SASS`
 
-    const descriptionHockeyShop = `Beautiful hockey shop layout`
+    const descriptionHockeyShop = lang === 'en'
+        ? `Beautiful hockey shop layout`
+        : `Красивая планировка хоккейного магазина`
     const descriptionHockeyShopStack = `JavaScript / TypeScript, React, SASS`
 
-    const descriptionOmarket = `Fork project, Large commercial project`
+    const descriptionOmarket = lang === 'en'
+        ? `Fork project, Large commercial project`
+        : `Fork проекта, Большой коммерческий проект`
     const descriptionOmarketStack = `JavaScript / TypeScript, React, Redux, Redux/Toolkit, SCSS, native js `
 
-    const descriptionHotelSearch = (
-        `Hotel search application, request hotels with API,Authorization page, Request parameters where you can enter the name of the city, 
-         date check-in and number of days. Hotels can be added to your favorites. Selected hotels can be sorted by cost and number of stars. etc.`
-    )
+    const descriptionHotelSearch = lang === 'en'
+        ? `Hotel search application, request hotels with API,Authorization page, Request parameters where you can enter the name of the city, 
+        date check-in and number of days. Hotels can be added to your favorites. Selected hotels can be sorted by cost and number of stars. etc.`
+        : `Приложение для поиска отелей, запрос отелей с API, страница авторизации, параметры запроса, где вы можете ввести название города,
+         дату заселения и кол-во дней. Отели могут быть добавлены в избранное. Выбранные отели можно отсортировать по стоимости и количеству звезд. и так далее.`
     const descriptionHotelSearchStack = `JavaScript / TypeScript, React, Redux (Redux-Saga) React-Hooks, saved in sessStorage`
 
-    const descriptionGoogleBooksAPI = (
-        `Google Books API - App requesting books from the Google API, 
-        'load more' pagination, filtering, as well as filtering by category, implemented on the front, because. not on the back. 
-         Clicking on the card will take you to the detailed page of the book`
-    )
+    const descriptionGoogleBooksAPI = lang === 'en'
+        ? `App requesting books from the Google API, 
+            'load more' pagination, filtering, as well as filtering by categories, implemented on the front, because there is no on the back-end.
+            Clicking on the card will redirect you to a detailed description of the book.`
+        : `Приложение, запрашивающее книги из Google API, Подгрузка книг(load more), фильтрация, а также фильтрация по категориям,
+        реализованная на фронте, потому что нету на back-end. Нажав на карточку вас перенаправит на подробное описание книги.`
     const descriptionGoogleBooksAPIStack = `JavaScript / TypeScript, React Redux, SASS, etc.`
 
-    const descriptionOnlineStore = `Online Store layout. Search by selected categories. as well as for the mobile version`
+    const descriptionOnlineStore = lang === 'en'
+        ? `Online Store layout. Search by selected categories. as well as for the mobile version`
+        : `Макет интернет-магазина. Поиск, поиск по выбранным категориям, так же под мобильную версию`
     const descriptionOnlineStoreStack = `JavaScript / TypeScript, React, SASS`
 
-    const descriptionQuestions = (
-        `The app queries and displays questions on Stackoverflow, search by title and date. 
-         Drag and Drop, on auth site click. load more loading of data, according to the number selected in the select`
-    )
+    const descriptionQuestions = lang === 'en'
+        ? `The app queries and displays questions on Stackoverflow, search by title and date. 
+            Drag and Drop, close the window when clicking not on an item. load additional questions according to the number selected in the selector'`
+        : `Приложение запрашивает и отображает вопросы со Stackoverflow, выполняет поиск по заголовку и дате.
+        Перетаскивание(Drag and Drop),  закрыть окно при клике не по элементу. загрузить дополнительнные вопросы в соответствии с кол-вом, выбранном в селекторе`
     const descriptionQuestionsStack = `JavaScript / TypeScript, Reaact, Redux, Redux-Thunk, react-beautiful-dnd, mui, interaction with the API server`
 
-    const descriptionTodo = `Huge project - Todo list with storage of data on remote server`
+    const descriptionTodo = lang === 'en'
+        ? `Huge project - Todo list with storage of data on remote server`
+        : `Большой проект - Todo list с хранением данных на удаленном сервере`
     const descriptionTodoStack = `JavaScript / TypeScript, React, Redux (Redux-thunk, Redux-toolkit, Hooks), REST API, Storybook, 
          Unit and snapshot tests. Formik, Material-UI. And much more...`
 
-    const descriptionNetwork = `Social network`
+    const descriptionNetwork = lang === 'en' ? `Social network` : `Социальная сеть`
     const descriptionNetworkStack = `JavaScript / TypeScript, React, Redux, redux-thunk, Hooks, 
          REST API Axios, Formik, HOC, context API, Class components, selectors(reselect), test's. And much more...`
 
-    const descriptionCRMPanel = `Сontrol panel CRM, connected to the service and display the addresses entered by the user on the page. as well as for the mobile version`
+    const descriptionCRMPanel = lang === 'en'
+        ? `Сontrol panel CRM, connected to the service and display the addresses entered by the user on the page. as well as for the mobile version`
+        : `Панель управления CRM, подключенная к сервису и отображающая адреса, введенные пользователем в поиске, так же под мобильную версию`
     const descriptionCRMPanelStack = `JavaScript / TypeScript, React, SASS, interaction with the API server`
 
-    const descriptioncarLeasingCalculator = `Calculate the cost of a car lease`
+    const descriptioncarLeasingCalculator = lang === 'en'
+        ? `Calculate the cost of a car lease`
+        : `Рассчитать стоимость аренды автомобиля`
     const descriptioncarLeasingCalculatorStack = `JavaScript / TypeScript, React, SASS`
 
-    const descriptionNetflix = `Netflix app, Netflix copy, request API themoviedb. scroll When clicking on the picture, the video is played`
+    const descriptionNetflix = lang === 'en'
+        ? `Netflix app, Netflix copy, request API themoviedb. scroll, when clicking on the picture, the video is played`
+        : `Netflix, копия Netflix, запрос API themoviedb. прокрутка, при нажатии на картинку воспроизводится видео`
     const descriptionNetflixStack = `JavaScript / TypeScript, React, Hooks. request API, css BEM, movie-trailer`
 
-    const descriptionCalculator = `Calculator, Not using the EVAL method, well, with it too. As well as keyboard input, + Escape, Enter, NumpadEnter`
+    const descriptionCalculator = lang === 'en'
+        ? `Calculator, Not using the EVAL method, as well as keyboard input, + Escape, Enter, NumpadEnter`
+        : `Калькулятор, не использующий метод EVAL, а также ввод с клавиатуры, + Escape, Enter, NumpadEnter`
     const descriptionCalculatorStack = `JavaScript / TypeScript, Native Webpack build, React, Redux`
 
-    const descriptionChatFirebase = 'Simple chat on React and Firebase. Login via google and email. Hooks, CSS'
+    const descriptionChatFirebase = lang === 'en'
+        ? 'Simple chat on React and Firebase. Login via google and email'
+        : `Простой чат на React и Firebase. Вход через гугл и электронную почту`
     const descriptionChatFirebaseStack = 'JavaScript / TypeScript, React, Firebase. Hooks, CSS'
 
-    const descriptionCatImages = `Cat pictures API, Pagination, the ability to add to 'favorites' and remove from 'favorites'`
+    const descriptionCatImages = lang === 'en'
+        ? `The application requests images from the API and displays them, Pagination, the ability to add to 'favorites' and remove from 'favorites'`
+        : `Приложение запрашивает  по API изображения и отображает их, Пагинация, возможность добавлять в «избранное» и удалять из «избранного»`
     const descriptionCatImagesStack = `JavaScript / TypeScript, React, Redux, interaction with the API server`
 
 
@@ -109,10 +137,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
         <div id='project' className={style.projectsBlock}>
             <div className={style.container} >
                 <Fade direction='up' triggerOnce={true}>
-                    {
-                        lang === 'en' ? <Title text={'Projects'} />
-                            : <Title text={'Проекты'} />
-                    }
+                    <Title text={lang === 'en' ? 'Projects' : 'Проекты'} />
                 </Fade>
                 <div className={style.projects}>
                     <Project
@@ -123,6 +148,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         icon={webpackIcon}
                         description={descriptionTurbinary}
                         descriptionStack={descriptionTurbinaryStack}
+                        lang={lang}
                     />
                     <Project
                         videos={keep}
@@ -132,6 +158,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         description={descriptionFashionCatalog}
                         descriptionStack={descriptionFashionCatalogStack}
                         height={220}
+                        lang={lang}
                     />
                     <Project
                         videos={hockey}
@@ -141,6 +168,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         description={descriptionHockeyShop}
                         descriptionStack={descriptionHockeyShopStack}
                         height={220}
+                        lang={lang}
                     />
                     <Project
                         style={omarket}
@@ -150,6 +178,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         description={descriptionOmarket}
                         descriptionStack={descriptionOmarketStack}
                         notPagesIo
+                        lang={lang}
                     />
                     <Project
                         style={hotelSearch}
@@ -158,6 +187,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         gitWay={'hotel-search'}
                         description={descriptionHotelSearch}
                         descriptionStack={descriptionHotelSearchStack}
+                        lang={lang}
                     />
                     <Project
                         style={todolist}
@@ -166,6 +196,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         gitWay={'todolist'}
                         description={descriptionTodo}
                         descriptionStack={descriptionTodoStack}
+                        lang={lang}
                     />
                     <Project
                         style={googleBooks}
@@ -174,6 +205,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         gitWay={'book-search'}
                         description={descriptionGoogleBooksAPI}
                         descriptionStack={descriptionGoogleBooksAPIStack}
+                        lang={lang}
                     />
                     <Project
                         style={onlineStore}
@@ -182,6 +214,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         gitWay={'online-store'}
                         description={descriptionOnlineStore}
                         descriptionStack={descriptionOnlineStoreStack}
+                        lang={lang}
                     />
                     <Project
                         style={questions}
@@ -191,6 +224,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         gitWay={'questions-stackoverflow'}
                         description={descriptionQuestions}
                         descriptionStack={descriptionQuestionsStack}
+                        lang={lang}
                     />
                     <Project
                         style={social}
@@ -199,6 +233,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         gitWay={'TypeScript-Social-Network'}
                         description={descriptionNetwork}
                         descriptionStack={descriptionNetworkStack}
+                        lang={lang}
                     />
                     <Project
                         style={CMSPanel}
@@ -208,6 +243,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         gitWay={'crm-control-panel'}
                         description={descriptionCRMPanel}
                         descriptionStack={descriptionCRMPanelStack}
+                        lang={lang}
                     />
                     <Project
                         style={carLeasingCalculator}
@@ -216,6 +252,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         gitWay={'car-leasing-calculator'}
                         description={descriptioncarLeasingCalculator}
                         descriptionStack={descriptioncarLeasingCalculatorStack}
+                        lang={lang}
                     />
                     <Project
                         style={netflix}
@@ -224,6 +261,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         gitWay={'netflix'}
                         description={descriptionNetflix}
                         descriptionStack={descriptionNetflixStack}
+                        lang={lang}
                     />
                     <Project
                         style={calculator}
@@ -233,6 +271,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         gitWay={'webpack-build-calculator'}
                         description={descriptionCalculator}
                         descriptionStack={descriptionCalculatorStack}
+                        lang={lang}
                     />
                     <Project
                         style={chat}
@@ -242,6 +281,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         gitWay={'chat-firebase'}
                         description={descriptionChatFirebase}
                         descriptionStack={descriptionChatFirebaseStack}
+                        lang={lang}
                     />
                     <Project
                         style={catImages}
@@ -250,6 +290,7 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                         gitWay={'cat-images'}
                         description={descriptionCatImages}
                         descriptionStack={descriptionCatImagesStack}
+                        lang={lang}
                     />
                 </div>
             </div>

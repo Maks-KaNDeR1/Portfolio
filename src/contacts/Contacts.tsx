@@ -8,8 +8,8 @@ import { FormEvent, useRef } from 'react'
 
 
 type PropsType = {
-    theme: string | undefined
-    lang: string | undefined
+    theme?: string
+    lang?: string
 }
 
 export const Contacts: React.FC<PropsType> = ({ theme, lang }) => {
@@ -32,15 +32,25 @@ export const Contacts: React.FC<PropsType> = ({ theme, lang }) => {
         <div id='contacts' className={styles.contactsBlock}>
             <Fade direction='up' triggerOnce={true} >
                 <div className={styles.container}>
-                    {
-                        lang === 'en' ? <Title text={'Contacts'} />
-                            : <Title text={'Контакты'} />
-                    }
+                    <Title text={lang === 'en' ? 'Contacts' : 'Контакты'} />
                     <form className={styles.form} onSubmit={onSubmitSendMessage} >
-                        <input type='text' placeholder='Name' className={styles.input} ref={nameRef} />
-                        <input type='text' placeholder='E-mail' className={styles.input} ref={emailRef} />
-                        <textarea placeholder='Your  message' className={styles.area} ref={messageRef} />
-                        <button type='submit' >{lang === 'en' ? 'Send message' : 'Отправить сообщение'}</button>
+                        <input
+                            type='text'
+                            placeholder={lang === 'en' ? 'Name' : 'Имя'}
+                            className={styles.input}
+                            ref={nameRef} />
+                        <input
+                            type='text'
+                            placeholder='E-mail'
+                            className={styles.input}
+                            ref={emailRef} />
+                        <textarea
+                            placeholder={lang === 'en' ? 'Your  message' : 'Ваше сообщение'}
+                            className={styles.area}
+                            ref={messageRef} />
+                        <button type='submit'>
+                            {lang === 'en' ? 'Send message' : 'Отправить сообщение'}
+                        </button>
                     </form>
                 </div>
             </Fade>

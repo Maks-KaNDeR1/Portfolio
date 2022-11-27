@@ -4,11 +4,19 @@
 .button {
   margin-top: 25px;
   background-color: #252527;
-  
+
   .copyNumber {
-  background-color: $bgSecondary;
-  color: $textColor;
-  opacity: 0.4;
-  text-align: center;
-}
+    position: relative;
+    background-color: $bgSecondary;
+    color: $textColor;
+    opacity: 0.4;
+    text-align: center;
+
+    .arrowCircle {
+      position: 'absolute';
+      // float: 'inline-end';
+      top: '120px';
+      left: ''
+    }
+  }
 }

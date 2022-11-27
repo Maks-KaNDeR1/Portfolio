@@ -2,12 +2,12 @@
 @import '../../common/styles/sass/mixins';
 
 
-:root[data-theme="dark"] {
+:root[data-theme='dark'] {
   --skillBackground: rgba(251, 252, 255, 0.923);
   --skillBoxShadow: inset 6px 4px 20px 0px rgb(0 129 255 / 9%);
 }
 
-:root[data-theme="light"] {
+:root[data-theme='light'] {
   --skillBackground: rgba(255, 255, 255, 0.1);
 }
 

@@ -2,13 +2,13 @@
 @import '../../common/styles/sass/mixins';
 
 
-:root[data-theme="dark"] {
+:root[data-theme='dark'] {
   --backgroundColor: #f8f8f8;
   --opacity: 0.1;
   --border: 2px solid #595a5b
 }
 
-:root[data-theme="light"] {
+:root[data-theme='light'] {
     --backgroundColor: #000;
     --opacity: 0.2;
 }

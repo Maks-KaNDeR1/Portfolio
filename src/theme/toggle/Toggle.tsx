@@ -9,10 +9,10 @@ type PropsType = {
 
 const Toggle: React.FC<PropsType> = ({ value, onChange }) => {
   return (
-    <label className={styles.root} htmlFor="toggler">
+    <label className={styles.root} htmlFor='toggler'>
       <input
-        id="toggler"
-        type="checkbox"
+        id='toggler'
+        type='checkbox'
         onClick={onChange}
         checked={value}
         readOnly

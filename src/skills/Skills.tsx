@@ -17,8 +17,8 @@ import mongoIcon from './../assets/images/mongo.svg'
 import { Fade } from 'react-awesome-reveal'
 
 type PropsType = {
-       theme: string | undefined
-       lang: string | undefined
+       theme?: string
+       lang?: string
 }
 
 export const Skills: React.FC<PropsType> = ({ theme, lang }) => {
@@ -42,10 +42,7 @@ export const Skills: React.FC<PropsType> = ({ theme, lang }) => {
               <div id='skills' className={styles.skillsBlock}>
                      <Fade direction='up' triggerOnce={true} >
                             <div className={styles.container}>
-                                   {
-                                          lang === 'en' ? <Title text={'Skills'} />
-                                                 : <Title text={'Скиллы'} />
-                                   }
+                                   <Title text={lang === 'en' ? 'Skills' : 'Скиллы'} />
                                    <div className={styles.skills}>
                                           <Skill
                                                  title={'html & Css'}

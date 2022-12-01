@@ -22,7 +22,7 @@ export const Main: React.FC<PropsType> = ({ theme, lang }) => {
                     <div className={styles.greeting}>
                         <span style={{ fontSize: '16px' }}>
                             {
-                                lang === 'en' ? 'Welcome to me Portolio' : 'Добро пожаловать ко мне Портфолио'
+                                lang === 'en' ? 'Welcome to me Portolio' : 'Добро пожаловать ко мне в Портфолио'
                             }
                             <img src={portfolioIcon} alt='' />
                         </span>

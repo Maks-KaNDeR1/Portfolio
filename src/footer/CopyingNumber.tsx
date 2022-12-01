@@ -47,7 +47,7 @@ export const CopyingNumber: React.FC<PropsType> = ({ theme, lang }) => {
               {
                 lang === 'en'
                   ? 'Copy on click'
-                  : 'Скопировать по клику'
+                  : 'Копировать по клику'
               }
               <FaArrowCircleDown style={{ position: 'absolute', float: 'inline-end', top: '11px', marginLeft: '2px' }} />
               <FaArrowCircleDown style={{ opacity: '0' }} />

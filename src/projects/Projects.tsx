@@ -73,9 +73,8 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
     const descriptionHotelSearchStack = `JavaScript / TypeScript, React, Redux (Redux-Saga) React-Hooks, saved in sessStorage`
 
     const descriptionGoogleBooksAPI = lang === 'en'
-        ? `App requesting books from the Google API, 
-            'load more' pagination, filtering, as well as filtering by categories, implemented on the front, because there is no on the back-end.
-            Clicking on the card will redirect you to a detailed description of the book.`
+        ? `App requesting books from the Google API, 'load more' pagination, filtering, as well as filtering by categories,
+         implemented on the front, because there is no on the back-end. Clicking on the card will redirect you to a detailed description of the book.`
         : `Приложение, запрашивающее книги из Google API, Подгрузка книг(load more), фильтрация, а также фильтрация по категориям,
         реализованная на фронте, потому что нету на back-end. Нажав на карточку вас перенаправит на подробное описание книги.`
     const descriptionGoogleBooksAPIStack = `JavaScript / TypeScript, React Redux, SASS, etc.`

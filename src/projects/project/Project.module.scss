@@ -3,9 +3,9 @@
 
 
 :root[data-theme='dark'] {
-  --backgroundColor: #f8f8f8;
-  --opacity: 0.1;
-  --border: 2px solid #595a5b
+    --backgroundColor: #f8f8f8;
+    --opacity: 0.1;
+    --border: 2px solid #595a5b
 }
 
 :root[data-theme='light'] {
@@ -20,37 +20,17 @@
 
     .video {
         position: absolute;
-        width: 450px;
-        max-height: 300px;
+        width: 100%;
         object-fit: cover;
         margin-top: 0;
-        background-color:  $bgSecondary;
-    }
-
-    .imageV {
-                min-height: 220px;
-                // height: 300px;
-                @include flex(row, center, center, nowrap);
-                @include bgSettings();
-                position: relative;
-                &::before {
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    opacity: var(--opacity);
-                    background-color: var(--backgroundColor);
-                    border: var(--border);
-                }
+        background-color: $bgSecondary;
     }
     .image {
-        // min-height: 220px;
         height: 300px;
         @include flex(row, center, center, nowrap);
         @include bgSettings();
         position: relative;
+
         &::before {
             position: absolute;
             content: '';
@@ -63,34 +43,30 @@
             border: var(--border);
         }
     }
+
     .projectInfo {
         padding: 25px 20px;
         background-color: $bgSecondary;
+
         .projectTitle {
             @include text($TitleFontFamily, 16px, 1.2, 800);
             letter-spacing: 1px;
             margin: 0 0 5px;
         }
+
         img {
             height: 20px;
             width: 20px;
         }
+
         a {
             @include text($TextFontFamily, 12px, 1.8, 500);
             color: #4e93e6;
             text-decoration: none;
         }
+
         .description {
             @include text($TextFontFamily, 12px, 1.8, 400);
         }
     }
 }
-
-
-
-
-
-
-
-
-

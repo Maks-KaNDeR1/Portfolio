@@ -37,11 +37,13 @@ export const Project: React.FC<PropsType> = (
             <Fade delay={300}>
                 {
                     videos ?
-                        <div>
-                            <video className={styles.video} autoPlay loop muted>
+                        <div style={{ position: 'relative' }} >
+                            <video className={styles.video} autoPlay loop muted >
                                 <source src={videos} type='video/mp4' />
                             </video>
-                            <div className={styles.image} style={{ height: `${height}px` }} >
+                            <div className={styles.image}
+                                style={{ height: `${height}px` }}
+                            >
                                 <Button
                                     disabled={notPagesIo}
                                     way={`https://maks-kander1.github.io/${way}/`}

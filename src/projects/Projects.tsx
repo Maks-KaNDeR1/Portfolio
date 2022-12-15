@@ -141,9 +141,9 @@ export const Projects: React.FC<PropsType> = ({ lang }) => {
                 <div className={style.projects}>
                     <Project
                         style={turbinary}
-                        way={'turbinary'}
+                        way={'games-catalog'}
                         title={'Games Catalog - webpack build'}
-                        gitWay={'turbinary'}
+                        gitWay={'games-catalog'}
                         icon={webpackIcon}
                         description={descriptionTurbinary}
                         descriptionStack={descriptionTurbinaryStack}

@@ -12,9 +12,7 @@ import { LangContext } from './language/contexts/LangContext'
 
 
 export const App = () => {
-
   return (
-
     <LangContext.Consumer>
       {({ lang }) => (
         <ThemeContext.Consumer>

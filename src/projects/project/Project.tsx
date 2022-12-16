@@ -42,7 +42,7 @@ export const Project: React.FC<PropsType> = (
                                 <source src={videos} type='video/mp4' />
                             </video>
                             <div className={styles.image}
-                                style={{ height: `${height}px` }}
+                                style={{ maxHeight: `${height}px` }}
                             >
                                 <Button
                                     disabled={notPagesIo}

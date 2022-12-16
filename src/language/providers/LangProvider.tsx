@@ -5,10 +5,10 @@ const getLang = () => {
   const language = `${window?.localStorage?.getItem('lang')}`
   if (Object.values(langs).includes(language as LangsTypes)) return language
 
-  const userMedia = window.matchMedia('(lang: en)')
-  if (userMedia.matches) return langs.en
+  const userMedia = window.matchMedia('(lang: ru)')
+  if (userMedia.matches) return langs.ru
 
-  return langs.ru
+  return langs.en
 }
 
 

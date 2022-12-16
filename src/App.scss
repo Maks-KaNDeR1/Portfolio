@@ -1,15 +1,16 @@
 @import './common/styles/sass/variables';
 
 
-*{
+* {
     transition: all 0.02s;
 }
 
 .App {
-    > div {
+    div {
         &:nth-child(n) {
             background-color: $bgSecondary;
         }
+
         &:nth-child(2n) {
             background-color: $bgPrimary;
         }
@@ -17,5 +18,15 @@
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    background-color: $bgSecondary;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $primaryColor;
+    border-radius: 9em;
+
+    &:hover {
+        background-color: $textColor;
+    }
 }

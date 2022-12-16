@@ -3,8 +3,8 @@ import React, { Dispatch, SetStateAction } from 'react'
 export type LangsTypes = 'ru' | 'en'
 
 export const langs = {
-  ru: 'ru' as const,
   en: 'en' as const,
+  ru: 'ru' as const,
 }
 
 export type LangsObjType = typeof langs;

@@ -22,7 +22,7 @@ export const Main: React.FC<PropsType> = ({ theme, lang }) => {
                     <div className={styles.greeting}>
                         <span style={{ fontSize: '16px' }}>
                             {
-                                lang === 'en' ? 'Welcome to me Portolio' : 'Добро пожаловать ко мне в Портфолио'
+                                lang === 'en' ? 'Welcome to me Portolio!' : 'Добро пожаловать ко мне в Портфолио'
                             }
                             <img src={portfolioIcon} alt='' />
                         </span>
@@ -44,24 +44,25 @@ export const Main: React.FC<PropsType> = ({ theme, lang }) => {
                         {
                             lang === 'en' ?
                                 <span style={{ fontSize: '17px', maxWidth: '605px', marginTop: '25px' }} >
-                                    Hello, I'm an experienced Front-end developer!
-                                    I create a SPA using the following technologies: JavaScript / TypeScript / React /
-                                    Redux / Webpack and others.
-                                    Now I am improving my skills in this direction and expanding them with new ones.
-                                    In addition to these projects, there are also works on github. I am ready to consider
-                                    project work and full employment.
+                                    A developer with an advanced level of JavaScript, TypeScript, React and Next.js,
+with experience working with Binance, Bybit, Okx exchanges.
+I specialize in creating both trading platforms and websites using React and Next.js technologies.
+In my work, I actively use modern tools such as Redux Toolkit, WebSocket and others. I have experience working
+with axios, klinecharts, nanostores, MUI and Ant Design, as well as with data visualization libraries such as recharts.
+I also have skills in working with Canvas, server-side rendering (SSR) and SEO optimization, which allows me to create high-performance and accessible web applications.
+I am ready to consider project work and full or part-time employment
                                     <p /> My github: <b />
                                     <a target='_blank' rel='noreferrer' href='https://github.com/Maks-KaNDeR1' >@Maks_KaNDeR</a>
                                 </span>
                                 :
                                 <span style={{ fontSize: '17px', maxWidth: '605px', marginTop: '25px' }} >
-                                    Здравствуйте, я опытный Front-end разработчик!
-                                    Создаю SPA с использованием следующих технологий: JavaScript / TypeScript /
-                                    React / Redux / Webpack и прочих...
-                                    Сейчас совершенствую свои навыки в этом направлении и расширяю их
-                                    новыми.
-                                    По мимо указанных работ, проектов есть еще работы на github.
-                                    Готов рассмотреть проектную работу и полную занятость
+                                    Разработчик с продвинутым уровнем владения JavaScript, TypeScript, React и Next.js, 
+                                    обладающий опытом работы с биржами Binance, Bybit, Okx. 
+                                    Специализируюсь на создании как трейдинговых платформ, так и веб-сайтов с использованием технологий React и Next.js. 
+                                    В своей работе активно применяю современные инструменты, такие как Redux Toolkit, WebSocket и другие. Имею опыт работы 
+                                    с axios, klinecharts, nanostores, MUI и Ant Design, а также с библиотеками визуализации данных, такими как recharts. 
+                                    Также владею навыками работы с Canvas, серверного рендеринга (SSR) и SEO-оптимизации, что позволяет создавать высокопроизводительные и доступные веб-приложения.
+                                    Готов рассмотреть проектную работу и полную или частичную занятость
                                     <p /> Мой github: <b />
                                     <a target='_blank' rel='noreferrer' href='https://github.com/Maks-KaNDeR1' >@Maks_KaNDeR</a>
                                 </span>

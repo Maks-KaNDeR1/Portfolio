@@ -8,7 +8,7 @@ import jslIcon from './../assets/images/jsl.svg'
 import formikIcon from './../assets/images/formik.svg'
 import figmaIcon from './../assets/images/figma.svg'
 import materialcon from './../assets/images/material.svg'
-import ajaxIcon from './../assets/images/AJAX.svg'
+// import ajaxIcon from './../assets/images/AJAX.svg'
 import websocketIcon from './../assets/images/websocket.svg'
 import testIcon from './../assets/images/test.svg'
 import nodeIcon from './../assets/images/node-js.svg'
@@ -25,7 +25,7 @@ export const Skills: React.FC<PropsType> = ({ theme, lang }) => {
 
        const html = htmlIcon
        const formik = formikIcon
-       const ajax = ajaxIcon
+       // const ajax = ajaxIcon
        const websocket = websocketIcon
        const figma = figmaIcon
        const material = materialcon
@@ -73,11 +73,11 @@ export const Skills: React.FC<PropsType> = ({ theme, lang }) => {
                                                  title={'rest api'}
                                                  logos={themeObj ? 'dashicons:rest-api' : 'vscode-icons:file-type-rest'}
                                           />
-                                          <Skill
+                                          {/* <Skill
                                                  title={'axios'}
                                                  description={'Axios'}
                                                  icon={ajax}
-                                          />
+                                          /> */}
                                           <Skill
                                                  title={'github'}
                                                  description={'Maks-KaNDeR1'}

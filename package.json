@@ -61,5 +61,8 @@
     "@iconify/react": "^3.2.2",
     "gh-pages": "^4.0.0",
     "sass": "^1.51.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
